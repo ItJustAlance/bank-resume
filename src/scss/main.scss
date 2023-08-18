@@ -3,6 +3,7 @@
 @import 'modules/reset';
 @import 'utilities/variables';
 @import 'utilities/mixins';
+@import 'utilities/utils';
 @import 'modules/mixin_font-face';
 @import 'modules/fontstylesheet';
 
@@ -14,12 +15,14 @@
 
 // ====================  Default  =======================
 
+
 @import "elements/ui";
 @import "elements/typography";
 @import "elements/buttons";
 @import "elements/checkbox";
 @import "elements/icons";
 
+@import "layout/general";
 
 
 // ====================  components  ======================
@@ -27,7 +30,8 @@
 @import 'components/header';
 
 
-// ====================  Partials  ======================
+// ====================  Pages  ======================
+@import "pages/main";
 
 // =====================  Media  ========================
 
