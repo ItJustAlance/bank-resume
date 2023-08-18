@@ -1,0 +1,90 @@
+a
+  color: $clrPrimaryMain
+  text-decoration: none
+  transition: all 0.3s ease
+  &:hover, &:focus
+    text-decoration: none
+    color: $clrPrimaryHover
+
+
+
+// buttons
+button
+  -webkit-appearance: none
+  border: 0
+  box-shadow: none
+  cursor: pointer
+  &:focus
+    outline: none
+
+.btn
+  display: inline-flex
+  position: relative
+  align-items: center
+  justify-content: center
+  text-align: center
+  cursor: pointer
+  transition: all $transitionSpeed $ease
+  color: #fff
+  background: $clrPrimaryMain
+  border-radius: 4px
+  padding: 9px 16px
+  font-weight: 500
+  border: 1px solid $clrPrimaryMain
+  +r($xl)
+    padding: 7px 10px
+  .svg-icon
+    margin-right: 4px
+    fill: currentColor
+  &:focus, &:active
+    outline: none
+  &:hover
+    background: $clrPrimaryHover
+    color: #fff
+    border-color: $clrPrimaryHover
+
+
+  &--second
+    color: $clrPrimaryMain
+    background: $clrPrimarySecond
+    border-color: $clrPrimarySecond
+    &:hover
+      color: $clrPrimaryHover
+      background: $clrPrimarySecond
+  &--white
+    color: $clrGrey90
+    background: $clrGrey10
+    border-color: $clrGrey10
+    &:hover
+      color: $clrGrey10
+      background: $clrPrimaryMain
+      border-color: $clrPrimaryMain
+  &--gray
+    border-color: $clrPrimaryMain
+    color: $clrPrimaryMain
+    background: $clrGrey20
+    &:hover
+      color: $clrGrey10
+      background: $clrPrimaryHover
+      border-color: $clrPrimaryHover
+
+  &--inline
+    border-color: rgba(255,255,255, 0)
+    background: none
+    color: $clrGrey90
+    padding-left: 0
+    padding-right: 0
+    &:hover
+      background: none
+      border-color: rgba(255,255,255, 0)
+      color: $clrPrimaryHover
+
+
+.link-box
+  display: inline-flex
+  align-items: center
+  .svg-icon
+    margin-right: 8px
+
+.link--red
+  color: $clrDangerMain

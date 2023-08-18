@@ -1,0 +1,21 @@
+include utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    title #{title}
+    meta(name="description", content=description)
+    meta(name="keywords" content=keywords)
+    link(rel="shortcut icon" href="favicon.png" type="image/png")
+
+  body(class=pageClass)
+    .wrapper
+      include partials/header
+      main
+        block content
+      include partials/footer
