@@ -4,5 +4,34 @@ header.header
       +icon('logo', 1)
     .header-right
       .btns
-        a.btn(href="#") Вход
+        a.btn.btn-modal(href="#" data-modal="modal-support") Вход
         a.btn.btn(href="#") Регистрация
+    button.burger-btn(type="button")
+      span.burger-btn__line
+      span.burger-btn__line
+      span.burger-btn__line
+  .mobile-menu
+    .mobile-menu__overlay
+    .mobile-menu__wrapper
+      .mobile-menu__header
+        nav.mobile-menu__nav
+          ul.mobile-menu__nav-list
+            li
+              a.btn(href="#") Вход для соискателя
+            li
+              a.btn(href="#") Вход для директора
+            li
+              a.btn.btn--border(href="#") Регистрация
+      .mobile-menu__content
+        ul.menu-links
+          li
+            a(href="#") Пользовательское соглашение
+          li
+            a(href="#") Правовая информация
+          li
+            a(href="#") Контакты
+          li
+            a(href="#") Помощь (FAQ)
+          li
+            a.link-support(href="#") Служба поддержки
+

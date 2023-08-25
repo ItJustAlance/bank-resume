@@ -1,9 +1,21 @@
 .header
   width: 100%
   padding: 43px 0
+  background: $baseBg
+  position: relative
+  +r($lg)
+    padding: 18px 0
+    height: 56px
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 101
   .all
     display: flex
     align-items: center
+    position: relative
+    +r($lg)
+      z-index: 101
   .logo
     .svg-icon--logo
       width: 160px
@@ -13,7 +25,119 @@
     .btns
       display: flex
       gap: 20px
+      +r($lg)
+        display: none
+
+  .burger-btn
+    background: none
+    border: none
+    height: 18px
+    position: relative
+    width: 30px
+    display: none
+    +r($lg)
+      display: block
+    &__line
+      background-color: $clrGrey90
+      border: 1px solid $clrGrey90
+      border-radius: 3px
+      display: block
+      height: 1px
+      position: absolute
+      transition: .5s
+      width: 20px
+      &:first-child
+        left: 0
+        top: 0
+        transition: right .4s .4s,top .4s .4s,transform .4s
+      &:nth-child(2)
+        left: 0
+        top: 8px
+        transition: opacity .4s
+      &:nth-child(3)
+        bottom: 0
+        left: 0
+        transition: left .4s .4s,bottom .4s .4s,transform .4s
+
+    &.opened
+      .burger-btn
+        &__line
+          &:first-child
+            left: 0
+            top: 7px
+            transform: rotate(45deg)
+            transition: right .4s,top .4s,transform .4s .4s
+          &:nth-child(2)
+            opacity: 0
+          &:nth-child(3)
+            bottom: 8px
+            left: 0
+            transform: rotate(-45deg)
+            transition: left .4s,bottom .4s,transform .4s .4s
+
+.mobile-menu
+  height: 100%
+  left: 102vw
+  padding: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 100
+  font-size: 15px
+  overflow: hidden
+
+  &__overlay
+    background: rgba(0, 0, 0, 0.08)
+    position: absolute
+    top: 55px
+    bottom: 0
+    left: 0
+    width: 100%
+  &__wrapper
+    position: absolute
+    top: 56px
+    right: -101vw
+    width: 87%
+    max-width: 400px
+    padding: 40px 32px
+    display: flex
+    gap: 40px
+    background: $baseBg
+    border-radius: 0 0 0 16px
+    flex-direction: column
+    transition: all .5s ease
+
+  &__nav
+    &-list
+      display: flex
+      flex-direction: column
+      gap: 18px
+      li
+        a.btn
+          display: block
+  &__content
+  .menu-links
+    display: flex
+    flex-direction: column
+    gap: 24px
+    li
+      a
+        color: $clrGrey90
+        &.link-support
+          color: $clrPrimaryMain
+          text-decoration: underline
+
+.open-menu
+  .mobile-menu
+    left: 0
+
+.open-menu-in
+  .mobile-menu
+    &__wrapper
+      right: 0
+
 
 .index-page
   .header
     background: $baseBg
+

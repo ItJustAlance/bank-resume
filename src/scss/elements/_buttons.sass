@@ -31,8 +31,9 @@ button
   padding: 9px 16px
   font-weight: 500
   border: 1px solid $clrPrimaryMain
-  +r($xl)
-    padding: 7px 10px
+  +r($md)
+    padding: 12px 10px
+    font-weight: 400
   .svg-icon
     margin-right: 4px
     fill: currentColor
@@ -42,8 +43,13 @@ button
     background: $clrPrimaryHover
     color: #fff
     border-color: $clrPrimaryHover
+  &:focus
+    background: $clrPrimaryFocus
+  &:active
+    background: $clrPrimaryPressed
 
-
+  &--full
+    width: 100%
   &--second
     color: $clrPrimaryMain
     background: $clrPrimarySecond
@@ -51,6 +57,29 @@ button
     &:hover
       color: $clrPrimaryHover
       background: $clrPrimarySecond
+    &:focus
+      color: $clrPrimaryMain
+      background: $clrPrimarySecond
+      border-color: $clrPrimaryFocus
+    &:active
+      color: $clrPrimaryPressed
+      background: $clrPrimarySecond
+  &--border
+    color: $clrPrimaryMain
+    background: none
+    border-color: $clrPrimaryMain
+    &:hover
+      color: $clrPrimaryHover
+      background: none
+      border-color: $clrPrimaryHover
+    &:focus
+      color: $clrPrimaryFocus
+      background: none
+      border-color: $clrPrimaryFocus
+    &:active
+      color: $clrPrimaryPressed
+      background: none
+      border-color: $clrPrimaryPressed
   &--white
     color: $clrGrey90
     background: $clrGrey10

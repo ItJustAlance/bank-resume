@@ -1,0 +1,73 @@
+.footer
+  font-size: 15px
+  background: $baseBg
+  padding: 40px 0 30px
+  margin-top: 140px
+  +r($md)
+    margin-top: 80px
+  .all
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+  &-left
+    flex: 0 0 30%
+    +r($md)
+      flex: 1 1 100%
+      text-align: center
+      padding-bottom: 40px
+  &-center
+    flex: 1 1 auto
+    +r($md)
+      flex: 1 1 100%
+  &-right
+    max-width: 190px
+    +r($md)
+      flex: 1 1 100%
+      max-width: 100%
+  &-copy
+    color: $clrGrey50
+    text-align: center
+    width: 100%
+    padding-top: 48px
+    .small
+      font-size: 12px
+      padding-top: 4px
+  &-nav
+    margin: 0
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    +r($md)
+      max-width: 500px
+      margin: 0 auto 16px
+    li
+      width: 50%
+      margin-bottom: 12px
+      +r($md)
+        width: 100%
+        text-align: center
+        margin-bottom: 16px
+      a
+        color: $clrGrey90
+        &:hover
+          color: $clrGrey50
+  .link-sites
+    display: flex
+    gap: 12px
+    +r($md)
+      justify-content: center
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #fff
+      width: 60px
+      height: 60px
+      border-radius: 8px
+      &:hover
+        opacity: .8
+
+
+

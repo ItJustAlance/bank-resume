@@ -19,7 +19,7 @@
 @import "elements/ui";
 @import "elements/typography";
 @import "elements/buttons";
-@import "elements/checkbox";
+@import "elements/inputs";
 @import "elements/icons";
 
 @import "layout/general";
@@ -28,6 +28,8 @@
 // ====================  components  ======================
 
 @import 'components/header';
+@import 'components/footer';
+@import 'components/modals';
 
 
 // ====================  Pages  ======================

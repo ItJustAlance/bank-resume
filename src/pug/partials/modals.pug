@@ -1,0 +1,27 @@
++modal("modal-support")
+  .just-modal__header
+    .just-modal-title служба поддержки
+    .just-modal-subtitle Опишите вашу проблему.
+  .just-modal-form
+    .just-modal-form__row
+      label.label Имя
+      input.input(type="text")
+    .just-modal-form__row
+      label.label E-mail
+      input.input(type="text")
+    .just-modal-form__row
+      label.label Ваша проблема
+      textarea.textarea
+    .just-modal-form__row.pb-32
+      .b-checkbox
+        input(type="checkbox" id="fff")
+        label.b-checkbox__label(for="fff")
+          span.checked
+            +icon('check')
+          span.b-checkbox__text Согласен на <a href="#">обработку персональных данных</a>
+    .just-modal-form__row.pb-32
+      .text-captcha Подтвердите, что вы не робот
+      .captcha
+        img(src="assets/img/capha.png")
+    .just-modal-form__row
+      button.btn.btn--full(type="submit") Отправить

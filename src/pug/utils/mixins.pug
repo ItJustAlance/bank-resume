@@ -6,3 +6,17 @@ mixin icon(name,mod)
   else
     svg(class="svg-icon svg-icon--" + name)
       use(xlink:href="assets/img/sprite.svg#icon-" + name)
+
+
+mixin modal(name,mod)
+  .just-modal(id="" + name)
+    .just-modal__wrapper
+      .just-modal__overlay
+      .just-modal__container
+        .just-modal__body
+          block
+        .just-modal__close-wrapper
+          button(type="button" class="just-modal__close")
+            +icon('close')
+
+

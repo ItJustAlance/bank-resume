@@ -1,19 +1,43 @@
 // titles
 .h1-title
-  font-size: 72px
-  font-weight: 700
+  font-size: 50px
+  font-weight: 900
   line-height: 1
-  letter-spacing: em(-1.22, 72)
+  +r($lg)
+    font-size: 44px
+  +r($md)
+    font-size: 36px
+  +r($sm)
+    font-size: 32px
 
 .h2-title
-  font-size: 48px
-  font-weight: 700
-  letter-spacing: em(-.33, 48)
+  font-size: 32px
+  font-weight: 900
+  margin: 0
+  padding: 0 0 16px
+  +r($lg)
+    font-size: 30px
+  +r($md)
+    font-size: 28px
+  +r($sm)
+    font-size: 24px
 
 .h3-title
-  font-size: 28px
-  letter-spacing: em(-0.17, 28)
-  font-weight: 700
+  font-size: 24px
+  font-weight: 900
+  +r($lg)
+    font-size: 22px
+  +r($md)
+    font-size: 20px
+  +r($sm)
+    font-size: 18px
+
+.h4-title
+  font-size: 18px
+  font-weight: 600
+  +r($md)
+    font-size: 16px
+
 
 // paragraphs
 .p-main
