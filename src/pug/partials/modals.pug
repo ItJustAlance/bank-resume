@@ -1,6 +1,6 @@
 +modal("modal-support")
   .just-modal__header
-    .just-modal-title служба поддержки
+    .just-modal-title.h2-title служба поддержки
     .just-modal-subtitle Опишите вашу проблему.
   .just-modal-form
     .just-modal-form__row
@@ -25,3 +25,23 @@
         img(src="assets/img/capha.png")
     .just-modal-form__row
       button.btn.btn--full(type="submit") Отправить
+
++modal("modal-login", "modal--white modal-form-normal")
+  .just-modal-form
+    .just-modal-form__row
+      .b-radio
+        input(type="radio" id="rad1")
+        label.b-radio__label(for="rad1")
+          span.checked
+          span.b-radio__text Вход для директора
+    .just-modal-form__row
+      .b-radio
+        input(type="radio" id="rad2")
+        label.b-radio__label(for="rad2")
+          span.checked
+          span.b-radio__text Вход для соискателя
+    .just-modal-form__btns
+      .just-modal-form__col2
+        button.btn.btn--full(type="submit") Продолжить
+      .just-modal-form__col2
+        a.btn.btn--border.btn--full.js-just-modal__close(href="#") Отменить

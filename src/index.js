@@ -6,3 +6,4 @@ import './scss/main.scss';
 
 // Pug
 import './pug/pages/index.pug';
+import './pug/pages/login.pug';

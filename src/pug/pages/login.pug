@@ -1,0 +1,51 @@
+extends ../template2
+
+block variables
+  - var title = 'Вход'
+  - var pageClass = 'login-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .p-login
+    .p-login-container
+      .p-login-left
+        .p-login-left__wrapper
+          .p-login-header
+            .logo
+              a(href="#")
+                +icon('logo', 1)
+          .p-login-form
+            .p-login-form__title.h2-title вход
+            .form-form
+              .form-form__row
+                label.label E-mail
+                input.input(type="text" placeholder="Введите e-mail")
+              .form-form__row
+                label.label Пароль
+                .inp-password
+                  input.input(type="text" placeholder="Введите пароль")
+                  span.password-icon
+                    +icon('eye')
+              .form-form__row.pb-40
+                .b-checkbox
+                  input(type="checkbox" id="fff")
+                  label.b-checkbox__label(for="fff")
+                    span.checked
+                      +icon('check')
+                    span.b-checkbox__text Запомнить меня
+                .link-repass
+                  a(href="#") Забыли пароль?
+
+              .form-form__row
+                button.btn.btn--full(type="submit") Вход
+              .form-form__row
+                a.btn.btn--full.btn--border
+                  img.icon(src="assets/img/dpmo-logo.svg")
+                  | Вход через ДПО
+              .form-form__row.login-bottom
+                span.login-bottom__item Не зарегистрированы?
+                a.login-bottom__item(href="#") Регистрация
+
+      .p-login-image
+        img(src="assets/img/ill1.svg")

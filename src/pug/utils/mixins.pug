@@ -8,15 +8,15 @@ mixin icon(name,mod)
       use(xlink:href="assets/img/sprite.svg#icon-" + name)
 
 
-mixin modal(name,mod)
-  .just-modal(id="" + name)
+mixin modal(name,mclass)
+  .just-modal(id="" + name class="" + mclass)
     .just-modal__wrapper
       .just-modal__overlay
       .just-modal__container
         .just-modal__body
           block
         .just-modal__close-wrapper
-          button(type="button" class="just-modal__close")
+          button(type="button" class="just-modal__close js-just-modal__close")
             +icon('close')
 
 

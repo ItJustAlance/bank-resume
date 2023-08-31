@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
     $("#" + modal).addClass("open ");
     setTimeout(() => ($("#" + modal).addClass("in")), 300);
   });
-  $(".just-modal__overlay, .just-modal__close").on("click", function (){
+  $(".just-modal__overlay, .js-just-modal__close").on("click", function (){
     $("body").removeClass("lock just-modal--default")
     $(".just-modal").removeClass("open in");
   });
@@ -30,7 +30,5 @@ window.addEventListener('load', () => {
       $("body").addClass("open-menu")
       $("body").addClass("open-menu-in")
     }
-
-
   })
 });
