@@ -1,0 +1,33 @@
+extends ../template2
+
+block variables
+  - var title = 'Вход'
+  - var pageClass = 'login-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .p-login
+    .p-login-container
+      .p-login-left
+        .p-login-left__wrapper
+          .p-login-header
+            .logo
+              a(href="#")
+                +icon('logo', 1)
+          .p-login-form
+            .p-login-form__header
+              .p-login-form__title.h2-title восстановить пароль
+              .p-login-form__subtitle Забыли пароль? <br>Укажите адрес электронной почты, и мы отправим вам новый пароль.
+            .form-form
+              .form-form__row.pb-40
+                label.label E-mail
+                input.input(type="text" placeholder="Введите e-mail")
+              .form-form__row
+                button.btn.btn--full(type="submit") Восстановить
+              .form-form__row
+                a.btn.btn--full.btn--border Назад
+
+
+      .p-login-image
+        img(src="assets/img/ill1.svg")

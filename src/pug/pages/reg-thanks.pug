@@ -1,0 +1,30 @@
+extends ../template2
+
+block variables
+  - var title = 'Вход'
+  - var pageClass = 'login-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .p-login
+    .p-login-container
+      .p-login-left
+        .p-login-left__wrapper
+          .p-login-header
+            .logo
+              a(href="#")
+                +icon('logo', 1)
+          .p-login-form
+            .p-login-form__header
+              .p-login-form__title.h2-title поздравляем!
+              .p-login-form__subtitle Вы успешно прошли регистрацию. Войдите в Личный кабинет.
+            .form-form
+              .form-form__row
+                a.btn.btn--full(href="#") Вход
+              .form-form__row
+                a.btn.btn--full.btn--border На главную
+
+
+      .p-login-image
+        img(src="assets/img/ill1.svg")

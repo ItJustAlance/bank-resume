@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Popup from './popup';
+import  './libs';
 
 window.addEventListener('load', () => {
   console.log($);
@@ -20,6 +20,17 @@ window.addEventListener('load', () => {
     $(".just-modal").removeClass("open in");
   });
 
+  $(".js-btn-password-toggle").on("click", function (){
+    $(this).closest(".js-pasword-wrapper").toggleClass("show-password");
+    const inpPass = $(this).closest(".js-pasword-wrapper").find(".js-pasword-input");
+    const type = inpPass.attr("type");
+    if( type === 'password' ){
+      $(inpPass).attr("type", "text");
+    }else{
+      $(inpPass).attr("type", "password");
+    }
+  });
+
   $(".burger-btn").on("click", function (){
     if($(this).hasClass('opened')) {
       $(this).removeClass("opened")
@@ -30,5 +41,14 @@ window.addEventListener('load', () => {
       $("body").addClass("open-menu")
       $("body").addClass("open-menu-in")
     }
-  })
+  });
+  if ($('.js-phone_mask').length) {
+    $(".js-phone_mask").mask("+7 (999) 999-9999");
+  }
+  if ($('.js-snils_mask').length) {
+    $(".js-snils_mask").mask("9999-99999-9999");
+  }
+  if($("select.ik-select").length>0) {
+    $('select.ik-select').ikSelect();
+  }
 });

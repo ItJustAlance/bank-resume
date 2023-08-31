@@ -1,0 +1,134 @@
+extends ../template2
+
+block variables
+  - var title = 'регистрация'
+  - var pageClass = 'login-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .p-login
+    .p-login-container
+      .p-login-left
+        .p-login-left__wrapper
+          .p-login-header
+            .logo
+              a(href="#")
+                +icon('logo', 1)
+          .p-login-form
+            .p-login-form__header
+              .p-login-form__title.h2-title регистрация
+            .reg-step.step1
+              .form-form
+                .form-form__row
+                  label.label E-mail
+                  input.input(type="text" placeholder="Введите e-mail")
+                .form-form__row
+                  label.label Пароль
+                  .inp-password.js-pasword-wrapper
+                    input.input.js-pasword-input(type="password" placeholder="Введите пароль")
+                    span.password-icon.js-btn-password-toggle
+                      +icon('eye')
+                      +icon('eye-off')
+
+                .form-form__row
+                  label.label Пароль
+                  .inp-password.js-pasword-wrapper
+                    input.input.js-pasword-input(type="password" placeholder="Введите пароль")
+                    span.password-icon.js-btn-password-toggle
+                      +icon('eye')
+                      +icon('eye-off')
+                .form-form__row.pb-40
+                  .b-checkbox
+                    input(type="checkbox" id="fff2")
+                    label.b-checkbox__label(for="fff2")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Я принимаю <a href="#">Пользовательское соглашение</a>
+
+                .form-form__row
+                  button.btn.btn--full(type="submit") Вход
+                .form-form__row
+                  a.btn.btn--full.btn--border
+                    img.icon(src="assets/img/dpmo-logo.svg")
+                    | Вход через ДПО
+                .form-form__row.login-bottom
+                  span.login-bottom__item Уже зарегистрированы?
+                  a.login-bottom__item(href="#") Вход
+            .reg-step.step2
+              .form-form
+                .form-form__row
+                  label.label Фамилия*
+                  input.input(type="text" placeholder="Фамилия")
+                .form-form__row
+                  label.label Имя*
+                  input.input(type="text" placeholder="Имя")
+                .form-form__row
+                  label.label Отчество*
+                  input.input(type="text" placeholder="Отчество")
+                .form-form__row
+                  label.label Возраст*
+                  input.input(type="text" placeholder="Возраст")
+                .form-form__row
+                  label.label Телефон*
+                  input.input.js-phone_mask(type="text" placeholder="Телефон")
+
+                .form-form__row.pb-40
+                  .b-checkbox
+                    input(type="checkbox" id="fff3")
+                    label.b-checkbox__label(for="fff3")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Я принимаю <a href="#">Пользовательское соглашение</a>
+
+                .form-form__row
+                  button.btn.btn--full(type="submit") Продолжить
+                .form-form__row
+                  a.btn.btn--full.btn--border Назад
+
+            .reg-step.step3.active
+              .form-form
+                .form-form__row
+                  label.label Пол
+                  select.ik-select
+                    option Муж
+                    option Жен
+                .form-form__row
+                  label.label Семейное положение
+                  select.ik-select
+                    option Муж
+                    option Жен
+                .form-form__row
+                  label.label Готовность к переезду
+                  select.ik-select
+                    option Муж
+                    option Жен
+                .form-form__row
+                  label.label Место проживания
+                  select.ik-select
+                    option Муж
+                    option Жен
+                .form-form__row
+                  label.label СНИЛС
+                  input.input.js-snils_mask(type="text" placeholder="СНИЛС")
+                .form-form__row.pb-40
+                  label.label Фото профиля
+                  .b-input-browse
+                    input.input-browse(type="file")
+                    .input-browse__label Добавить фото профиля
+                    +icon('camera')
+
+
+
+                .form-form__row
+                  button.btn.btn--full(type="submit") Зарегистрироваться
+                .form-form__row
+                  a.btn.btn--full.btn--border Назад
+
+
+          .reg-step-bullit
+            .reg-step-bullit__item.active
+            .reg-step-bullit__item
+            .reg-step-bullit__item
+      .p-login-image
+        img(src="assets/img/ill1.svg")
