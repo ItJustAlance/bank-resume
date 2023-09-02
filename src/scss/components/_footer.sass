@@ -1,10 +1,12 @@
 .footer
   font-size: 15px
-  background: $baseBg
-  padding: 40px 0 30px
-  margin-top: 140px
-  +r($md)
-    margin-top: 80px
+  margin-top: auto
+  &-wrapper
+    padding: 40px 0 30px
+    background: $baseBg
+    margin-top: 140px
+    +r($md)
+      margin-top: 80px
   .all
     display: flex
     flex-wrap: wrap
@@ -71,3 +73,6 @@
 
 
 
+.login-page
+  .footer-wrapper
+    margin-top: 0

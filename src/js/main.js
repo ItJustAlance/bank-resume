@@ -51,4 +51,11 @@ window.addEventListener('load', () => {
   if($("select.ik-select").length>0) {
     $('select.ik-select').ikSelect();
   }
+
+  $(".js-mobile-text-full").on("click", function (){
+    $(this).closest(".js-text-overflow-wrapper").find(".text-full-overflow").toggle();
+    $(this).closest(".js-text-overflow-wrapper").find(".text-small-overflow").toggle();
+
+    return false
+  });
 });

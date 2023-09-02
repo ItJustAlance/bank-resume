@@ -1,0 +1,21 @@
+extends ../template
+
+block variables
+  - var title = '404'
+  - var pageClass = 'e404-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .all.page-404
+    .img 404
+    .info-404
+      .h2-title Ой, что-то пошло не так. <br>Страница не найдена.
+      .text Такой страницы не существует или она была перенесена.
+      ul.b-links
+        li
+          a.btn.btn--full(href="#") На главную
+        li
+          a(href="#") Служба поддержки
+        li
+          a(href="#") Помощь

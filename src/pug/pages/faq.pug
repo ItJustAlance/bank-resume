@@ -1,0 +1,83 @@
+extends ../template
+
+block variables
+  - var title = 'Часто задаваемые вопросы'
+  - var pageClass = 'second-page'
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+
+block content
+  .all.pt-40
+    h1.h2-title.title-page Часто задаваемые вопросы
+    section.section.section--faq
+      .faq-list
+        .faq-item.js-faq-wrapper
+          .faq-item__toggle
+            .faq-item__title.js-faq-toggler
+              | Как пользоваться Банком резюме?
+            .faq-item__ico
+              +icon('plus-circle')
+              +icon('minus-circle')
+          .faq-item__desc.js-faq-desq Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.
+        .faq-item.js-faq-wrapper
+          .faq-item__toggle
+            .faq-item__title.js-faq-toggler
+              | Как пользоваться Банком резюме?
+            .faq-item__ico
+              +icon('plus-circle')
+              +icon('minus-circle')
+          .faq-item__desc.js-faq-desq Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.
+        .faq-item.js-faq-wrapper
+          .faq-item__toggle
+            .faq-item__title.js-faq-toggler
+              | Как пользоваться Банком резюме?
+            .faq-item__ico
+              +icon('plus-circle')
+              +icon('minus-circle')
+          .faq-item__desc.js-faq-desq Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.
+        .faq-item.js-faq-wrapper
+          .faq-item__toggle
+            .faq-item__title.js-faq-toggler
+              | Как пользоваться Банком резюме?
+            .faq-item__ico
+              +icon('plus-circle')
+              +icon('minus-circle')
+          .faq-item__desc.js-faq-desq Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.
+
+      .loader-etc
+        a.link-loader(href="#") Смотреть еще
+    section.section
+      .p-login.p-form-faq
+        .p-login-container
+          .p-login-left
+            .p-login-left__wrapper
+              .p-login-form
+                .p-login-form__header
+                  .p-login-form__title.h2-title Задать вопрос
+                  .p-login-form__subtitle Если у вас остались вопросы, напишите нам.
+                .form-form
+                  .form-form__row
+                    label.label Имя
+                    input.input(type="text" placeholder="Имя")
+                  .form-form__row
+                    label.label E-mail
+                      input.input(type="text" placeholder="E-mail")
+                  .form-form__row
+                    label.label Ваш вопрос
+                    textarea.textarea
+                  .form-form__row.pb-32
+                    .b-checkbox
+                      input(type="checkbox" id="ff4f")
+                      label.b-checkbox__label(for="ff4f")
+                        span.checked
+                          +icon('check')
+                        span.b-checkbox__text Согласен на <a href="#">обработку персональных данных</a>
+                  .form-form__row.pb-32
+                    .text-captcha Подтвердите, что вы не робот
+                    .captcha
+                      img(src="assets/img/capha.png")
+                  .form-form__row
+                    button.btn.btn--full(type="submit") Отправить
+
+          .p-login-image
+            img(src="assets/img/ill1.svg")
