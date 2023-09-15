@@ -1,0 +1,224 @@
+.main--office
+  padding-top: 60px
+.cabinet
+  &-header
+    padding-bottom: 40px
+    &__row
+      display: flex
+      flex-wrap: wrap
+    &__title
+      margin-right: auto
+      text-transform: uppercase
+      margin-bottom: 0
+      padding-bottom: 0
+  &-ava
+    width: 170px
+    height: 170px
+    position: relative
+    &-img
+      width: 170px
+      height: 170px
+      overflow: hidden
+      border-radius: 50%
+      background: $clrGrey30
+      border: 4px solid #fff
+      &.active
+        border-color: #F1BCC7
+    &-wrapper
+      position: relative
+      width: 170px
+      .ic-camera
+        position: absolute
+        bottom: 10px
+        right: 10px
+        background: #F4F9FB
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $clrGrey90
+        .svg-icon
+          width: 15px
+          height: 15px
+      .text-add
+        text-align: center
+        font-size: 12px
+        color: $clrGrey60
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 14px
+        .svg-icon
+          width: 12px
+          height: 12px
+          margin-right: 4px
+    &__edit
+      overflow: hidden
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      input
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 400px
+        height: 400px
+        font-size: 200px
+        z-index: 1
+        cursor: pointer
+        opacity: 0
+  &-fio
+    padding-top: 32px
+    text-transform: uppercase
+
+  &-content
+  &-info
+    &__section
+      border-top: 1px solid $clrGrey40
+      display: flex
+      flex-wrap: wrap
+      padding: 20px 0 30px
+      +r($md)
+        padding-bottom: 18px
+    &__row
+      padding-bottom: 12px
+      width: 100%
+      display: flex
+      +r($md)
+        flex-wrap: wrap
+      &.--x2
+        padding-bottom: 42px
+        +r($md)
+          padding-bottom: 32px
+    &__label
+      color: $clrGrey60
+      font-size: 15px
+      flex: 0 0 300px
+      padding-right: 20px
+      +r($md)
+        flex: 0 0 100%
+        padding-right: 0
+        padding-bottom: 4px
+    &__text
+      flex: 1 1 auto
+      color: #000
+      font-size: 18px
+      font-weight: 600
+      +r($md)
+        flex: 0 0 100%
+    &__bottom
+      padding-top: 60px
+      +r($md)
+        padding-top: 20px
+      .btn
+        margin-right: 18px
+        margin-bottom: 18px
+    &__error
+      padding-bottom: 12px
+      color: $clrDangerMain
+    &__btns
+      display: flex
+      flex-wrap: wrap
+      &.--center
+        justify-content: center
+  &-edit
+    display: flex
+    flex-wrap: wrap
+    max-width: 945px
+    width: 100%
+    &__text
+      max-width: 890px
+    &__section
+      display: flex
+      width: 100%
+      flex-wrap: wrap
+      gap: 18px
+      & + .cabinet-edit__section
+        padding-top: 60px
+      .h3-title
+        text-transform: uppercase
+        margin: 0
+        padding: 0 0 32px
+    &__row
+      display: flex
+
+      gap: 0 50px
+      width: 100%
+      +r($md)
+        flex-wrap: wrap
+    &__col-md-1
+      width: 100%
+      flex: 0 0 100%
+    &__col-md-2
+      width: 50%
+      flex: 0 0 50%
+      +r($md)
+        width: 100%
+        flex: 0 0 100%
+        & + .cabinet-edit__col-md-2
+          margin-top: 16px
+      .form-item
+        max-width: 420px
+        &+.h3-title
+          margin-top: 40px
+    .label
+    .input
+  .add-row-wrapper + .add-row-wrapper
+    margin-top: 18px
+  .text-add
+    text-align: center
+    font-size: 12px
+    color: $clrGrey60
+    display: flex
+    align-items: center
+    cursor: pointer
+    padding-top: 18px
+    .svg-icon
+      width: 12px
+      height: 12px
+      margin-right: 4px
+  &-tabs
+    .cabinet-header__title
+      padding-bottom: 40px
+    .tabs
+      display: flex
+      margin: 0
+      padding: 0
+      list-style: none
+      gap: 12px
+      &__item
+        display: inline-flex
+        align-items: center
+        border-radius: 16px 16px 0 0
+        border: 1px solid #F4F9FB
+        justify-content: center
+        padding: 18px
+        color: $clrGrey60
+        font-size: 18px
+        font-weight: 600
+        flex: 1 1 auto
+        cursor: pointer
+        &.active, &:hover
+          background: #F4F9FB
+          color: $clrGrey90
+    .box
+      display: none
+      &-bg
+        background: #F4F9FB
+        border-radius: 0 0 16px 16px
+        padding: 60px
+        &+.box-bg
+          border-radius: 16px
+          margin-top: 18px
+      &.show
+        display: block
+      &-wrapper
+        max-width: 940px
+        margin: 0 auto
+        width: 100%
+
+

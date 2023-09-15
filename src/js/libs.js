@@ -924,7 +924,7 @@
     toggle: function (bool) {
       this.isDisabled = typeof bool !== 'undefined' ? !bool : !this.isDisabled;
       this.$el.prop('disabled', this.isDisabled);
-      this.$link.toggleClass('ik_select_link_disabled', this.isDisabled);
+      this.$wrapper.toggleClass('ik_select_disabled', this.isDisabled);
     },
 
     // make option selected by value

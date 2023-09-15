@@ -32,9 +32,11 @@ button
   font-weight: 500
   border: 1px solid $clrPrimaryMain
   text-decoration: none
+  font-size: 15px
   +r($md)
     padding: 12px 10px
     font-weight: 400
+
   .svg-icon, .icon
     margin-right: 4px
     fill: currentColor
@@ -81,6 +83,21 @@ button
       color: $clrPrimaryPressed
       background: none
       border-color: $clrPrimaryPressed
+    &__red
+      color: $clrRedSecondMian
+      border-color: $clrRedSecondMian
+      &:hover
+        color: $clrRedSecondHover
+        background: none
+        border-color: $clrRedSecondHover
+      &:focus
+        color: $clrRedSecondFocus
+        background: none
+        border-color: $clrRedSecondFocus
+      &:active
+        color: $clrRedSecondPressed
+        background: none
+        border-color: $clrRedSecondPressed
   &--white
     color: $clrGrey90
     background: $clrGrey10
@@ -108,8 +125,11 @@ button
       background: none
       border-color: rgba(255,255,255, 0)
       color: $clrPrimaryHover
-
-
+  &:disabled
+    background: $clrGrey20
+    border-color: $clrGrey20
+    color: $clrGrey40
+    cursor: default
 .link-box
   display: inline-flex
   align-items: center

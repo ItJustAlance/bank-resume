@@ -22,12 +22,49 @@
       height: 18px
   &-right
     margin-left: auto
+    display: flex
+    align-items: center
+    gap: 48px
+
     .btns
       display: flex
       gap: 20px
       +r($lg)
         display: none
-
+  &__links
+    display: flex
+    align-items: center
+    +r($lg)
+      display: none
+  &-auth
+    display: flex
+    align-items: center
+    +r($lg)
+      display: none
+    &__icons
+      display: flex
+      align-items: center
+      gap: 24px
+      margin-right: 24px
+      .link-item
+        &:hover
+          .svg-icon
+            fill: $clrPrimaryMain
+            &--bell
+              fill: none
+              stroke: $clrPrimaryMain
+      .svg-icon
+        width: 24px
+        height: 24px
+        fill: $clrGrey90
+        &--bell
+          fill: none
+          stroke: $clrGrey90
+          stroke-width: 2
+  .link--support
+    margin-left: 60px
+    +r($lg)
+      display: none
   .burger-btn
     background: none
     border: none

@@ -5,6 +5,7 @@
 This starter-kit with [Webpack 4](https://webpack.js.org/) based setup helps you build web apps and sites much faster.
 
 ## Installation
+NODE 13.8.0
 
 1. Clone the repo using `git clone https://github.com/motrdevua/Webpack-4-Starter.git` or [download _Webpack-4-Starter_](https://github.com/motrdevua/Webpack-4-Starter/archive/master.zip).
 2. Open **Webpack-4-Starter** folder in terminal and install a packages via command: `npm install`.

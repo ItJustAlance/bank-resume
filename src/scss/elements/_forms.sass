@@ -14,15 +14,25 @@
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s
   vertical-align: top
   width: 100% !important
+  &_disabled
+    color: $clrGrey40
+    cursor: default
+    .ik_select
+      &_link
+        background: #fbfdfd
+        &_text
+          color: $clrGrey40
   &_link
     overflow: hidden
-    padding: 8px 12px
+    padding: 11px 12px
+    height: 45px
     white-space: nowrap
     position: relative
     border-radius: 4px
     background-color: #fff
     border: 1px solid $clrGrey40
     z-index: 99
+
     &_text
       padding-right: 15px
       color: $clrGrey90
@@ -140,3 +150,9 @@
     max-width: 50%
     min-width: 50%
     padding: 0 10px
+  .form-item
+
+    & + .form-item
+      padding-top: 18px
+  .b-subeckbox
+    margin-top: 12px

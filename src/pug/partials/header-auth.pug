@@ -1,0 +1,61 @@
+header.header
+  .all
+    .logo
+      a(href="#")
+        +icon('logo', 1)
+    .link--support
+      a(href="#") Служба поддержки
+    .header-right
+      .header__links
+        .drop-link
+          .drop-link__label
+            | Резюме
+          .drop-link__arrow
+            +icon('chevron-down')
+          .drop-link__dropdown
+            .drop-link__dropdown-wrapper
+              ul
+                li
+                  a(href="#") Мои резюме
+                li
+                  a(href="#") Создать резюме
+        a(href="#") Каталог вакансий
+      .header-auth
+        .header-auth__icons
+          a.link-item(href="#")
+            +icon('heart')
+          a.link-item(href="#")
+            +icon('send')
+          a.link-item(href="#")
+            +icon('bell', 1)
+        .header-auth__ava
+          a(href="#")
+            img(src="assets/img/mini-ava.png")
+      .btns
+        a.btn(href="#") Выход
+    button.burger-btn(type="button")
+      span.burger-btn__line
+      span.burger-btn__line
+      span.burger-btn__line
+  .mobile-menu
+    .mobile-menu__overlay
+    .mobile-menu__wrapper
+      .mobile-menu__header
+        nav.mobile-menu__nav
+          ul.mobile-menu__nav-list
+            li
+              a.btn(href="#") Выход
+
+      .mobile-menu__content
+        ul.menu-links
+          li
+            a(href="#") Пользовательское соглашение
+          li
+            a(href="#") Правовая информация
+          li
+            a(href="#") Контакты
+          li
+            a(href="#") Помощь (FAQ)
+          li
+            a.link-support(href="#") Служба поддержки
+

@@ -1,0 +1,439 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__title.h2-title создать резюме
+          .cabinet-header__rignt
+            a.btn.btn--border(href="#") К списку резюме
+      .cabinet-tabs.js-tabs-wrapper
+        ul.tabs.js-tab-list
+          li.tabs__item.active
+            span Основная информация
+          li.tabs__item
+            span Желаемое место работы
+          li.tabs__item
+            span Образование и карьера
+          li.tabs__item
+            span Награды и проекты
+          li.tabs__item
+            span Эссе
+
+        .box.js-tab-box
+          .box-bg
+            .box-wrapper
+              .cabinet-header
+                .cabinet-header__row
+                  .cabinet-header__title.h3-title Основная информация
+                .cabinet-ava-wrapper
+                  .cabinet-ava
+                    .cabinet-ava-img
+
+                    .cabinet-ava__edit
+                      input(type="file")
+                      .ic-camera
+                        +icon('camera')
+                  .text-add
+                    +icon('plus')
+                    | Добавить фото
+
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-1
+                        .form-item
+                          label.label Фамилия*
+                          input.input(type="text" placeholder="Фамиля")
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-1
+                        .form-item
+                          label.label Имя*
+                          input.input(type="text" placeholder="Имя")
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-1
+                        .form-item
+                          label.label Отчество*
+                          input.input(type="text" placeholder="Отчество*")
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Дата рождения*
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Регион
+                          select.ik-select
+                            option Москва
+                            option Челябинск
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Пол
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Округ
+                          select.ik-select
+                            option Округ
+                            option Челябинск
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        label.label Семейное положение
+                        select.ik-select
+                          option Замужем
+                          option Челябинск
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Район
+                          select.ik-select
+                            option Район
+                            option Челябинск
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Телефон*
+                          input.input.js-phone_mask(type="text")
+                      .cabinet-edit__col-md-2
+
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label E-mail*
+                          input.input(type="text" placeholder="E-mail")
+                      .cabinet-edit__col-md-2
+
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label СНИЛС
+                          input.input.js-snils_mask(type="text" placeholder="")
+                        .form-item
+                          label.label Готовность к переезду
+                          select.ik-select(disabled)
+                            option Не готова
+                            option Готова
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          .add-row-wrapper
+                            label.label Ссылки на социальные сети
+                            input.input(type="text" placeholder="")
+                          .add-row-wrapper
+                            input.input(type="text" placeholder="")
+                        .text-add
+                          +icon('plus')
+                          | Добавить ссылку
+
+        .box.js-tab-box
+          .box-bg
+            .box-wrapper
+              .cabinet-edit__section
+                .cabinet-edit__row
+                  .cabinet-edit__col-md-1
+                    .h3-title желаемое место работы
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Желаемая позиция
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Возможность подмены
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Уровень оклада
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Фамилия*
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label График работы
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                      .cabinet-edit__col-md-2
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .form-item
+                          label.label Местоположение работодателя
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                      .cabinet-edit__col-md-2
+
+
+
+        .box.js-tab-box
+          .box-bg
+            .box-wrapper
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .h3-title Основное образование
+                        .form-item
+                          label.label ВУЗ/СПО
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                        .form-item
+                          label.label Начало обучения
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                        .form-item
+                          label.label Окончание
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .b-checkbox.b-subeckbox
+                            input(type="checkbox" id="f3")
+                            label.b-checkbox__label(for="f3")
+                              span.checked
+                                +icon('check')
+                              span.b-checkbox__text По настоящее время
+                        .form-item
+                          label.label Форма обучения
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                        .form-item
+                          label.label Квалификация
+                          input.input(type="text" placeholder="Квалификация")
+                        .form-item
+                          label.label Направление/специальность
+                          input.input(type="text" placeholder="Направление")
+                        .form-item
+                          label.label Уровень образования
+                          select.ik-select
+                            option Женский
+                            option Челябинск
+                        .form-item
+                          label.label Номер диплома/Дата выдачи
+                          input.input(type="text" placeholder="Номер диплома/Дата выдачи")
+
+                      .cabinet-edit__col-md-2
+                        .h3-title Дополнительное образование
+                        .form-item
+                          label.label Образовательная организация
+                          input.input(type="text" placeholder="Образовательная организация")
+                        .form-item
+                          label.label Наименование программы
+                          input.input(type="text" placeholder="Наименование программы")
+                        .form-item
+                          label.label Год окончания
+                          select.ik-select
+                            option Год окончания
+                            option 2001
+                          .text-add
+                            +icon('plus')
+                            | Добавить дополнительное образование
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .h3-title Карьера
+                        .form-item
+                          label.label Стаж
+                          input.input(type="text" placeholder="Стаж")
+                        .form-item
+                          label.label Место работы
+                          input.input(type="text" placeholder="Стаж")
+                        .form-item
+                          label.label Начало работы
+                          input.input(type="text" placeholder="Стаж")
+                        .form-item
+                          label.label Окончание
+                          input.input(type="text" placeholder="Стаж")
+                        .form-item
+                          label.label Неизвестно
+                          input.input(type="text" placeholder="Стаж")
+                        .form-item
+                          label.label Неизвестно
+                          textarea.textarea
+                        .form-item
+                          label.label Достижения
+                          textarea.textarea
+                      .cabinet-edit__col-md-2
+                        .h3-title Аттестация
+                        .form-item
+                          label.label Категория
+                          select.ik-select
+                            option Категория
+                            option Категория
+                        .form-item
+                          label.label Год аттестации
+                          select.ik-select
+                            option Год аттестации
+                            option Год аттестации
+                        .h3-title Аттестация
+                        .form-item
+                          label.label Язык
+                          input.input(type="text" placeholder="Язык")
+                        .form-item
+                          label.label Уровень владения
+                          select.ik-select
+                            option Год аттестации
+                            option Год аттестации
+                          .text-add
+                            +icon('plus')
+                            | Добавить дополнительное образование
+        .box.js-tab-box
+          .box-bg
+            .box-wrapper
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .h3-title Участие в мероприятиях
+                        .form-item
+                          label.label Тема мероприятия
+                          input.input(type="text" placeholder="")
+                        .form-item
+                          label.label Статус участника
+                          input.input(type="text" placeholder="")
+                        .form-item
+                          label.label Дата мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+                        .h3-title Участие в мероприятиях в роли слушателя
+                        .form-item
+                          label.label Тема мероприятия
+                          input.input(type="text" placeholder="")
+                        .form-item
+                          label.label Дата мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+
+                      .cabinet-edit__col-md-2
+                        .h3-title Персональные награды
+                        .form-item
+                          label.label Присвоенное звание/медаль/другое
+                          input.input(type="text" placeholder="Присвоенное звание/медаль/другое")
+                        .form-item
+                          label.label Дата присвоения/мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+          .box-bg
+            .box-wrapper
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .h3-title Проекты
+                        .form-item
+                          label.label Наименование
+                          input.input(type="text" placeholder="")
+                        .form-item
+                          label.label Тема
+                          input.input(type="text" placeholder="")
+                        .form-item
+                          label.label Дата мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+
+
+                      .cabinet-edit__col-md-2
+                        .h3-title Публикации
+                        .form-item
+                          label.label Тема публикации
+                          input.input(type="text" placeholder="Тема публикации")
+                        .form-item
+                          label.label Ссылка/Место публикации
+                          select.ik-select
+                            option Ссылка/Место публикации
+                            option Челябинск
+
+                        .form-item
+                          label.label Дата присвоения/мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+                  .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-2
+                        .h3-title Выступление на научном мероприятии
+                        .form-item
+                          label.label Тема мероприятия
+                          input.input(type="text" placeholder="Тема мероприятия")
+                        .form-item
+                          label.label Тема выступления
+                          input.input(type="text" placeholder="Тема выступления")
+                        .form-item
+                          label.label Статус участника
+                          input.input(type="text" placeholder="Статус участника")
+                        .form-item
+                          label.label Дата мероприятия
+                          input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+                          .text-add
+                            +icon('plus')
+                            | Добавить мероприятие
+
+        .box.js-tab-box.show
+          .box-bg
+            .cabinet-content
+              .cabinet-edit.form-form
+                .cabinet-edit__section
+                  .cabinet-edit__text
+                    .h3-title Эссе
+                    .b-text
+                      p
+                        strong Кратко сформулируйте Ваши 3 главных профессиональных достижения* за последние 5 лет работы, а также при желании ответьте на вопросы ниже.
+                      p *Профессиональные достижения — успешно реализованные проекты, достигнутые цели, Ваши конкурентные преимущества.
+                      ul.list-circ
+                        li
+                          strong Почему Вы хотите работать в образовательной организации?
+                        li
+                          strong Что, как Вы думаете, является самой важной областью в Вашей предметной отрасли? Почему? Могли бы Вы привести пример?
+                        li
+                          strong Что Вы делаете для того чтобы поддерживать знания в Вашей области актуальными и на современном уровне?
+                        li
+                          strong Какие знания Вы приобрели в последнее время?
+                    .b-editor
+                      textarea.textarea
+    .cabinet-info__bottom
+      .cabinet-info__error
+        | Вы зарегистрированы через портал ДПО. <br>
+        | Чтобы изменить данные, перейдите на сайт портала ДПО.
+      .cabinet-info__btns.--center
+        a.btn.btn--border.btn--border__red(href="#") Отменить
+        a.btn.btn--border(href="#") Сохранить как черновик
+        input.btn(type="submit"  value="Сохранить и опубликовать")
+
