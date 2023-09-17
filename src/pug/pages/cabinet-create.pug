@@ -14,8 +14,8 @@ block content
       .cabinet-header
         .cabinet-header__row
           .cabinet-header__title.h2-title создать резюме
-          .cabinet-header__rignt
-            a.btn.btn--border(href="#") К списку резюме
+          .cabinet-header__right
+            a.btn.btn--border.btn--md-full(href="#") К списку резюме
       .cabinet-tabs.js-tabs-wrapper
         ul.tabs.js-tab-list
           li.tabs__item.active
@@ -29,7 +29,7 @@ block content
           li.tabs__item
             span Эссе
 
-        .box.js-tab-box
+        .box.js-tab-box.show
           .box-bg
             .box-wrapper
               .cabinet-header
@@ -92,10 +92,11 @@ block content
                             option Челябинск
                     .cabinet-edit__row
                       .cabinet-edit__col-md-2
-                        label.label Семейное положение
-                        select.ik-select
-                          option Замужем
-                          option Челябинск
+                        .form-item
+                          label.label Семейное положение
+                          select.ik-select
+                            option Замужем
+                            option Челябинск
                       .cabinet-edit__col-md-2
                         .form-item
                           label.label Район
@@ -406,34 +407,35 @@ block content
                             +icon('plus')
                             | Добавить мероприятие
 
-        .box.js-tab-box.show
+        .box.js-tab-box
           .box-bg
-            .cabinet-content
-              .cabinet-edit.form-form
-                .cabinet-edit__section
-                  .cabinet-edit__text
-                    .h3-title Эссе
-                    .b-text
-                      p
-                        strong Кратко сформулируйте Ваши 3 главных профессиональных достижения* за последние 5 лет работы, а также при желании ответьте на вопросы ниже.
-                      p *Профессиональные достижения — успешно реализованные проекты, достигнутые цели, Ваши конкурентные преимущества.
-                      ul.list-circ
-                        li
-                          strong Почему Вы хотите работать в образовательной организации?
-                        li
-                          strong Что, как Вы думаете, является самой важной областью в Вашей предметной отрасли? Почему? Могли бы Вы привести пример?
-                        li
-                          strong Что Вы делаете для того чтобы поддерживать знания в Вашей области актуальными и на современном уровне?
-                        li
-                          strong Какие знания Вы приобрели в последнее время?
-                    .b-editor
-                      textarea.textarea
+            .box-wrapper
+              .cabinet-content
+                .cabinet-edit.form-form
+                  .cabinet-edit__section
+                    .cabinet-edit__text
+                      .h3-title Эссе
+                      .b-text
+                        p
+                          strong Кратко сформулируйте Ваши 3 главных профессиональных достижения* за последние 5 лет работы, а также при желании ответьте на вопросы ниже.
+                        p *Профессиональные достижения — успешно реализованные проекты, достигнутые цели, Ваши конкурентные преимущества.
+                        ul.list-circ
+                          li
+                            strong Почему Вы хотите работать в образовательной организации?
+                          li
+                            strong Что, как Вы думаете, является самой важной областью в Вашей предметной отрасли? Почему? Могли бы Вы привести пример?
+                          li
+                            strong Что Вы делаете для того чтобы поддерживать знания в Вашей области актуальными и на современном уровне?
+                          li
+                            strong Какие знания Вы приобрели в последнее время?
+                      .b-editor
+                        textarea.textarea
     .cabinet-info__bottom
       .cabinet-info__error
         | Вы зарегистрированы через портал ДПО. <br>
         | Чтобы изменить данные, перейдите на сайт портала ДПО.
       .cabinet-info__btns.--center
-        a.btn.btn--border.btn--border__red(href="#") Отменить
-        a.btn.btn--border(href="#") Сохранить как черновик
-        input.btn(type="submit"  value="Сохранить и опубликовать")
+        a.btn.btn--border.btn--border__red.btn--md-full(href="#") Отменить
+        a.btn.btn--border.btn--md-full(href="#") Сохранить как черновик
+        input.btn.btn--md-full(type="submit"  value="Сохранить и опубликовать")
 

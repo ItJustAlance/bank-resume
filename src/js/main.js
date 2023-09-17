@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
     $("body").addClass("lock just-modal--default")
     $("#" + modal).addClass("open ");
     setTimeout(() => ($("#" + modal).addClass("in")), 300);
+    return false
   });
   $(".just-modal__overlay, .js-just-modal__close").on("click", function (){
     $("body").removeClass("lock just-modal--default")
