@@ -65,6 +65,20 @@ window.addEventListener('load', () => {
     $(this).addClass('active').siblings().removeClass('active')
       .parents('.js-tabs-wrapper').find('.js-tab-box').eq($(this).index()).addClass('show').siblings('.js-tab-box').removeClass('show');
   })
+  $(".js-drop-select__label").on("click", function (){
+    $(this).closest(".js-drop-select").toggleClass("open");
+  });
+  $(".js-drop-select__val").on("click", function (){
+    let val = $(this).data("label");
+    $(this).closest(".js-drop-select").find(".js-drop-select__label").text(val)
+  });
+
+  $(document).click(function (e) {
+    if (!$(".js-drop-select").is(e.target) && $(".js-drop-select").has(e.target).length === 0) {
+      $(".js-drop-select").removeClass("open");
+    };
+  });
+
   $('.datepicker-range').daterangepicker({
     "showDropdowns": true,
     "minYear": 2000,

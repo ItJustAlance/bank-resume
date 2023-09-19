@@ -13,8 +13,40 @@ block content
     .cabinet
       .cabinet-header
         .cabinet-header__row
-          .cabinet-header__title.h2-title создать резюме
-          .cabinet-header__right
+          .cabinet-header__left
+            .cabinet-header__title.h2-title редактировать резюме
+            .cabinet-header__subtitle преподаватель географии
+            .cabinet-header__date Опубликовано 1 июля 2023
+            .cabinet-header__date Обновлено 6 июля 2023
+
+
+          .cabinet-header__right.align-start
+            .cabinet-progress
+              .progress-bar
+                .progress-bar__wrapper(style="width: 74%") 74%
+              .progress-view
+                +icon('eye')
+                .text 21
+            .drop-select.js-drop-select.cabinet-header-select--public
+              .drop-select__label.js-drop-select__label
+                | Опубликовать
+              .drop-select__arrow
+                +icon('chevron-down')
+              .drop-select__dropdown
+                .drop-select__dropdown-wrapper
+                  ul
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r1")
+                        label.b-radio__label(for="r1")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="Опубликовать") Опубликовать
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r2")
+                        label.b-radio__label(for="r2")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="Перенести в архив") Перенести в архив
             a.btn.btn--border.btn--md-full(href="#") К списку резюме
       .cabinet-tabs.js-tabs-wrapper
         ul.tabs.js-tab-list

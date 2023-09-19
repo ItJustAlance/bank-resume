@@ -550,3 +550,110 @@
           color: $clrGrey90
           &:hover
             background: #F4F9FB
+
+
+.drop-select
+  position: relative
+  display: inline-flex
+  align-items: center
+  font-size: 15px
+  font-weight: 500
+  border: 1px solid $clrGrey40
+  border-radius: 4px
+  text-align: left
+  &.open
+    .drop-select__dropdown
+      display: block
+  &__arrow
+    border-radius: 4px
+    width: 24px
+    height: 100%
+    display: flex
+    align-items: center
+    position: absolute
+    background: #fff
+    top: 0
+    right: 1px
+    cursor: pointer
+    .svg-icon
+      width: 18px
+      height: 18px
+  &__label
+    cursor: pointer
+    font-weight: 500
+    font-size: 15px
+    flex: 1 1 auto
+
+    padding: 12px 38px 12px 12px
+
+  &__dropdown
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    padding-top: 4px
+    background: rgba(0,0,0,0)
+    display: none
+    min-width:  230px
+    z-index: 10
+    &-wrapper
+      width: 100%
+      padding: 12px 0
+      background: #fff
+      border: 1px solid $clrGrey40
+      border-radius: 4px
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        display: block
+        padding: 6px 24px
+
+        .b-radio
+          position: relative
+          top: 3px
+          font-weight: 400
+        a
+          display: block
+          text-decoration: none
+          color: $clrGrey90
+          &:hover
+            background: #F4F9FB
+
+
+.progress-bar
+  position: relative
+  width: 100%
+  max-width: 176px
+  border-radius: 100px
+  border: 1px solid $clrPrimaryMain
+  height: 29px
+  &__wrapper
+    position: absolute
+    border-radius: 100px
+    background: linear-gradient(90deg, #D53656 -0.14%, #007DB6 109.27%)
+    top: 2px
+    left: 2px
+    right: 2px
+    bottom: 2px
+    text-align: right
+    color: #fff
+    font-size: 12px
+    font-weight: 400
+    padding-right: 10px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.progress-view
+  display: inline-flex
+  padding: 4px 10px
+  justify-content: center
+  align-items: center
+  gap: 8px
+  border-radius: 16px
+  background: $clrPrimaryMain
+  color: #fff
+  .icon
+  .text
