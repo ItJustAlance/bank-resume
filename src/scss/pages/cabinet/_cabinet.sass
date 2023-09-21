@@ -72,10 +72,13 @@
             margin-bottom: 32px
     &-select--public
       margin-right: 38px
+
   &-ava
     width: 170px
     height: 170px
     position: relative
+
+
     &-img
       width: 170px
       height: 170px
@@ -88,6 +91,15 @@
     &-wrapper
       position: relative
       width: 170px
+      &.small
+        .cabinet-fio
+          padding-top: 12px
+        .cabinet-ava
+          width: 100px
+          height: 100px
+        .cabinet-ava-img
+          width: 100px
+          height: 100px
       .ic-camera
         position: absolute
         bottom: 10px
@@ -138,11 +150,16 @@
 
   &-content
   &-info
+    &__box
+      width: 100%
+      padding-bottom: 60px
     &__section
       border-top: 1px solid $clrGrey40
       display: flex
       flex-wrap: wrap
       padding: 20px 0 30px
+      &.no-border
+        border-top: none
       +r($md)
         padding-bottom: 18px
     &__row
@@ -155,6 +172,15 @@
         padding-bottom: 42px
         +r($md)
           padding-bottom: 32px
+    &__md-1
+      display: flex
+      width: 100%
+    &__md-2
+      display: flex
+      width: 50%
+    .form-item
+      display: flex
+      width: 100%
     &__label
       color: $clrGrey60
       font-size: 15px
