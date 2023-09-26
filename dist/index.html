@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack 4</title>
+    <meta name="description" content="some description">
+    <meta name="keywords" content="some keyword">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="assets/css/app.css" rel="stylesheet"></head>
+  <body class="index-page">
+    <div class="over">
+      <header class="header">
+        <div class="all">
+          <div class="logo"><a href="#">
+              <svg class="svg-icon --color svg-icon--logo 1">
+                <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
+              </svg></a></div>
+          <div class="header-right">
+            <div class="btns"><a class="btn btn-modal" href="#" data-modal="modal-support">Вход</a><a class="btn btn--border" href="#">Регистрация</a></div>
+          </div>
+          <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__header">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__nav-list">
+                  <li><a class="btn" href="#">Вход для соискателя</a></li>
+                  <li><a class="btn" href="#">Вход для директора</a></li>
+                  <li><a class="btn btn--border" href="#">Регистрация</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="menu-links">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li><a class="link-support" href="#">Служба поддержки</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <ul class="index-menuu">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="login.html">Вход</a></li>
+          <li><a href="reg.html">Регистрация</a></li>
+          <li><a href="reg-thanks.html">Поздравляем с регистрацией</a></li>
+          <li><a href="repass.html">Забыли пароль</a></li>
+          <li><a href="success.html">Регистрация Готова</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="prav-info.html">Правовая информация</a></li>
+          <li><a href="404.html">404</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="soglasie.html">Пользовательское соглашение</a></li>
+          <li><strong>КАБИНЕТ</strong></li>
+          <li><a href="cabinet.html">Кабинет</a></li>
+          <li><a href="cabinet-edit.html">Кабинет редактирование</a></li>
+          <li><a href="cabinet-create.html">Кабинет создание</a></li>
+          <li><a href="cabinet-edit-resume.html">Кабинет соискателя_редактировать_резюме</a></li>
+          <li><a href="cabinet-resume-view.html">Кабинет соискателя_Просмотр резюме</a></li>
+          <li><a href="cabinet-resume-list.html">Кабинет_соискателя_список_резюме</a></li>
+          <!--li-->
+          <!--  a(href="index.html") Главная-->
+          <!---->
+        </ul>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="all">
+            <div class="footer-left"><a href="#">Служба поддержки</a></div>
+            <div class="footer-center">
+              <ul class="footer-nav">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <div class="link-sites"><a href="#"><img src="assets/img/site1.svg"></a><a href="#"><img src="assets/img/site2.svg"></a></div>
+            </div>
+            <div class="footer-copy">© Департамент образования и науки г. Москвы, 2023
+              <div class="small">При полном или частичном использовании материалов с официальных сайтов Правительства Москвы ссылка на источник обязательна.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="just-modal undefined" id="modal-support">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal__header">
+                <div class="just-modal-title h2-title">служба поддержки</div>
+                <div class="just-modal-subtitle">Опишите вашу проблему.</div>
+              </div>
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <label class="label">Имя</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">E-mail</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">Ваша проблема</label>
+                  <textarea class="textarea"></textarea>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="b-checkbox">
+                    <input type="checkbox" id="fff">
+                    <label class="b-checkbox__label" for="fff"><span class="checked">
+                        <svg class="svg-icon svg-icon--check">
+                          <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                        </svg></span><span class="b-checkbox__text">Согласен на <a href="#">обработку персональных данных</a></span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="text-captcha">Подтвердите, что вы не робот</div>
+                  <div class="captcha"><img src="assets/img/capha.png"></div>
+                </div>
+                <div class="just-modal-form__row">
+                  <button class="btn btn--full" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal--white modal-form-normal" id="modal-login">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad1">
+                    <label class="b-radio__label" for="rad1"><span class="checked"></span><span class="b-radio__text">Вход для директора</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad2">
+                    <label class="b-radio__label" for="rad2"><span class="checked"></span><span class="b-radio__text">Вход для соискателя</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Продолжить</button>
+                  </div>
+                  <div class="just-modal-form__col2"><a class="btn btn--border btn--full js-just-modal__close" href="#">Отменить</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")-->
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")-->
+  <script type="text/javascript" src="assets/js/vendors~app.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>

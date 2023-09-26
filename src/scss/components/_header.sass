@@ -34,8 +34,12 @@
   &__links
     display: flex
     align-items: center
+    gap: 30px
     +r($lg)
       display: none
+    .btn-link
+      display: inline-block
+      vertical-align: top
   &-auth
     display: flex
     align-items: center
@@ -61,6 +65,10 @@
           fill: none
           stroke: $clrGrey90
           stroke-width: 2
+  .drop-link
+    margin-bottom: -8px
+    &__label
+      padding-bottom: 8px
   .link--support
     margin-left: 60px
     +r($lg)

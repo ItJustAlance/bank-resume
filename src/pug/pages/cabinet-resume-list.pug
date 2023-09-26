@@ -1,0 +1,176 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет_соискателя_список_резюме'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title Список резюме
+            .cabinet-header__tags
+              .cabinet-header__tag-item
+                | Всего резюме
+                span.highlight 5
+              .cabinet-header__tag-item
+                | Активно
+                span.highlight 5
+
+      .cabinet-content
+        .cabinet__list
+          .cabinet__card__wrapper
+            .cabinet__card
+              .cabinet__card__header
+                .b-left
+                  h3.h3-title.header-title Преподаватель обществознания
+                  .cabinet__card__status не активно
+                .b-right
+                  .cabinet-progress
+                    .progress-bar
+                      .progress-bar__wrapper(style="width: 14%") 14%
+              .cabinet__card__body
+                .b-text.h4-title Статистика за неделю
+                ul.statistics
+                  li показов <strong>23</strong>
+                  li просмотров <strong>3</strong>
+                  li приглашений <strong>1</strong>
+                .cabinet__card__btns
+                  a.btn.btn--border(href="#") 52 вакансии
+                  a.btn(href="#") Перенести в архив
+              .cabinet__card__footer
+                .b-left
+                  .links
+                    a.btn.btn--link(href="#") Редактировать
+                    a.btn.btn--link(href="#") Изменить статус
+                .b-right
+                  .dates Опубликовано 1 июля 2023 <br>Обновлено 6 июля 2023
+          .cabinet__card__wrapper
+            .cabinet__card
+              .cabinet__card__header
+                .b-left
+                  h3.h3-title.header-title Преподаватель истории с длинным при длинным названием
+                  .cabinet__card__status.active активно
+                .b-right
+                  .cabinet-progress
+                    .progress-bar
+                      .progress-bar__wrapper(style="width: 74%") 74%
+              .cabinet__card__body
+                .b-text.h4-title Статистика за неделю
+                ul.statistics
+                  li показов <strong>23</strong>
+                  li просмотров <strong>3</strong>
+                  li приглашений <strong>1</strong>
+                .cabinet__card__btns
+                  a.btn.btn--border(href="#") 52 вакансии
+                  a.btn(href="#") Перенести в архив
+              .cabinet__card__footer
+                .b-left
+                  .links
+                    a.btn.btn--link(href="#") Редактировать
+                    a.btn.btn--link(href="#") Изменить статус
+                .b-right
+                  .dates Опубликовано 1 июля 2023 <br>Обновлено 6 июля 2023
+          .cabinet__card__wrapper
+            .cabinet__card
+              .cabinet__card__header
+                .b-left
+                  h3.h3-title.header-title Преподаватель истории
+                  .cabinet__card__status.active активно
+                .b-right
+                  .cabinet-progress
+                    .progress-bar
+                      .progress-bar__wrapper(style="width: 74%") 74%
+              .cabinet__card__body
+                .b-text.h4-title Статистика за неделю
+                ul.statistics
+                  li показов <strong>23</strong>
+                  li просмотров <strong>3</strong>
+                  li приглашений <strong>1</strong>
+                .cabinet__card__btns
+                  a.btn.btn--border(href="#") 52 вакансии
+                  a.btn(href="#") Перенести в архив
+              .cabinet__card__footer
+                .b-left
+                  .links
+                    a.btn.btn--link(href="#") Редактировать
+                    a.btn.btn--link(href="#") Изменить статус
+                .b-right
+                  .dates Опубликовано 1 июля 2023 <br>Обновлено 6 июля 2023
+          .cabinet__card__wrapper
+            .cabinet__card
+              .cabinet__card__header
+                .b-left
+                  h3.h3-title.header-title Преподаватель истории
+                  .cabinet__card__status.active активно
+                .b-right
+                  .cabinet-progress
+                    .progress-bar
+                      .progress-bar__wrapper(style="width: 74%") 74%
+              .cabinet__card__body
+                .b-text.h4-title Статистика за неделю
+                ul.statistics
+                  li показов <strong>23</strong>
+                  li просмотров <strong>3</strong>
+                  li приглашений <strong>1</strong>
+                .cabinet__card__btns
+                  a.btn.btn--border(href="#") 52 вакансии
+                  a.btn(href="#") Перенести в архив
+              .cabinet__card__footer
+                .b-left
+                  .links
+                    a.btn.btn--link(href="#") Редактировать
+                    a.btn.btn--link(href="#") Изменить статус
+                .b-right
+                  .dates Опубликовано 1 июля 2023 <br>Обновлено 6 июля 2023
+          .cabinet__card__wrapper
+            .cabinet__card
+              .cabinet__card__header
+                .b-left
+                  h3.h3-title.header-title Преподаватель истории
+                  .cabinet__card__status.active активно
+                .b-right
+                  .cabinet-progress
+                    .progress-bar
+                      .progress-bar__wrapper(style="width: 74%") 74%
+              .cabinet__card__body
+                .b-text.h4-title Статистика за неделю
+                ul.statistics
+                  li показов <strong>23</strong>
+                  li просмотров <strong>3</strong>
+                  li приглашений <strong>1</strong>
+                .cabinet__card__btns
+                  a.btn.btn--border(href="#") 52 вакансии
+                  a.btn(href="#") Перенести в архив
+              .cabinet__card__footer
+                .b-left
+                  .links
+                    a.btn.btn--link(href="#") Редактировать
+                    a.btn.btn--link(href="#") Изменить статус
+                .b-right
+                  .dates Опубликовано 1 июля 2023 <br>Обновлено 6 июля 2023
+
+    .pagination-section
+      ul.pagination.--right
+        li.pagination__item.arr-prev
+          a.link.arr(href="#")
+            +icon('chevron-left')
+        li.pagination__item
+          a.link.active(href="#") 1
+        li.pagination__item
+          a.link(href="#") 2
+        li.pagination__item
+          a.link(href="#") 3
+        li.pagination__item
+          span.link ...
+        li.pagination__item
+          a.link(href="#") 10
+        li.pagination__item.arr-next
+          a.link.arr(href="#")
+            +icon('chevron-right')

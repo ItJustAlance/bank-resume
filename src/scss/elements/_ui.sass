@@ -657,3 +657,42 @@
   color: #fff
   .icon
   .text
+
+
+.pagination
+  margin-left: auto
+  display: flex
+  gap: 8px
+  &-section
+    width: 100%
+    display: flex
+  &__item
+    width: 28px
+    height: 28px
+    color: $clrGrey90
+    border-radius: 50%
+    &.arr-prev
+      margin-right: 10px
+    &.arr-next
+      margin-left: 10px
+    .link
+      color: inherit
+      border: 1px solid rgba(255,255,255, 0)
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      &.arr
+        border-color: $clrGrey30
+      &.active
+        color: $clrPrimaryMain
+        background: $clrGrey20
+    a.link
+      &:hover
+        color: $clrPrimaryMain
+        background: $clrGrey20
+
+    span
+

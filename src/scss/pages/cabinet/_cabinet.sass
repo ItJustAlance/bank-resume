@@ -10,6 +10,26 @@
       margin-right: 12px
   &-header
     padding-bottom: 40px
+    &__tags
+      display: flex
+      padding-top: 12px
+    &__tag-item
+      display: inline-flex
+      align-items: center
+      vertical-align: top
+      color: #000
+      margin-right: 24px
+      .highlight
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        vertical-align: top
+        margin-left: 4px
+        width: 30px
+        height: 30px
+        background: #F4F9FB
+        color: $clrGrey80
+        border-radius: 50%
     &__row
       display: flex
       flex-wrap: wrap
@@ -150,6 +170,10 @@
 
   &-content
   &-info
+    .h4-title
+      padding-bottom: 12px
+    p
+      padding-bottom: 18px
     &__box
       width: 100%
       padding-bottom: 60px
@@ -158,15 +182,19 @@
       display: flex
       flex-wrap: wrap
       padding: 20px 0 30px
+      width: 100%
       &.no-border
         border-top: none
       +r($md)
         padding-bottom: 18px
+      .h2-title--section
+        padding-bottom: 20px
     &__row
       padding-bottom: 12px
-      width: 100%
+      min-width: 100%
       display: flex
-      +r($md)
+      margin: 0 -24px
+      +r($lg + 1)
         flex-wrap: wrap
       &.--x2
         padding-bottom: 42px
@@ -175,16 +203,35 @@
     &__md-1
       display: flex
       width: 100%
+      flex-direction: column
+      padding: 0 24px
     &__md-2
       display: flex
       width: 50%
+      flex-direction: column
+      padding: 0 24px
+    &__lg-1
+      display: flex
+      width: 100%
+      flex-direction: column
+      padding: 0 24px
+    &__lg-2
+      display: flex
+      width: 50%
+      flex-direction: column
+      padding: 0 24px
+      +r($lg + 1)
+        width: 100%
     .form-item
       display: flex
       width: 100%
+      padding-bottom: 12px
+      +r($md)
+        flex-wrap: wrap
     &__label
       color: $clrGrey60
       font-size: 15px
-      flex: 0 0 300px
+      flex: 0 0 280px
       padding-right: 20px
       +r($md)
         flex: 0 0 100%
@@ -346,3 +393,84 @@
             padding-top: 32px
             padding-bottom: 16px
 
+
+
+
+.cabinet
+  &__list
+    padding-bottom: 62px
+  &__card
+    box-shadow: -2px 2px 14px 0px rgba(27, 27, 27, 0.10)
+    border-radius: 16px
+    padding: 40px 60px
+    border: 1px solid rgba(0,0,0,0)
+    margin-bottom: 18px
+    &:hover
+      border-color: $clrPrimaryPressed
+    .cabinet-progress
+      margin-right: 0
+    &__wrapper
+      width: 100%
+    &__header
+      display: flex
+      +r($md)
+        flex-wrap: wrap
+      .header-title
+        text-transform: uppercase
+        padding-bottom: 4px
+        +r($md)
+          flex: 1 1 auto
+          padding-right: 12px
+      .b-left
+        padding-right: 20px
+        +r($md)
+          padding-right: 0
+          display: flex
+      .b-right
+        width: 230px
+        margin-left: auto
+        +r($md)
+          width: 100%
+    &__status
+      position: relative
+      color: $clrGrey60
+      padding-left: 12px
+      &:after
+        position: absolute
+        background: #B0112E
+        width: 8px
+        height: 8px
+        top: 8px
+        left: 0
+        content: ""
+        border-radius: 50%
+      &.active
+        &:after
+          background: #197962
+    &__body
+      padding-top: 18px
+      .title
+    .statistics
+      margin: 0
+      padding: 0 0 32px
+      li
+        margin-right: 18px
+      strong
+        font-weight: 600
+    .b-text
+      padding-bottom: 12px
+    &__btns
+      display: flex
+      gap: 18px
+    &__footer
+      padding-top: 30px
+      display: flex
+      flex-wrap: wrap
+      .b-left
+        padding-right: 20px
+      .b-right
+        width: 230px
+        margin-left: auto
+      .links
+      .dates
+        color: $clrGrey60
