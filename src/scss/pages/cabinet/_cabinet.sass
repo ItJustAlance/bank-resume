@@ -10,6 +10,21 @@
       margin-right: 12px
   &-header
     padding-bottom: 40px
+    &__search
+      padding-top: 32px
+      display: flex
+      gap: 18px
+      .b-pole
+        flex: 1 1 auto
+      .pole-search
+        background: url(../img/search.svg) 12px 50% no-repeat
+        padding-left: 38px
+      &-btns
+        display: flex
+        gap: 18px
+        .btn
+          padding-left: 24px
+          padding-right: 24px
     &__tags
       display: flex
       padding-top: 12px
@@ -19,6 +34,8 @@
       vertical-align: top
       color: #000
       margin-right: 24px
+      +r($md)
+        margin-right: 12px
       .highlight
         display: inline-flex
         justify-content: center
@@ -168,7 +185,15 @@
     padding-top: 32px
     text-transform: uppercase
 
+  &-wrapper
+    display: flex
+
   &-content
+    flex: 1 1 auto
+  &-aside
+    flex: 0 0 232px
+    & + .cabinet-content
+      margin-left: 66px
   &-info
     .h4-title
       padding-bottom: 12px
@@ -399,22 +424,40 @@
 .cabinet
   &__list
     padding-bottom: 62px
+    +r($md)
+      margin-left: -12px
+      margin-right: -12px
+      padding-bottom: 40px
   &__card
     box-shadow: -2px 2px 14px 0px rgba(27, 27, 27, 0.10)
     border-radius: 16px
     padding: 40px 60px
     border: 1px solid rgba(0,0,0,0)
     margin-bottom: 18px
+    +r($md)
+      padding: 18px 12px
+
     &:hover
       border-color: $clrPrimaryPressed
     .cabinet-progress
       margin-right: 0
+    .mobile-dates
+      display: none
+      font-size: 12px
+      color: $clrGrey60
+      margin-bottom: 18px
+      +r($md)
+        display: block
     &__wrapper
       width: 100%
+      &.cabinet__card--smd
+        .cabinet__card
+          padding: 32px 40px
     &__header
       display: flex
       +r($md)
         flex-wrap: wrap
+        width: 100%
       .header-title
         text-transform: uppercase
         padding-bottom: 4px
@@ -426,15 +469,23 @@
         +r($md)
           padding-right: 0
           display: flex
+          width: 100%
+        +r($xss)
+          flex-wrap: wrap
       .b-right
         width: 230px
         margin-left: auto
         +r($md)
           width: 100%
+
     &__status
       position: relative
       color: $clrGrey60
       padding-left: 12px
+      white-space: nowrap
+      +r($sm)
+        font-size: 12px
+        margin-bottom: 12px
       &:after
         position: absolute
         background: #B0112E
@@ -444,6 +495,10 @@
         left: 0
         content: ""
         border-radius: 50%
+        +r($sm)
+          width: 6px
+          height: 6px
+          top: 6px
       &.active
         &:after
           background: #197962
@@ -462,15 +517,22 @@
     &__btns
       display: flex
       gap: 18px
+      +r($md)
+        flex-wrap: wrap
     &__footer
       padding-top: 30px
       display: flex
       flex-wrap: wrap
       .b-left
         padding-right: 20px
+        +r($md)
+          padding-right: 0
+          width: 100%
       .b-right
         width: 230px
         margin-left: auto
       .links
       .dates
         color: $clrGrey60
+        +r($md)
+          display: none

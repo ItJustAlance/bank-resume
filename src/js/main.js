@@ -70,7 +70,8 @@ window.addEventListener('load', () => {
   });
   $(".js-drop-select__val").on("click", function (){
     let val = $(this).data("label");
-    $(this).closest(".js-drop-select").find(".js-drop-select__label").text(val)
+    $(this).closest(".js-drop-select").find(".js-drop-select__label").text(val);
+    $(this).closest(".js-drop-select").removeClass("open");
   });
 
   $(document).click(function (e) {

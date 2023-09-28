@@ -578,6 +578,13 @@
     .svg-icon
       width: 18px
       height: 18px
+  &__item
+    .b-select-inline
+      cursor: pointer
+      display: block
+      width: 100%
+    &:hover
+      background: #F4F9FB
   &__label
     cursor: pointer
     font-weight: 500
@@ -645,6 +652,7 @@
     display: flex
     align-items: center
     justify-content: flex-end
+    min-width: 40px
 
 .progress-view
   display: inline-flex
@@ -663,6 +671,9 @@
   margin-left: auto
   display: flex
   gap: 8px
+  &.--md-center
+    margin-right: auto
+    text-align: center
   &-section
     width: 100%
     display: flex
