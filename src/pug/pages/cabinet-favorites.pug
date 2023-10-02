@@ -14,7 +14,7 @@ block content
       .cabinet-header
         .cabinet-header__row
           .cabinet-header__left
-            .cabinet-header__title.h2-title каталог вакансий
+            .cabinet-header__title.h2-title избранные Вакансии
         .cabinet-header__search
           .b-pole
             input.input.pole-search(type="text" placeholder="ID, ссылка, название")
@@ -23,21 +23,6 @@ block content
               +icon('sliders')
           .cabinet-header__search-btns
             input.btn(value="Найти" type="submit")
-            button.btn.btn--border Сохранить поиск
-        .cabinet-header__filters
-          .label Найдено 112 вакансий
-          .drop-select.drop-select--small.js-drop-select
-            .drop-select__label.js-drop-select__label
-              | За все время
-            .drop-select__arrow
-              +icon('chevron-down')
-            .drop-select__dropdown
-              .drop-select__dropdown-wrapper
-                ul
-                  li.drop-select__item
-                    span.b-select-inline.js-drop-select__val(data-label="1 день") 1 день
-                  li.drop-select__item
-                    span.b-select-inline.js-drop-select__val(data-label="5 дней") 5 дней
       .cabinet-wrapper
         .cabinet-aside.js-filter-toggler
           .catalog-filter
@@ -404,7 +389,7 @@ block content
                       button.btn.btn--border.btn-small
                         span.svg-icon
                           +icon('heart')
-                        span.btn-label В избранное
+                        span.btn-label Удалить из избранного
                 .cabinet__card__body
                   .b-text.h4-title от 40 000 ₽
                   .organisation УО «Средняя школа №1»
@@ -431,7 +416,7 @@ block content
                         button.btn.btn--border.btn-small
                           span.svg-icon
                             +icon('heart')
-                          span.btn-label В избранное
+                          span.btn-label Удалить из избранного
                   .cabinet__card__body
                     .b-text.h4-title от 40 000 ₽
                     .organisation УО «Средняя школа №1»
@@ -459,7 +444,7 @@ block content
                         button.btn.btn--border.btn-small
                           span.svg-icon
                             +icon('heart')
-                          span.btn-label В избранное
+                          span.btn-label Удалить из избранного
                   .cabinet__card__body
                     .b-text.h4-title от 40 000 ₽
                     .organisation УО «Средняя школа №1»
@@ -485,7 +470,7 @@ block content
                       button.btn.btn--border.btn-small
                         span.svg-icon
                           +icon('heart')
-                        span.btn-label В избранное
+                        span.btn-label Удалить из избранного
                 .cabinet__card__body
                   .b-text.h4-title от 40 000 ₽
                   .organisation УО «Средняя школа №1»

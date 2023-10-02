@@ -74,6 +74,22 @@ window.addEventListener('load', () => {
     $(this).closest(".js-drop-select").removeClass("open");
   });
 
+  $(".js-show-more__link").on("click", function (){
+    let textHide = $(this).data("hide-text");
+    let textShow = $(this).data("show-text");
+    $(this).text(textHide);
+    $(this).toggleClass("active");
+    $(this).closest(".js-show-more-wrapper").toggleClass("show");
+    $(this).hasClass("active") ? $(this).text(textHide) : $(this).text(textShow)
+    return false
+  });
+  $(".js-filter-toggler__btn, .js-filter-toggler__close").on("click", function (){
+    $(".js-filter-toggler").slideToggle();
+    $(".js-filter-toggler__btn").toggleClass("active")
+    return false
+  });
+
+
   $(document).click(function (e) {
     if (!$(".js-drop-select").is(e.target) && $(".js-drop-select").has(e.target).length === 0) {
       $(".js-drop-select").removeClass("open");

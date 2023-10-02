@@ -10,21 +10,60 @@
       margin-right: 12px
   &-header
     padding-bottom: 40px
+    +r($sm)
+      padding-bottom: 32px
+    .mobile-filter
+      color: #fff
+      display: none
+      +r($md)
+        display: flex
+        .btn
+          width: 45px
+          height: 45px
+          align-items: center
+          justify-content: center
+          &.active
+            background: $clrPrimaryPressed
+
     &__search
       padding-top: 32px
       display: flex
       gap: 18px
+      +r($sm)
+        flex-wrap: wrap
       .b-pole
         flex: 1 1 auto
+        +r($sm)
+          max-width: calc(100% - 64px)
       .pole-search
         background: url(../img/search.svg) 12px 50% no-repeat
         padding-left: 38px
       &-btns
         display: flex
         gap: 18px
+        +r($xs)
+          flex-wrap: wrap
+          width: 100%
         .btn
           padding-left: 24px
           padding-right: 24px
+          +r($xs)
+            width: 100%
+    &__filters
+      padding-top: 32px
+      display: flex
+      align-items: center
+      +r($md)
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 12px
+      .label
+        font-size: 18px
+        font-weight: 600
+        color: $clrGrey90
+        padding-right: 18px
+        +r($md)
+          font-size: 15px
     &__tags
       display: flex
       padding-top: 12px
@@ -82,6 +121,25 @@
           justify-content: flex-start
           padding-bottom: 4px
           text-align: left
+    &__infobox
+      display: flex
+      margin-right: 24px
+      margin-top: 8px
+      +r($md)
+        margin-right: 0
+        width: 100%
+      .btn-link-icon
+        margin-left: 8px
+      .cabinet-progress
+        +r($md)
+          margin-right: 8px
+          flex: 1 1 auto
+        +r($xss)
+          margin-right: 4px
+        .progress-bar
+          +r($xss)
+            min-width: 130px
+            margin-right: 8px
     &__right
       margin-left: auto
       display: flex
@@ -105,7 +163,7 @@
       &.xl-column
         +r($xl)
           flex-direction: column
-          .cabinet-progress
+          .cabinet-header__infobox
             margin-bottom: 32px
     &-select--public
       margin-right: 38px
@@ -187,13 +245,20 @@
 
   &-wrapper
     display: flex
-
+    +r($md)
+      flex-wrap: wrap
   &-content
     flex: 1 1 auto
   &-aside
     flex: 0 0 232px
+    +r($md)
+      flex: 0 0 100%
+      display: none
     & + .cabinet-content
       margin-left: 66px
+      +r($md)
+        margin-left: 0
+
   &-info
     .h4-title
       padding-bottom: 12px
@@ -453,6 +518,8 @@
       &.cabinet__card--smd
         .cabinet__card
           padding: 32px 40px
+          +r($md)
+            padding: 18px 12px
     &__header
       display: flex
       +r($md)
@@ -466,6 +533,7 @@
           padding-right: 12px
       .b-left
         padding-right: 20px
+
         +r($md)
           padding-right: 0
           display: flex
@@ -473,11 +541,15 @@
         +r($xss)
           flex-wrap: wrap
       .b-right
-        width: 230px
+        max-width: 230px
+        display: inline-block
+        vertical-align: top
         margin-left: auto
+        .btn
+          white-space: nowrap
         +r($md)
           width: 100%
-
+          max-width: 100%
     &__status
       position: relative
       color: $clrGrey60
@@ -523,6 +595,12 @@
       padding-top: 30px
       display: flex
       flex-wrap: wrap
+      .b-btns
+        .btn
+          margin-right: 18px
+          +r($xs)
+            margin-right: 0
+            margin-bottom: 12px
       .b-left
         padding-right: 20px
         +r($md)
@@ -536,3 +614,72 @@
         color: $clrGrey60
         +r($md)
           display: none
+    .local
+      color: $clrGrey60
+    &__infos
+      margin: 0
+      padding: 0
+      list-style: none
+      +r($md)
+        display: none
+      &.--mobile
+        display: none
+        font-size: 12px
+        padding-bottom: 8px
+        +r($md)
+          display: block
+      li
+        display: inline-block
+        vertical-align: top
+        margin-right: 12px
+        color: $clrGrey60
+    &--catalog
+      .cabinet__card
+        &__body
+          padding-top: 12px
+
+
+
+.catalog-filter
+  display: flex
+  flex-direction: column
+  gap: 32px
+  position: relative
+  +r($md)
+    border-radius: 16px
+    box-shadow: -2px 2px 14px 0px rgba(27, 27, 27, 0.10)
+    padding: 38px 12px 12px
+  &__close
+    display: none
+    +r($md)
+      display: block
+      position: absolute
+      top: 12px
+      right: 12px
+      background: none
+      border: none
+  &-box
+  &__title
+    color: $clrGrey90
+    font-size: 18px
+    font-weight: 600
+    padding-bottom: 18px
+  &__list
+    display: flex
+    flex-direction: column
+    gap: 12px
+    &.show
+      .catalog-filter__item
+        &.hidden
+          display: block
+  &__item
+    &.hidden
+      display: none
+  &__show-more
+    .show-more__link
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  .inp-price
+    max-width: 180px
+    width: 100%

@@ -49,9 +49,13 @@ block content
       a(href="cabinet-resume-list-catalog.html") Кабинет соискателя_каталог вакансий
 
 
+    li
+      a(href="cabinet-favorites.html") Кабинет соискателя_Избранные вакансии
+
+
     //li
     //  a(href="index.html") Главная
-    //
+
 
     //li
     //  a(href="index.html") Главная
@@ -97,7 +101,26 @@ block content
     //  a(href="index.html") Главная
     //
 
-    //li
-    //  a(href="index.html") Главная
-    //
 
+  .form-form
+    .cabinet-edit__section
+      .cabinet-edit__row
+        .cabinet-edit__col-md-1
+          .form-item
+            label.label Фамилия*
+            input.input(type="text" placeholder="Фамиля")
+      .cabinet-edit__row
+        .cabinet-edit__col-md-1
+          .form-item
+            label.label ошибка
+            input.input.inp-error(type="text" placeholder="Фамиля")
+      .cabinet-edit__row
+        .cabinet-edit__col-md-1
+          .form-item
+            label.label success
+            input.input.inp-succ(type="text" placeholder="Фамиля")
+      .cabinet-edit__row
+        .cabinet-edit__col-md-1
+          .form-item
+            label.label disabled
+            input.input(type="text" disabled= placeholder="Фамиля")

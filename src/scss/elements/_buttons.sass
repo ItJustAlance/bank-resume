@@ -40,6 +40,8 @@ button
   .svg-icon, .icon
     margin-right: 4px
     fill: currentColor
+    display: inline-block
+    vertical-align: top
   &:focus, &:active
     outline: none
   &:hover
@@ -142,6 +144,11 @@ button
     border-color: $clrGrey20
     color: $clrGrey40
     cursor: default
+  &-small
+    border-radius: 16px
+    padding: 4px 12px
+    +r($xs)
+      padding: 4px 12px
 .link-box
   display: inline-flex
   align-items: center
@@ -150,3 +157,18 @@ button
 
 .link--red
   color: $clrDangerMain
+
+.btn-link-icon
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  padding: 4px 12px
+  border-radius: 16px
+  border: 1px solid $clrPrimaryMain
+  color: $clrPrimaryMain
+  &:hover
+    color: $clrPrimaryHover
+    border-color: $clrPrimaryHover
+  .svg-icon
+    width: 15px
+    height: 15px
