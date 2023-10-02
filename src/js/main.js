@@ -74,6 +74,10 @@ window.addEventListener('load', () => {
     $(this).closest(".js-drop-select").removeClass("open");
   });
 
+  $(".js-drop__label").on("click", function (){
+    $(this).closest(".js-drop").toggleClass("open");
+  });
+
   $(".js-show-more__link").on("click", function (){
     let textHide = $(this).data("hide-text");
     let textShow = $(this).data("show-text");

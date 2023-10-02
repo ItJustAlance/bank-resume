@@ -53,6 +53,7 @@
       padding-top: 32px
       display: flex
       align-items: center
+      gap: 18px
       +r($md)
         flex-wrap: wrap
         justify-content: space-between
@@ -61,7 +62,7 @@
         font-size: 18px
         font-weight: 600
         color: $clrGrey90
-        padding-right: 18px
+        // padding-right: 18px
         +r($md)
           font-size: 15px
     &__tags
@@ -638,6 +639,35 @@
         &__body
           padding-top: 12px
 
+  &-notification
+    border-radius: 16px
+    border: 2px solid #F4F9FB
+    padding: 32px 40px
+    +r($md)
+      padding: 18px 12px
+    &:hover, &.active
+      background: #F4F9FB
+    &__wrapper
+      padding-bottom: 18px
+      +r($md)
+        margin-left: 12px
+        margin-right: 12px
+
+    &__header
+      display: flex
+      padding-bottom: 12px
+      .left-col
+        flex: 1 1 auto
+      .right-col
+        margin-left: auto
+      .title
+        font-size: 18px
+        color: $clrGrey90
+        font-weight: 600
+      .date
+        padding-top: 4px
+        color: $clrGrey60
+        font-size: 12px
 
 
 .catalog-filter

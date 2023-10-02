@@ -552,7 +552,7 @@
             background: #F4F9FB
 
 
-.drop-select
+.drop-select, .drop
   position: relative
   display: inline-flex
   align-items: center
@@ -563,7 +563,7 @@
   text-align: left
 
   &.open
-    .drop-select__dropdown
+    .drop-select__dropdown, .drop__dropdown
       display: block
   &__arrow
     border-radius: 4px
@@ -630,7 +630,7 @@
             background: #F4F9FB
   &--small
     border-radius: 16px
-    .drop-select
+    .drop-select, .drop
       &__label
         padding: 4px 28px 4px 10px
       &__arrow
