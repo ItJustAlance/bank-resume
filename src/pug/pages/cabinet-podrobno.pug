@@ -1,0 +1,106 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет соискателя_вакансия подробно'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left.--md-8
+            .cabinet-header__title.h2-title Вакансия: подробно
+          .cabinet-header__right.--md-4
+            .b-btns.--podrobno
+              button.btn.btn--border.btn-small
+                  +icon('printer')
+              button.btn.btn--border
+                span.btn-label К каталогу вакансий
+
+
+      .cabinet-content
+        .cabinet-detail-section
+          .cabinet-detail-row
+            .cabinet-detail-content.--md-full
+              .b-detail-info
+                .b-detail-info__row
+                  .b-detail-info__col-md-auto
+                    h3.h3-title Преподаватель истории
+                    .b-detail-info__subtitle Преподаватель
+                  .b-detail-info__col-right.--md-hidden
+                    button.btn.btn--border.btn-small
+                      span.svg-icon
+                        +icon('heart')
+                      span.btn-label В избранное
+                .b-detail-info__row
+                  .b-detail-info__col-1
+                    | УО “Средняя школа №1”
+                    .b-detail-info__subtitle Москва, Тверской район
+                .b-detail-info__row
+                  .b-detail-info__col-1 Возможность подмены: да
+                .b-detail-info__row
+                  .b-detail-info__col-1 Заработная плата от 40 000 ₽
+                .b-detail-info__row
+                  .b-detail-info__col-1 Требуемый стаж: 1-3 года
+
+            .cabinet-detail-aside
+        .cabinet-detail-section
+          .cabinet-detail-row
+            .cabinet-detail-content.--md-full
+              article.article
+                h2.h4-title Должностные обязанности
+                ul
+                  li Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы, вне зависимости от их уровня, должны быть обнародованы.
+                  li Сложно сказать, почему многие известные личности освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объективно рассмотрены соответствующими инстанциями. Однозначно, интерактивные прототипы неоднозначны и будут в равной степени предоставлены сами себе.
+                  li Картельные сговоры не допускают ситуации, при которой стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и призваны к ответу.
+                h2.h4-title Условия работы
+                ul
+                  li Новая модель организационной деятельности бодрит
+                  li Новая парадигма реальности: средства индивидуальной защиты оказались бесполезны
+                  li Новая модель организационной деятельности бодрит
+                  li Новая парадигма реальности: средства индивидуальной защиты оказались бесполезны
+                  li Новая модель организационной деятельности бодрит
+
+                h2.h4-title Режим работы
+                ul
+                  li Понедельник – суббота
+                  li Первая смена
+                h2.h4-title График работы/учебная нагрузка
+                ul
+                  li Полный день
+                  li 1 ставка
+                h2.h4-title Дата выхода на работу
+                ul
+                  li 1 сентября
+                h2.h4-title Дополнительные требования
+                ul
+                  li Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы, вне зависимости от их уровня, должны быть обнародованы.
+              .cabinet-detail__bottom-btns
+                a.btn.btn--xs-full(href="#") Откликнуться
+            .cabinet-detail-aside.--md-hidden
+              .recomended-job.js-floating-column
+                .h3-title Рекомендованные вакансии
+                ul.recomended-job__list
+                  li
+                    a(href="#")
+                      | Преподаватель истории и обществознания<br>
+                      | от 50 000 ₽
+                      span.location Москва, Тверской район
+                  li
+                    a(href="#")
+                      | Преподаватель истории и обществознания <br>
+                      | от 50 000 ₽
+                      span.location Москва, Тверской район
+                  li
+                    a(href="#")
+                      | Преподаватель истории и обществознания <br>
+                      | от 50 000 ₽
+                      span.location Москва, Тверской район
+                  li
+                    a.link-etc(href="#") Смотреть еще 46 вакансий
+

@@ -187,4 +187,16 @@ window.addEventListener('load', () => {
     "linkedCalendars": true,
     "showCustomRangeLabel": false,
   });
+
+
+  /** плавающий блок **/
+  var topPos = $('.js-floating-column').offset().top;
+  $(window).scroll(function() {
+    var top = $(document).scrollTop(),
+      pip = $('.footer').offset().top,
+      height = $('.js-floating-column').outerHeight();
+    if (top > topPos && top < pip - height) {$('.js-floating-column').addClass('fixed').removeAttr("style");}
+    else if (top > pip - height) {$('.js-floating-column').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+    else {$('.js-floating-column').removeClass('fixed');}
+  });
 });

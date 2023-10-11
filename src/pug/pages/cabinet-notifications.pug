@@ -44,14 +44,15 @@ block content
                         span.checked
                           +icon('check')
                         span.b-checkbox__text Непрочитанные
-          button.btn.btn--border.btn-small
-            span.svg-icon
-              +icon('check-square')
-            span.btn-label Отметить все прочитанными
-          button.btn.btn--border.btn-small
-            span.svg-icon
-              +icon('trash-2')
-            span.btn-label Удалить все уведомления
+          .cabinet-header__filters-btns
+            button.btn.btn--border.btn-small
+              span.svg-icon
+                +icon('check-square')
+              span.btn-label Отметить все прочитанными
+            button.btn.btn--border.btn-small
+              span.svg-icon
+                +icon('trash-2')
+              span.btn-label Удалить все уведомления
       .cabinet-content
         .cabinet__list
           .cabinet-notification__wrapper
@@ -83,7 +84,7 @@ block content
               .cabinet-notification__body
                 .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
           .cabinet-notification__wrapper
-            .cabinet-notification
+            .cabinet-notification.active
               .cabinet-notification__header
                 .left-col
                   .title Уведомление
@@ -97,7 +98,7 @@ block content
               .cabinet-notification__body
                 .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
           .cabinet-notification__wrapper
-            .cabinet-notification
+            .cabinet-notification.active
               .cabinet-notification__header
                 .left-col
                   .title Уведомление

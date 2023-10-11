@@ -36,9 +36,10 @@ button
   +r($md)
     padding: 12px 10px
     font-weight: 400
-
-  .svg-icon, .icon
+  span.svg-icon
     margin-right: 4px
+  .svg-icon, .icon
+    margin-right: 0
     fill: currentColor
     display: inline-block
     vertical-align: top
@@ -147,6 +148,8 @@ button
   &-small
     border-radius: 16px
     padding: 4px 12px
+    +r($md)
+      padding: 4px 12px
     +r($xs)
       padding: 4px 12px
 .link-box

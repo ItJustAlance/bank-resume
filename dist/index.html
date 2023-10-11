@@ -18,7 +18,7 @@
                 <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
               </svg></a></div>
           <div class="header-right">
-            <div class="btns"><a class="btn btn-modal" href="#" data-modal="modal-support">Вход</a><a class="btn btn--border" href="#">Регистрация</a></div>
+            <div class="btns"><a class="btn js-btn-modal" href="#" data-modal="modal-support">Вход</a><a class="btn btn--border" href="#">Регистрация</a></div>
           </div>
           <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
         </div>
@@ -69,6 +69,7 @@
           <li><a href="cabinet-resume-list-catalog.html">Кабинет соискателя_каталог вакансий</a></li>
           <li><a href="cabinet-favorites.html">Кабинет соискателя_Избранные вакансии</a></li>
           <li><a href="cabinet-notifications.html">Кабинет соискателя_Уведомления</a></li>
+          <li><a href="cabinet-podrobno.html">Кабинет соискателя_вакансия подробно</a></li>
           <!--li-->
           <!--  a(href="index.html") Главная-->
           <!--li-->
@@ -104,7 +105,16 @@
           <!--li-->
           <!--  a(href="index.html") Главная-->
           <!---->
-        </ul>
+        </ul><br><br><br><br>
+        <h2 class="h2-title">Попапы</h2>
+        <ul class="index-menuu">
+          <li><a class="js-btn-modal" href="#" data-modal="modal-anons">Анонс</a></li>
+          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
+          <li><a class="js-btn-modal" href="#" data-modal="modal-covering-letter">Сопроводительное письмо</a></li>
+          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
+          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
+          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
+        </ul><br><br><br><br>
         <div class="form-form">
           <div class="cabinet-edit__section">
             <div class="cabinet-edit__row">
@@ -236,6 +246,64 @@
                     <button class="btn btn--full" type="submit">Продолжить</button>
                   </div>
                   <div class="just-modal-form__col2"><a class="btn btn--border btn--full js-just-modal__close" href="#">Отменить</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-covering-letter" id="modal-covering-letter">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal__header"></div>
+                <div class="just-modal-form__row">
+                  <div class="label">Сопроводительное письмо</div>
+                  <textarea class="textarea --covering-letter"></textarea>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-big modal-anons" id="modal-anons">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-anons">
+                <div class="anons-img"><img src="assets/img/anons-big.png"></div>
+                <div class="anons-date">28.06.2023</div>
+                <div class="anons-title h4-title">Современная методология разработки оказалась ошибочной</div>
+                <div class="anons-text">
+                  <p>И нет сомнений, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Задача организации, в особенности же экономическая повестка сегодняшнего дня предоставляет широкие возможности для стандартных подходов. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Сложно сказать, почему диаграммы связей ассоциативно распределены по отраслям! Таким образом, глубокий уровень погружения говорит о возможностях системы обучения кадров, соответствующей насущным потребностям.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
                 </div>
               </div>
             </div>

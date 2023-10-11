@@ -1,6 +1,90 @@
 .main--office
   padding-top: 60px
 .cabinet
+  &-detail
+    &__bottom-btns
+      padding-top: 60px
+      +r($md)
+        padding-top: 32px
+
+    &-section
+      &+.cabinet-detail-section
+        margin-top: 60px
+        +r($md)
+          margin-top: 32px
+    &-row
+      display: flex
+    &-content
+      flex: 0 0 69%
+      max-width: 69%
+      &.--md-full
+        +r($md)
+          flex: 0 0 100%
+          max-width: 100%
+      .article
+        padding-right: 32px
+        +r($md)
+          padding-right: 0
+      p+p, p+ul,ul+p ul+ul, p+h2,p+h3,p+h4,ul+h2,ul+h3,ul+h4,
+      p+ol,ol+p ol+ol, ol+h2,ol+h3,ol+h4
+        margin-top: 32px
+      h2,h3,h4
+        margin-bottom: 12px
+      ul
+        list-style: decimal
+        li
+          display: block
+          position: relative
+          padding-left: 24px
+          &+li
+            margin-top: 8px
+          &:after
+            content: ""
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background: $clrGrey90
+            position: absolute
+            top: 9px
+            left: 8px
+      .b-detail-info
+        padding: 32px 40px
+        background: $baseBg
+        border-radius: 16px
+        display: flex
+        flex-direction: column
+        gap: 18px
+        font-size: 18px
+        font-weight: 600
+        +r($md)
+          padding: 18px 12px
+        +r($xss)
+          font-size: 16px
+        .h3-title
+          text-transform: uppercase
+        &__subtitle
+          color: #292929
+          opacity: .6
+          font-size: 15px
+          font-weight: 400
+        &__row
+          display: flex
+        &__col-md-auto
+          flex: 1 1 auto
+        &__col-right
+          &.--md-hidden
+            +r($md)
+              display: none
+        &__col-1
+          width: 100%
+    &-aside
+      flex: 0 0 31%
+      max-width: 31%
+      position: relative
+      &.--md-hidden
+        +r($md)
+          display: none
+
   &-progress
     margin-right: 32px
     display: flex
@@ -65,6 +149,14 @@
         // padding-right: 18px
         +r($md)
           font-size: 15px
+      &-btns
+        display: flex
+        gap: 18px
+        +r($md - 1)
+          width: 100%
+          gap: 12px
+          flex-direction: column
+          align-items: flex-start
     &__tags
       display: flex
       padding-top: 12px
@@ -113,7 +205,6 @@
     &__left
       padding-right: 20px
       max-width: 400px
-
       +r($md)
         width: 100%
         max-width: 100%
@@ -122,6 +213,19 @@
           justify-content: flex-start
           padding-bottom: 4px
           text-align: left
+      &.--md-7
+        flex: 0 0 58.333%
+        max-width: 58.333%
+      &.--md-8
+        flex: 0 0 66.666%
+        max-width: 66.666%
+        +r($md)
+          flex: 0 0 100%
+          max-width: 100%
+          padding-right: 0
+      &.--md-4
+        flex: 0 0 33.333%
+        max-width: 33.333%
     &__infobox
       display: flex
       margin-right: 24px
@@ -145,9 +249,14 @@
       margin-left: auto
       display: flex
       align-items: center
+      +r($md)
+        width: 100%
+        justify-content: center
+        text-align: center
       .b-btns
         display: flex
         align-items: center
+        gap: 18px
         +r($sm)
           flex-direction: column
           width: 100%
@@ -155,12 +264,15 @@
           .drop-select
             width: 100%
             margin: 0
+        &.--podrobno
+          +r($md)
+            display: flex
+            width: 100%
+          +r($sm)
+            flex-direction: row
       &.align-start
         align-items: flex-start
-      +r($md)
-        width: 100%
-        justify-content: center
-        text-align: center
+
       &.xl-column
         +r($xl)
           flex-direction: column
@@ -713,3 +825,32 @@
   .inp-price
     max-width: 180px
     width: 100%
+
+.recomended-job
+  padding-left: 36px
+  border-left: 1px solid $clrGrey30
+  &.fixed
+    position: fixed
+    top: 10px
+    z-index: 9999
+
+  .h3-title
+    padding-bottom: 18px
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      display: block
+      margin-bottom: 18px
+      a
+        color: $clrGrey90
+      .location
+        display: block
+        color: $clrGrey40
+      .link-etc
+        color: $clrPrimaryMain
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+
