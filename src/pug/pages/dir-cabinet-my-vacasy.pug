@@ -1,0 +1,280 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет_соискателя_список_резюме'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title Мои вакансии
+
+
+        .cabinet-header__filters
+          .drop.drop--small.js-drop
+            .drop__label.js-drop__label
+              | Фильтр
+              .drop__arrow
+                +icon('chevron-down')
+            .drop__dropdown
+              .drop__dropdown-wrapper
+                ul
+                  li.drop__item
+                    .b-radio.b-radio--blue
+                      input(type="radio" name="m21" id="r21")
+                      label.b-radio__label(for="r21")
+                        span.checked
+                        span.b-radio__text.js-drop-select__val(data-label="Активные") Активные
+
+                  li.drop__item
+                    .b-radio.b-radio--blue
+                      input(type="radio" name="m21" id="r212")
+                      label.b-radio__label(for="r212")
+                        span.checked
+                        span.b-radio__text.js-drop-select__val(data-label="Черновики") Черновики
+                  li.drop__item
+                    .b-radio.b-radio--blue
+                      input(type="radio" name="m21" id="r213")
+                      label.b-radio__label(for="r213")
+                        span.checked
+                        span.b-radio__text.js-drop-select__val(data-label="Label") Label
+                  li.drop__item
+                    .b-radio.b-radio--blue
+                      input(type="radio" name="m21" id="r214")
+                      label.b-radio__label(for="r214")
+                        span.checked
+                        span.b-radio__text.js-drop-select__val(data-label="Label") Label
+                  li.drop__item
+                    .b-radio.b-radio--blue
+                      input(type="radio" name="m21" id="r215")
+                      label.b-radio__label(for="r215")
+                        span.checked
+                        span.b-radio__text.js-drop-select__val(data-label="Архив") Архив
+
+
+
+      .cabinet-content
+        .vacancy-table.--lg-hidden
+          .row-th
+            .col.col-name
+              .col-wrap Вакансия
+            .col.col-desc
+              .col-wrap Описание
+
+            .col.col-date
+              .col-wrap Дата размещения
+            .col.col-otcl
+              .col-wrap Отклики
+            .col.col-action
+              .col-wrap Действия
+          .row-td
+            .col.col-name
+              .col-wrap
+                a(href="#") Преподаватель географии
+            .col.col-desc
+              .col-wrap
+                ul.list-circ
+                  li Преподаватель
+                  li График работы: Полный день
+                  li Заработная плата от 40 000 ₽
+                  li Дата выхода на работу: 1 сентября
+            .col.col-date
+              .col-wrap 10.07.2023
+            .col.col-otcl
+              .col-wrap
+                a(href="#") 11
+            .col.col-action
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                  +icon('archive')
+          .row-td
+            .col.col-name
+              .col-wrap
+                a(href="#") Преподаватель географии
+            .col.col-desc
+              .col-wrap
+                ul.list-circ
+                  li Преподаватель
+                  li График работы: Полный день
+                  li Заработная плата от 40 000 ₽
+                  li Дата выхода на работу: 1 сентября
+            .col.col-date
+              .col-wrap 10.07.2023
+            .col.col-otcl
+              .col-wrap
+                a(href="#") 11
+            .col.col-action
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                  +icon('archive')
+          .row-td
+            .col.col-name
+              .col-wrap
+                a(href="#") Преподаватель географии
+            .col.col-desc
+              .col-wrap
+                ul.list-circ
+                  li Преподаватель
+                  li График работы: Полный день
+                  li Заработная плата от 40 000 ₽
+                  li Дата выхода на работу: 1 сентября
+            .col.col-date
+              .col-wrap 10.07.2023
+            .col.col-otcl
+              .col-wrap
+                a(href="#") 11
+            .col.col-action
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                  +icon('archive')
+          .row-td
+            .col.col-name
+              .col-wrap
+                a(href="#") Преподаватель географии
+            .col.col-desc
+              .col-wrap
+                ul.list-circ
+                  li Преподаватель
+                  li График работы: Полный день
+                  li Заработная плата от 40 000 ₽
+                  li Дата выхода на работу: 1 сентября
+            .col.col-date
+              .col-wrap 10.07.2023
+            .col.col-otcl
+              .col-wrap
+                a(href="#") 11
+            .col.col-action
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                  +icon('archive')
+          .row-td
+            .col.col-name
+              .col-wrap
+                a(href="#") Преподаватель географии
+            .col.col-desc
+              .col-wrap
+                ul.list-circ
+                  li Преподаватель
+                  li График работы: Полный день
+                  li Заработная плата от 40 000 ₽
+                  li Дата выхода на работу: 1 сентября
+            .col.col-date
+              .col-wrap 10.07.2023
+            .col.col-otcl
+              .col-wrap
+                a(href="#") 11
+            .col.col-action
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                  +icon('archive')
+    .vacancy-table__list
+      .vacancy-table-mobile.--lg-visible
+        .row-th
+          .col.col-1
+            .col-wrap Вакансия
+          .col.col-2
+            .col-wrap Действия
+        .row-td
+          .col.col-1
+            .col-wrap
+              a(href="#") Преподаватель истории
+          .col.col-2
+            .col-wrap
+              button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                +icon('edit-2')
+              button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                +icon('archive')
+        .row-td
+          .col.col-1
+            .col-wrap Описание
+          .col.col-2
+            .col-wrap
+              ul
+                li Преподаватель
+                li График работы: Полный день
+                li Заработная плата от 40 000 ₽
+                li Дата выхода на работу: 1 сентября
+        .row-td
+          .col.col-1
+            .col-wrap Дата размещения
+          .col.col-2
+            .col-wrap 10.07.2023
+        .row-td
+          .col.col-1
+            .col-wrap Отклики
+          .col.col-2
+            .col-wrap
+              a(href="#") 23
+      .vacancy-table-mobile.--lg-visible
+        .row-th
+          .col.col-1
+            .col-wrap Вакансия
+          .col.col-2
+            .col-wrap Действия
+        .row-td
+          .col.col-1
+            .col-wrap
+              a(href="#") Преподаватель истории
+          .col.col-2
+            .col-wrap
+              button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                +icon('edit-2')
+              button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Перенести в архив")
+                +icon('archive')
+        .row-td
+          .col.col-1
+            .col-wrap Описание
+          .col.col-2
+            .col-wrap
+              ul
+                li Преподаватель
+                li График работы: Полный день
+                li Заработная плата от 40 000 ₽
+                li Дата выхода на работу: 1 сентября
+        .row-td
+          .col.col-1
+            .col-wrap Дата размещения
+          .col.col-2
+            .col-wrap 10.07.2023
+        .row-td
+          .col.col-1
+            .col-wrap Отклики
+          .col.col-2
+            .col-wrap
+              a(href="#") 23
+
+    .pagination-section
+      ul.pagination.--md-center
+        li.pagination__item.arr-prev
+          a.link.arr(href="#")
+            +icon('chevron-left')
+        li.pagination__item
+          a.link.active(href="#") 1
+        li.pagination__item
+          a.link(href="#") 2
+        li.pagination__item
+          a.link(href="#") 3
+        li.pagination__item
+          span.link ...
+        li.pagination__item
+          a.link(href="#") 10
+        li.pagination__item.arr-next
+          a.link.arr(href="#")
+            +icon('chevron-right')

@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack 4</title>
+    <title>Кабинет</title>
     <meta name="description" content="some description">
     <meta name="keywords" content="some keyword">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link href="assets/css/app.css" rel="stylesheet"></head>
-  <body class="index-page">
+  <body class="cabinet-page">
     <div class="over">
       <header class="header">
         <div class="all">
@@ -17,8 +17,40 @@
               <svg class="svg-icon --color svg-icon--logo 1">
                 <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
               </svg></a></div>
+          <div class="link--support"><a href="#">Служба поддержки</a></div>
           <div class="header-right">
-            <div class="btns"><a class="btn js-btn-modal" href="#" data-modal="modal-support">Вход</a><a class="btn btn--border" href="#">Регистрация</a></div>
+            <div class="header__links">
+              <div class="drop-link">
+                <div class="drop-link__label">Вакансии</div>
+                <div class="drop-link__arrow">
+                  <svg class="svg-icon svg-icon--chevron-down">
+                    <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="drop-link__dropdown">
+                  <div class="drop-link__dropdown-wrapper">
+                    <ul>
+                      <li><a href="#">Мои вакансии</a></li>
+                      <li><a href="#">Создать вакансию</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><a class="btn-link" href="#">Каталог резюме</a>
+            </div>
+            <div class="header-auth">
+              <div class="header-auth__icons"><a class="link-item" href="#">
+                  <svg class="svg-icon svg-icon--heart">
+                    <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                  </svg></a><a class="link-item" href="#">
+                  <svg class="svg-icon svg-icon--send">
+                    <use xlink:href="assets/img/sprite.svg#icon-send"></use>
+                  </svg></a><a class="link-item" href="#">
+                  <svg class="svg-icon --color svg-icon--bell 1">
+                    <use xlink:href="assets/img/sprite-color.svg#icon-color-bell"></use>
+                  </svg></a></div>
+              <div class="header-auth__ava"><a href="#"><img src="assets/img/mini-ava.png"></a></div>
+            </div>
+            <div class="btns"><a class="btn" href="#">Выход</a></div>
           </div>
           <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
         </div>
@@ -28,9 +60,7 @@
             <div class="mobile-menu__header">
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__nav-list">
-                  <li><a class="btn" href="#">Вход для соискателя</a></li>
-                  <li><a class="btn" href="#">Вход для директора</a></li>
-                  <li><a class="btn btn--border" href="#">Регистрация</a></li>
+                  <li><a class="btn" href="#">Выход</a></li>
                 </ul>
               </nav>
             </div>
@@ -46,107 +76,115 @@
           </div>
         </div>
       </header>
-      <main class="main">
-        <ul class="index-menuu">
-          <li><a href="main.html">Главная</a></li>
-          <li><a href="login.html">Вход</a></li>
-          <li><a href="reg.html">Регистрация</a></li>
-          <li><a href="reg-thanks.html">Поздравляем с регистрацией</a></li>
-          <li><a href="repass.html">Забыли пароль</a></li>
-          <li><a href="success.html">Регистрация Готова</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="prav-info.html">Правовая информация</a></li>
-          <li><a href="404.html">404</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="soglasie.html">Пользовательское соглашение</a></li>
-          <li><strong>КАБИНЕТ</strong></li>
-          <li><a href="cabinet.html">Кабинет</a></li>
-          <li><a href="cabinet-edit.html">Кабинет редактирование</a></li>
-          <li><a href="cabinet-create.html">Кабинет создание</a></li>
-          <li><a href="cabinet-edit-resume.html">Кабинет соискателя_редактировать_резюме</a></li>
-          <li><a href="cabinet-resume-view.html">Кабинет соискателя_Просмотр резюме</a></li>
-          <li><a href="cabinet-resume-list.html">Кабинет_соискателя_список_резюме</a></li>
-          <li><a href="cabinet-resume-list-catalog.html">Кабинет соискателя_каталог вакансий</a></li>
-          <li><a href="cabinet-favorites.html">Кабинет соискателя_Избранные вакансии</a></li>
-          <li><a href="cabinet-notifications.html">Кабинет соискателя_Уведомления</a></li>
-          <li><a href="cabinet-podrobno.html">Кабинет соискателя_вакансия подробно</a></li>
-          <li><strong>КАБИНЕТ ДИРЕКТОРА</strong></li>
-          <li><a href="dir-cabinet.html">Кабинет директора_профиль</a></li>
-          <li><a href="dir-cabinet-edit.html">Кабинет директора_Редактировать профиль</a></li>
-          <li><a href="dir-cabinet-create.html">Кабинет директора_Создать вакансию</a></li>
-          <li><a href="dir-cabinet-my-vacasy.html">Кабинет директора_Мои вакансии</a></li>
-          <li><a href="dir-cabinet-arhive.html">Кабинет директора_архив</a></li>
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-          <!--li-->
-          <!--  a(href="index.html") Главная-->
-          <!---->
-        </ul><br><br><br><br>
-        <h2 class="h2-title">Попапы</h2>
-        <ul class="index-menuu">
-          <li><a class="js-btn-modal" href="#" data-modal="modal-anons">Анонс</a></li>
-          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
-          <li><a class="js-btn-modal" href="#" data-modal="modal-covering-letter">Сопроводительное письмо</a></li>
-          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
-          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
-          <li><a class="js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></li>
-        </ul><br><br><br><br>
-        <div class="form-form">
-          <div class="cabinet-edit__section">
-            <div class="cabinet-edit__row">
-              <div class="cabinet-edit__col-md-1">
-                <div class="form-item">
-                  <label class="label">Фамилия*</label>
-                  <input class="input" type="text" placeholder="Фамиля">
+      <main class="main main--office">
+        <div class="all">
+          <div class="cabinet">
+            <div class="cabinet-header">
+              <div class="cabinet-ava-wrapper">
+                <div class="cabinet-ava">
+                  <div class="cabinet-ava-img active"><img src="assets/img/ava.png"></div>
                 </div>
               </div>
+              <div class="cabinet-fio h2-title">Петрова мария ивановна</div>
             </div>
-            <div class="cabinet-edit__row">
-              <div class="cabinet-edit__col-md-1">
-                <div class="form-item">
-                  <label class="label">ошибка</label>
-                  <input class="input inp-error" type="text" placeholder="Фамиля">
+            <div class="cabinet-content">
+              <div class="cabinet-info">
+                <div class="cabinet-info__section">
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">ID</div>
+                        <div class="cabinet-info__text"><a href="#">895623</a></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="cabinet-edit__row">
-              <div class="cabinet-edit__col-md-1">
-                <div class="form-item">
-                  <label class="label">success</label>
-                  <input class="input inp-succ" type="text" placeholder="Фамиля">
+                <div class="cabinet-info__section">
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Возраст</div>
+                        <div class="cabinet-info__text">29 лет</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Пол</div>
+                        <div class="cabinet-info__text">Женский</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Семейное положение</div>
+                        <div class="cabinet-info__text">Замужем</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="cabinet-edit__row">
-              <div class="cabinet-edit__col-md-1">
-                <div class="form-item">
-                  <label class="label">disabled</label>
-                  <input class="input" type="text" disabled="Фамиля">
+                <div class="cabinet-info__section">
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Место проживания</div>
+                        <div class="cabinet-info__text">Москва, ЦАО, Арбат</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Телефон</div>
+                        <div class="cabinet-info__text">+7 (495) 123-45-67</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">E-mail</div>
+                        <div class="cabinet-info__text"><a href="#">mojemail@mail.ru</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-info__section">
+                  <div class="cabinet-info__row --x2">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">СНИЛС</div>
+                        <div class="cabinet-info__text">ХХХ-ХХХ-ХХХ YY</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row --x2">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Готовность к переезду</div>
+                        <div class="cabinet-info__text">Не готова</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-info__row --x2">
+                    <div class="cabinet-info__md-1">
+                      <div class="form-item">
+                        <div class="cabinet-info__label">Ссылки на соц.сети</div>
+                        <div class="cabinet-info__text"><a href="#">https://vk.com/id23456789</a><br><a href="#">https://vk.com/id23456789</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-info__bottom">
+                  <div class="cabinet-info__error">
+                    Вы зарегистрированы через портал ДПО. <br>
+                    Чтобы изменить данные, перейдите на сайт портала ДПО.
+                  </div>
+                  <div class="cabinet-info__btns"><a class="btn btn--border" href="#">Заявка на удаление профиля</a>
+                    <input class="btn" type="submit" disabled value="Редактировать профиль">
+                  </div>
                 </div>
               </div>
             </div>

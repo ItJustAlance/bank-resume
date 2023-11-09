@@ -7,19 +7,34 @@ header.header
       a(href="#") Служба поддержки
     .header-right
       .header__links
-        .drop-link
-          .drop-link__label
-            | Резюме
-          .drop-link__arrow
-            +icon('chevron-down')
-          .drop-link__dropdown
-            .drop-link__dropdown-wrapper
-              ul
-                li
-                  a(href="#") Мои резюме
-                li
-                  a(href="#") Создать резюме
-        a.btn-link(href="#") Каталог вакансий
+        if(director)
+          .drop-link
+            .drop-link__label
+              | Вакансии
+            .drop-link__arrow
+              +icon('chevron-down')
+            .drop-link__dropdown
+              .drop-link__dropdown-wrapper
+                ul
+                  li
+                    a(href="#") Мои вакансии
+                  li
+                    a(href="#") Создать вакансию
+          a.btn-link(href="#") Каталог резюме
+        else
+          .drop-link
+            .drop-link__label
+              | Резюме
+            .drop-link__arrow
+              +icon('chevron-down')
+            .drop-link__dropdown
+              .drop-link__dropdown-wrapper
+                ul
+                  li
+                    a(href="#") Мои резюме
+                  li
+                    a(href="#") Создать резюме
+          a.btn-link(href="#") Каталог вакансий
       .header-auth
         .header-auth__icons
           a.link-item(href="#")

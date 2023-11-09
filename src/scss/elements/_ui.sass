@@ -527,7 +527,7 @@
     top: 100%
     left: 0
     width: 100%
-    min-width: 180px
+    min-width: 195px
     padding-top: 4px
     background: rgba(0,0,0,0)
     display: none
@@ -748,3 +748,16 @@
   100%
     transform: rotate(360deg)
 
+.btn-tooltip
+  position: relative
+.btn-tooltip-wrapper
+  position: absolute
+  bottom: calc(100% + 5px)
+  right: 0
+  white-space: nowrap
+  padding: 8px
+  color: $clrGrey80
+  font-size: 12px
+  border-radius: 8px
+  background: var(--Background, #F4F9FB)
+  box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.16)

@@ -1,0 +1,133 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__title.h2-title редактировать профиль
+          .cabinet-header__right
+
+
+
+      .cabinet-header
+
+        .cabinet-ava-wrapper
+          .cabinet-ava
+            .cabinet-ava-img
+
+            .cabinet-ava__edit
+              input(type="file")
+              .ic-camera
+                +icon('camera')
+          .text-add
+            +icon('plus')
+            | Добавить фото
+
+      .cabinet-content
+        .cabinet-edit.form-form
+          .cabinet-edit__section
+            .cabinet-edit__row
+              .cabinet-edit__col-md-1
+                .form-item
+                  label.label Фамилия*
+                  input.input(type="text" placeholder="Фамиля")
+            .cabinet-edit__row
+              .cabinet-edit__col-md-1
+                .form-item
+                  label.label Имя*
+                  input.input(type="text" placeholder="Имя")
+            .cabinet-edit__row
+              .cabinet-edit__col-md-1
+                .form-item
+                  label.label Отчество*
+                  input.input(type="text" placeholder="Отчество*")
+          .cabinet-edit__section
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Дата рождения*
+                  input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Регион
+                  select.ik-select
+                    option Москва
+                    option Челябинск
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Пол
+                  select.ik-select
+                    option Женский
+                    option Челябинск
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Округ
+                  select.ik-select
+                    option Округ
+                    option Челябинск
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Семейное положение
+                  select.ik-select
+                    option Замужем
+                    option Челябинск
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Район
+                  select.ik-select
+                    option Район
+                    option Челябинск
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label Телефон*
+                  input.input.js-phone_mask(type="text")
+              .cabinet-edit__col-md-2
+
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label E-mail*
+                  input.input(type="text" placeholder="E-mail")
+              .cabinet-edit__col-md-2
+
+          .cabinet-edit__section
+            .cabinet-edit__row
+              .cabinet-edit__col-md-2
+                .form-item
+                  .add-row-wrapper
+                    label.label Ссылки на социальные сети
+                    input.input(type="text" placeholder="")
+                  .add-row-wrapper
+                    input.input(type="text" placeholder="")
+                .text-add
+                  +icon('plus')
+                  | Добавить ссылку
+              .cabinet-edit__col-md-2
+                .form-item
+                  label.label СНИЛС
+                  input.input.js-snils_mask(type="text" placeholder="")
+
+
+
+
+
+    .cabinet-info__bottom
+      .cabinet-info__error
+        | Вы зарегистрированы через портал ДПО. <br>
+        | Чтобы изменить данные, перейдите на сайт портала ДПО.
+      .cabinet-info__btns
+        a.btn.btn--border.btn--md-full(href="#") Вернуться
+        input.btn.btn--md-full(type="submit"  value="Сохранить изменения")
+

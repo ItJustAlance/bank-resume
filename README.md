@@ -18,6 +18,7 @@ NODE 13.8.0
 
 ## Structure
 
+svg спрайты очищаются от fill из svg/mono-svg и копируются в clean-svg
 Shorten directories and files structure which you'll see after build:
 
 ```shell

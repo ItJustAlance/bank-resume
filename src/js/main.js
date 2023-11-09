@@ -190,13 +190,27 @@ window.addEventListener('load', () => {
 
 
   /** плавающий блок **/
-  var topPos = $('.js-floating-column').offset().top;
-  $(window).scroll(function() {
-    var top = $(document).scrollTop(),
-      pip = $('.footer').offset().top,
-      height = $('.js-floating-column').outerHeight();
-    if (top > topPos && top < pip - height) {$('.js-floating-column').addClass('fixed').removeAttr("style");}
-    else if (top > pip - height) {$('.js-floating-column').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
-    else {$('.js-floating-column').removeClass('fixed');}
-  });
+  if($(".js-floating-column").length > 0){
+    var topPos = $('.js-floating-column').offset().top;
+    $(window).scroll(function() {
+      var top = $(document).scrollTop(),
+        pip = $('.footer').offset().top,
+        height = $('.js-floating-column').outerHeight();
+      if (top > topPos && top < pip - height) {$('.js-floating-column').addClass('fixed').removeAttr("style");}
+      else if (top > pip - height) {$('.js-floating-column').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+      else {$('.js-floating-column').removeClass('fixed');}
+    });
+  }
+
+
+  /*** tooltip ***/
+  $( ".js-btn-tooltip" ).hover(
+    function() {
+      let text = $(this).data("tooltip");
+      $( this ).append( $( "<span class='btn-tooltip-wrapper'>" + text + "</span>" ) );
+    }, function() {
+      $( this ).find( ".btn-tooltip-wrapper" ).remove();
+    }
+  );
+
 });
