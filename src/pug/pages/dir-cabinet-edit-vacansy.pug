@@ -1,0 +1,129 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет Директора_Редактировать вакансию'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left.--md-7
+            .cabinet-header__title.h2-title редактировать вакансию
+          .cabinet-header__right.--md-a
+            .b-btns.--podrobno
+              button.btn.btn--border.btn-small
+                +icon('printer')
+              button.btn
+                span.btn-label К каталогу вакансий
+              button.btn.btn--border
+                span.btn-label Перенести в архив
+
+
+      .box-bg
+        .box-wrapper
+          .cabinet-content
+            .cabinet-edit.form-form
+              .cabinet-edit__section
+                .cabinet-edit__row
+                  .cabinet-edit__col-md-2
+                    .form-item
+                      label.label Название вакансии
+                      input.input(type="text" placeholder="Название вакансии")
+                    .form-item
+                      label.label Наименование должности
+                      select.ik-select
+                        option Наименование должности
+                        option Челябинск
+                    .form-item
+                      label.label Опыт работы
+                      select.ik-select
+                        option Опыт работы
+                        option Челябинск
+                  .cabinet-edit__col-md-2
+                    .form-item
+                      label.label Место работы
+                      select.ik-select
+                        option Москва
+                        option Челябинск
+                    .form-item
+                      label.label Округ
+                      select.ik-select
+                        option Москва
+                        option Челябинск
+                    .form-item
+                      label.label Район
+                      select.ik-select
+                        option Москва
+                        option Челябинск
+      .box-bg
+        .box-wrapper
+          .cabinet-content
+            .cabinet-edit.form-form
+              .cabinet-edit__section
+                .cabinet-edit__row
+                  .cabinet-edit__col-md-1
+                    .form-item
+                      .h4-title Должностные обязанности
+                      .b-editor
+                        textarea.textarea
+
+                    .form-item
+                      .h4-title Условия и режим работы
+                      .b-editor
+                        textarea.textarea
+      .box-bg
+        .box-wrapper
+          .cabinet-content
+            .cabinet-edit.form-form
+              .cabinet-edit__section
+                .cabinet-edit__row
+                  .cabinet-edit__col-md-2
+                    .form-item
+                      label.label Возможность подмены
+                      select.ik-select
+                        option Возможность подмены
+                        option Челябинск
+                    .form-item
+                      label.label График работы
+                      select.ik-select
+                        option Наименование должности
+                        option Челябинск
+                    .form-item
+                      label.label Нагрузка
+                      select.ik-select
+                        option Опыт работы
+                        option Челябинск
+                  .cabinet-edit__col-md-2
+                    .form-item
+                      label.label Уровень зарплаты
+                      select.ik-select
+                        option Москва
+                        option Челябинск
+                    .form-item
+                      label.label Дата выхода на работу
+                      input.input.datepicker(type="text" placeholder="ДД-ММ-ГГГГ")
+      .box-bg
+        .box-wrapper
+          .cabinet-content
+            .cabinet-edit.form-form
+              .cabinet-edit__section
+                .cabinet-edit__row
+                  .cabinet-edit__col-md-1
+                    .h4-title Дополнительные требования к кандидату
+                    .b-editor
+                      textarea.textarea
+
+
+
+    .cabinet-info__bottom
+      .cabinet-info__btns.--center
+        a.btn.btn--border.btn--border__red.btn--md-full(href="#") Отменить
+        a.btn.btn--border.btn--md-full(href="#") Сохранить как черновик
+        input.btn.btn--md-full(type="submit"  value="Сохранить и опубликовать")
+

@@ -183,6 +183,15 @@
       padding-top: 80px
       +r($sm)
         padding: 54px 12px 32px
+.modal-middle
+  .just-modal
+    &__container
+      max-width: 630px
+    &__body
+      padding: 18px 32px
+      +r($sm)
+        padding: 18px 12px
+
 .modal-anons
   .anons-img
     margin-bottom: 32px
@@ -343,3 +352,35 @@
       gap: 32px
       padding-top: 32px
       justify-content: flex-end
+
+
+.modal-review
+  .just-modal__body
+    background: #fff
+.review-list
+  overflow: auto
+  max-height: 80vh
+  margin: 40px -20px 0 0
+  padding-right: 20px
+.review-item
+  background: $baseBg
+  margin-bottom: 18px
+  border-radius: 16px
+  padding: 24px 18px
+  .name
+    font-size: 18px
+    font-weight: 600
+  .text-gray
+    color: $clrGrey60
+  &__header
+    display: flex
+    padding-bottom: 12px
+  &__title
+    font-size: 18px
+    font-weight: 600
+  &__date
+    margin-left: auto
+    color: $clrGrey60
+  &__text
+    padding-bottom: 18px
+  &__bottom

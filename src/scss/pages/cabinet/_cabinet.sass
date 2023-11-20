@@ -208,6 +208,10 @@
     &__left
       padding-right: 20px
       max-width: 400px
+      &.--md-6
+        max-width: 50%
+        +r($md)
+          max-width: 100%
       +r($md)
         width: 100%
         max-width: 100%
@@ -226,6 +230,9 @@
           flex: 0 0 100%
           max-width: 100%
           padding-right: 0
+      &.--md-5
+        flex: 0 0 41.666%
+        max-width: 41.666%
       &.--md-4
         flex: 0 0 33.333%
         max-width: 33.333%
@@ -256,6 +263,29 @@
         width: 100%
         justify-content: center
         text-align: center
+      &.just-right
+        justify-content: flex-end
+      &.algin-start
+        align-items: flex-start
+      &.--md-7
+        flex: 0 0 58.333%
+        max-width: 58.333%
+      &.--md-8
+        flex: 0 0 66.666%
+        max-width: 66.666%
+        +r($md)
+          flex: 0 0 100%
+          max-width: 100%
+          padding-right: 0
+      &.--md-5
+        flex: 0 0 41.666%
+        max-width: 41.666%
+      &.--md-a
+        flex: 0 0 auto
+        max-width: 100%
+      &.--md-4
+        flex: 0 0 33.333%
+        max-width: 33.333%
       .b-btns
         display: flex
         align-items: center
@@ -283,13 +313,22 @@
             margin-bottom: 32px
     &-select--public
       margin-right: 38px
-
+    &-select--status-right
+      .drop-select__dropdown,
+      .drop__dropdown
+        left: auto
+        right: 0
   &-ava
     width: 170px
     height: 170px
     position: relative
-
-
+    &.--small
+      width: 100px
+      height: 100px
+      .cabinet-ava
+        &-img
+          width: 100px
+          height: 100px
     &-img
       width: 170px
       height: 170px
@@ -620,7 +659,6 @@
     margin-bottom: 18px
     +r($md)
       padding: 18px 12px
-
     &:hover
       border-color: $clrPrimaryPressed
     .cabinet-progress
@@ -644,6 +682,10 @@
       +r($md)
         flex-wrap: wrap
         width: 100%
+        gap: 18px
+      &.--md-reverse
+        +r($md)
+          flex-direction: column-reverse
       .header-title
         text-transform: uppercase
         padding-bottom: 4px
@@ -664,6 +706,19 @@
         display: inline-block
         vertical-align: top
         margin-left: auto
+        &.--status-fav
+          max-width: 47%
+          width: 100%
+          +r($md)
+            max-width: 100%
+            order: 0
+        .b-btns-right
+          display: flex
+          flex-wrap: wrap
+          gap: 12px
+          justify-content: flex-end
+          +r($md)
+            justify-content: flex-start
         .btn
           white-space: nowrap
         +r($md)
@@ -695,6 +750,25 @@
           background: #197962
     &__body
       padding-top: 18px
+      .options-vacansy
+        margin: 0
+        padding: 0
+        display: flex
+        gap: 32px
+        +r($md)
+          flex-wrap: wrap
+          gap: 12px 32px
+        .item-vacansy
+          +r($sm)
+            // width: 100%
+
+          &__label
+            color: $clrGrey60
+            display: block
+          &__text
+            display: block
+            font-size: 18px
+            font-weight: 600
       .title
     .statistics
       margin: 0
@@ -735,6 +809,19 @@
           display: none
     .local
       color: $clrGrey60
+    .organisation__title
+      color: $clrGrey60
+    .info-card-resume
+      margin-bottom: 18px
+      .b-row
+        display: flex
+        margin-bottom: 8px
+
+      &-label
+        color: $clrGrey60
+        padding-right: 12px
+      &-text
+        font-weight: 500
     &__infos
       margin: 0
       padding: 0
@@ -909,6 +996,9 @@
   border-radius: 16px
   border: 1px solid $clrGrey30
   margin-bottom: 30px
+  display: none
+  +r($md)
+    display: block
   a
     text-decoration: underline
     &:hover
@@ -937,3 +1027,26 @@
     min-width: 45%
     max-width: 45%
 
+.covering-letter
+  padding-bottom: 60px
+  +r($md)
+    padding-bottom: 40px
+  &__header
+    padding-bottom: 18px
+    display: flex
+    +r($md)
+      flex-direction: column-reverse
+    .b-title
+      flex: 1 1 auto
+      .h3-title
+        text-transform: uppercase
+    .right-btns
+      display: flex
+      justify-content: flex-end
+      gap: 12px
+      +r($md)
+        justify-content: flex-start
+        padding-bottom: 40px
+      +r($xss)
+      flex-wrap: wrap
+  &__body

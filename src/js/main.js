@@ -212,5 +212,8 @@ window.addEventListener('load', () => {
       $( this ).find( ".btn-tooltip-wrapper" ).remove();
     }
   );
-
+  $(".js-open-btn-admin-panel").on("click", function (){
+    $(".admin-panel").toggleClass("open")
+    return false
+  });
 });

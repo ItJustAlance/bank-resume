@@ -1,0 +1,467 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет Директора_избранные резюме'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left.--md-6
+            .cabinet-header__title.h2-title избранные резюме
+            .cabinet-header__tags
+              .cabinet-header__tag-item
+                | Непрочитанные
+                span.highlight 5
+          .cabinet-header__right.--md-4.just-right.algin-start
+            .b-btns
+              .drop-select.js-drop-select.cabinet-header-select--status-right
+                .drop-select__label.js-drop-select__label
+                  | Статус кандидата
+                .drop-select__arrow
+                  +icon('chevron-down')
+                .drop-select__dropdown
+                  .drop-select__dropdown-wrapper
+                    ul
+                      li.drop-select__item
+                        .b-radio.b-radio--blue
+                          input(type="radio" name="m1" id="r1")
+                          label.b-radio__label(for="r1")
+                            span.checked
+                            span.b-radio__text.js-drop-select__val(data-label="Приглашение отправлено") Приглашение отправлено
+                      li.drop-select__item
+                        .b-radio.b-radio--blue
+                          input(type="radio" name="m1" id="r2")
+                          label.b-radio__label(for="r2")
+                            span.checked
+                            span.b-radio__text.js-drop-select__val(data-label="Отклик не рассмотрен") Отклик не рассмотрен
+                      li.drop-select__item
+                        .b-radio.b-radio--blue
+                          input(type="radio" name="m1" id="r2")
+                          label.b-radio__label(for="r2")
+                            span.checked
+                            span.b-radio__text.js-drop-select__val(data-label="Избранные резюме") Избранные резюме
+
+        .cabinet-header__search
+          .b-pole
+            input.input.pole-search(type="text" placeholder="ID, ссылка, название")
+          .mobile-filter
+            button.btn.js-filter-toggler__btn
+              +icon('sliders')
+          .cabinet-header__search-btns
+            input.btn(value="Найти" type="submit")
+      .cabinet-wrapper
+        .cabinet-aside.js-filter-toggler
+          .catalog-filter
+
+            button.catalog-filter__close.js-filter-toggler__close
+              +icon('close')
+            .catalog-filter__box
+              .catalog-filter__title Должность
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f1")
+                    label.b-checkbox__label(for="f1")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Директор
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f2")
+                    label.b-checkbox__label(for="f2")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Завуч
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f3")
+                    label.b-checkbox__label(for="f3")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Педагог-организатор
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f4")
+                    label.b-checkbox__label(for="f4")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Преподаватель
+            .catalog-filter__box
+              .catalog-filter__title Предметная область
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f11")
+                    label.b-checkbox__label(for="f11")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Математика и информатика
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f12")
+                    label.b-checkbox__label(for="f12")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Филология
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f13")
+                    label.b-checkbox__label(for="f13")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Физика, химия, биология
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f14")
+                    label.b-checkbox__label(for="f14")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Обществознание
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f15")
+                    label.b-checkbox__label(for="f15")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Технология
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f16")
+                    label.b-checkbox__label(for="f16")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Искусство
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f17")
+                    label.b-checkbox__label(for="f17")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Физическая культура
+            .catalog-filter__box
+              .catalog-filter__title Тип занятости
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f21")
+                    label.b-checkbox__label(for="f21")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Полная занятость
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f22")
+                    label.b-checkbox__label(for="f22")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Частичная занятость
+
+            .catalog-filter__box
+              .catalog-filter__title График работы
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f31")
+                    label.b-checkbox__label(for="f31")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Полный день
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f32")
+                    label.b-checkbox__label(for="f32")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Сменный график
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f33")
+                    label.b-checkbox__label(for="f33")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Гибкий график
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f34")
+                    label.b-checkbox__label(for="f34")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Удаленная работа
+            .catalog-filter__box
+              .catalog-filter__title Нагрузка
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f41")
+                    label.b-checkbox__label(for="f41")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text 0,5 ставки
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f42")
+                    label.b-checkbox__label(for="f42")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text 1 ставка
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f43")
+                    label.b-checkbox__label(for="f43")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text 2 ставки
+
+            .catalog-filter__box
+              .catalog-filter__title Возможность подмены
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-radio.b-radio--blue
+                    input(type="radio" name="m1" id="r1")
+                    label.b-radio__label(for="r1")
+                      span.checked
+                      span.b-radio__text.js-drop-select__val(data-label="Да") Да
+                .catalog-filter__item
+                  .b-radio.b-radio--blue
+                    input(type="radio" name="m1" id="r2")
+                    label.b-radio__label(for="r2")
+                      span.checked
+                      span.b-radio__text.js-drop-select__val(data-label="Нет") Нет
+
+
+            .catalog-filter__box
+              .catalog-filter__title Округ
+              .catalog-filter__list.js-show-more-wrapper
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f51")
+                    label.b-checkbox__label(for="f51")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Центральный
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f52")
+                    label.b-checkbox__label(for="f52")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северный
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f53")
+                    label.b-checkbox__label(for="f53")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северо-Восточный
+                .catalog-filter__item.hidden
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f54")
+                    label.b-checkbox__label(for="f54")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северо-Восточный
+                .catalog-filter__item.hidden
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f55")
+                    label.b-checkbox__label(for="f55")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северо-Восточный
+                .catalog-filter__item.hidden
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f56")
+                    label.b-checkbox__label(for="f56")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северо-Восточный
+                .catalog-filter__item.hidden
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f57")
+                    label.b-checkbox__label(for="f57")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Северо-Восточный
+                .catalog-filter__show-more
+                  a.show-more__link.js-show-more__link(href="#" data-show-text="Показать все" data-hide-text="Свернуть") Показать все
+            .catalog-filter__box
+              .catalog-filter__title Район
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f61")
+                    label.b-checkbox__label(for="f61")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Тверской
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f62")
+                    label.b-checkbox__label(for="f62")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Выхино-Жулебино
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f63")
+                    label.b-checkbox__label(for="f63")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Тропарёво-Никулино
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f64")
+                    label.b-checkbox__label(for="f64")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Тимирязевский
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f65")
+                    label.b-checkbox__label(for="f65")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Новогиреево
+            .catalog-filter__box
+              .catalog-filter__title Район
+              .catalog-filter__list
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f71")
+                    label.b-checkbox__label(for="f71")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Не имеет значения
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f72")
+                    label.b-checkbox__label(for="f72")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text от 5 000 ₽
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f73")
+                    label.b-checkbox__label(for="f73")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text от 30 000 ₽
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f74")
+                    label.b-checkbox__label(for="f74")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text от 50 000 ₽
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f75")
+                    label.b-checkbox__label(for="f75")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text от 80 000 ₽
+                .catalog-filter__item
+                  .b-checkbox.b-subeckbox
+                    input(type="checkbox" id="f76")
+                    label.b-checkbox__label(for="f76")
+                      span.checked
+                        +icon('check')
+                      span.b-checkbox__text Своя зарплата
+                .catalog-filter__item
+                  input.input.inp-price(type="text" placeholder="от")
+
+
+        .cabinet-content
+          .cabinet__list
+            .cabinet__card__wrapper.cabinet__card--smd
+              .cabinet__card.cabinet__card--catalog
+                .cabinet__card__header.--md-reverse
+                  .b-left
+                    h3.h3-title.header-title Преподаватель истории
+                    h4.h4-title Иванова Анна Андреевна, 29 лет
+                  .b-right.--status-fav
+                    .b-btns-right
+                      span.btn.btn--border.btn-small
+                        span.svg-icon
+                          +icon('send')
+                        span.btn-label Приглашение отправлено
+                      button.btn.btn--border.btn-small
+                        span.svg-icon
+                          +icon('heart')
+                        span.btn-label Удалить из избранного
+                .cabinet__card__body
+                  ul.options-vacansy
+                    li.item-vacansy
+                      span.item-vacansy__label Стаж
+                      span.item-vacansy__text 1-3 года
+                    li.item-vacansy
+                      span.item-vacansy__label Последнее место работы
+                      span.item-vacansy__text УО СШ №321
+                    li.item-vacansy
+                      span.item-vacansy__label Уровень зарплаты
+                      span.item-vacansy__text от 30 000 ₽
+
+                .cabinet__card__footer
+                  .b-left
+                    .b-btns
+                      a.btn.btn--xs-full(href="#") Подробнее
+            - for (var i=0; i<4; i++)
+              .cabinet__card__wrapper.cabinet__card--smd
+                .cabinet__card.cabinet__card--catalog
+                  .cabinet__card__header.--md-reverse
+                    .b-left
+                      h3.h3-title.header-title Преподаватель обществознанияоб ществознания
+                      h4.h4-title Иванова Анна Андреевна, 29 лет
+                    .b-right.--status-fav
+                      .b-btns-right
+                        button.btn.btn--border.btn-small
+                          span.svg-icon
+                            +icon('heart')
+                          span.btn-label Удалить из избранного
+                  .cabinet__card__body
+                    ul.options-vacansy
+                      li.item-vacansy
+                        span.item-vacansy__label Стаж
+                        span.item-vacansy__text 1-3 года
+                      li.item-vacansy
+                        span.item-vacansy__label Последнее место работы
+                        span.item-vacansy__text УО СШ №321
+                      li.item-vacansy
+                        span.item-vacansy__label Уровень зарплаты
+                        span.item-vacansy__text от 30 000 ₽
+
+                  .cabinet__card__footer
+                    .b-left
+                      .b-btns
+                        a.btn.btn--border.btn--xs-full(href="#") Предложить работу
+                        a.btn.btn--xs-full(href="#") Подробнее
+
+
+
+
+
+
+  .pagination-section
+              ul.pagination.--right.--md-center
+                li.pagination__item.arr-prev
+                  a.link.arr(href="#")
+                    +icon('chevron-left')
+                li.pagination__item
+                  a.link.active(href="#") 1
+                li.pagination__item
+                  a.link(href="#") 2
+                li.pagination__item
+                  a.link(href="#") 3
+                li.pagination__item
+                  span.link ...
+                li.pagination__item
+                  a.link(href="#") 10
+                li.pagination__item.arr-next
+                  a.link.arr(href="#")
+                    +icon('chevron-right')

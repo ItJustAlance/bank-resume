@@ -1,0 +1,27 @@
+include utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    title #{title}
+    meta(name="description", content=description)
+    meta(name="keywords" content=keywords)
+    link(rel="shortcut icon" href="favicon.png" type="image/png")
+
+  body(class=pageClass)
+    .over
+      if(headerAuth)
+        include partials/header-auth
+      else
+        include partials/header
+      main.main(class=mainClass)
+        block content
+      include partials/footer
+      include partials/admin-panel
+    //script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
+    //script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")

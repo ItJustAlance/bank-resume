@@ -1,0 +1,132 @@
+extends ../template
+
+block variables
+  - var title = 'Кабинет директора_Уведомления'
+  - var pageClass = 'cabinet-page'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title Уведомления
+            .cabinet-header__tags
+              .cabinet-header__tag-item
+                | Непрочитанные
+                span.highlight 5
+
+        .cabinet-header__filters
+          .drop.drop--small.js-drop
+            .drop__label.js-drop__label
+              | Фильтр
+              .drop__arrow
+                +icon('chevron-down')
+            .drop__dropdown
+              .drop__dropdown-wrapper
+                ul
+                  li.drop__item
+                    .b-checkbox.b-subeckbox
+                      input(type="checkbox" id="fd1")
+                      label.b-checkbox__label(for="fd1")
+                        span.checked
+                          +icon('check')
+                        span.b-checkbox__text Прочитанные
+
+                  li.drop__item
+                    .b-checkbox.b-subeckbox
+                      input(type="checkbox" id="ff1")
+                      label.b-checkbox__label(for="ff1")
+                        span.checked
+                          +icon('check')
+                        span.b-checkbox__text Непрочитанные
+          .cabinet-header__filters-btns
+            button.btn.btn--border.btn-small
+              span.svg-icon
+                +icon('check-square')
+              span.btn-label Отметить все прочитанными
+            button.btn.btn--border.btn-small
+              span.svg-icon
+                +icon('trash-2')
+              span.btn-label Удалить все уведомления
+      .cabinet-content
+        .cabinet__list
+          .cabinet-notification__wrapper
+            .cabinet-notification
+              .cabinet-notification__header
+                .left-col
+                  .title Уведомление
+                  .date 10.07.2023
+                .right-col
+                  .b-btn
+                    button.btn.btn--border.btn-small
+                      span.svg-icon
+                        +icon('trash-2')
+                      span.btn-label Удалить
+              .cabinet-notification__body
+                .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
+          .cabinet-notification__wrapper
+            .cabinet-notification
+              .cabinet-notification__header
+                .left-col
+                  .title Уведомление
+                  .date 10.07.2023
+                .right-col
+                  .b-btn
+                    button.btn.btn--border.btn-small
+                      span.svg-icon
+                        +icon('trash-2')
+                      span.btn-label Удалить
+              .cabinet-notification__body
+                .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
+          .cabinet-notification__wrapper
+            .cabinet-notification.active
+              .cabinet-notification__header
+                .left-col
+                  .title Уведомление
+                  .date 10.07.2023
+                .right-col
+                  .b-btn
+                    button.btn.btn--border.btn-small
+                      span.svg-icon
+                        +icon('trash-2')
+                      span.btn-label Удалить
+              .cabinet-notification__body
+                .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
+          .cabinet-notification__wrapper
+            .cabinet-notification.active
+              .cabinet-notification__header
+                .left-col
+                  .title Уведомление
+                  .date 10.07.2023
+                .right-col
+                  .b-btn
+                    button.btn.btn--border.btn-small
+                      span.svg-icon
+                        +icon('trash-2')
+                      span.btn-label Удалить
+              .cabinet-notification__body
+                .b-text Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!
+
+    .pagination-section
+      ul.pagination.--md-center
+        li.pagination__item.arr-prev
+          a.link.arr(href="#")
+            +icon('chevron-left')
+        li.pagination__item
+          a.link.active(href="#") 1
+        li.pagination__item
+          a.link(href="#") 2
+        li.pagination__item
+          a.link(href="#") 3
+        li.pagination__item
+          span.link ...
+        li.pagination__item
+          a.link(href="#") 10
+        li.pagination__item.arr-next
+          a.link.arr(href="#")
+            +icon('chevron-right')
