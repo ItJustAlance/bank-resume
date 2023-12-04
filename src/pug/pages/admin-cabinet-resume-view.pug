@@ -1,0 +1,345 @@
+extends ../template-admin
+
+block variables
+  - var title = 'Кабинет админиа_Просмотр резюме'
+  - var pageClass = 'cabinet-page mode-admin'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title просмотр резюме
+            .cabinet-header__subtitle преподаватель географии
+            .cabinet-header__date Опубликовано 1 июля 2023
+            .cabinet-header__date Обновлено 6 июля 2023
+
+          .cabinet-header__right.xl-column.align-start
+            .cabinet-header__infobox
+              .cabinet-progress
+                .progress-bar
+                  .progress-bar__wrapper(style="width: 74%") 74%
+                .progress-view
+                  +icon('eye')
+                  .text 21
+              a.btn-link-icon(href="#")
+                +icon('printer')
+              a.btn-link-icon(href="#")
+                +icon('download')
+            .b-btns
+              .drop-select.js-drop-select.cabinet-header-select--public
+                .drop-select__label.js-drop-select__label
+                  | Опубликовать
+                .drop-select__arrow
+                  +icon('chevron-down')
+                .drop-select__dropdown
+                  .drop-select__dropdown-wrapper
+                    ul
+                      li.drop-select__item
+                        .b-radio.b-radio--blue
+                          input(type="radio" name="m1" id="r1")
+                          label.b-radio__label(for="r1")
+                            span.checked
+                            span.b-radio__text.js-drop-select__val(data-label="Опубликовать") Опубликовать
+                      li.drop-select__item
+                        .b-radio.b-radio--blue
+                          input(type="radio" name="m1" id="r2")
+                          label.b-radio__label(for="r2")
+                            span.checked
+                            span.b-radio__text.js-drop-select__val(data-label="Перенести в архив") Перенести в архив
+              a.btn.btn--border.btn--md-full(href="#") К списку резюме
+
+
+      .cabinet-content
+        .cabinet-info
+          .cabinet-info__row
+            .cabinet-info__md-1
+              .cabinet-info__box
+                  .cabinet-ava-wrapper.small
+                    .cabinet-ava
+                      .cabinet-ava-img.active
+                        img(src="assets/img/ava.png")
+                  .cabinet-fio.h3-title иванова анна андреевна
+          .cabinet-info__section.no-border
+            .cabinet-info__row
+              .cabinet-info__lg-2
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Возраст
+                    .cabinet-info__text 29 лет
+                  .form-item
+                    .cabinet-info__label Пол
+                    .cabinet-info__text Женский
+                  .form-item
+                    .cabinet-info__label Семейное положение
+                    .cabinet-info__text Замужем
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Место проживания
+                    .cabinet-info__text Москва, ЦАО, Арбат
+                  .form-item
+                    .cabinet-info__label Телефон
+                    .cabinet-info__text +7 (495) 123-45-67
+                  .form-item
+                    .cabinet-info__label E-mail
+                    .cabinet-info__text
+                      a(href="#") mojemail@mail.ru
+              .cabinet-info__lg-2
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label СНИЛС
+                    .cabinet-info__text ХХХ-ХХХ-ХХХ YY
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Готовность к переезду
+                    .cabinet-info__text Не готова
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Ссылки на соц.сети
+                    .cabinet-info__text
+                      a(href="#") https://vk.com/id23456789
+                      br
+                      a(href="#") https://vk.com/id23456789
+
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Желаемое место работы
+            .cabinet-info__row
+              .cabinet-info__lg-2
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Желаемая позиция
+                    .cabinet-info__text Преподаватель географии
+                  .form-item
+                    .cabinet-info__label Уровень оклада
+                    .cabinet-info__text 40 000 руб.
+                  .form-item
+                    .cabinet-info__label График работы
+                    .cabinet-info__text Полный день
+                  .form-item
+                    .cabinet-info__label Местоположение работодателя
+                    .cabinet-info__text Москва
+              .cabinet-info__lg-2
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Возможность подмены
+                    .cabinet-info__text Да
+                  .form-item
+                    .cabinet-info__label Статус резюме
+                    .cabinet-info__text Черновик
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Основное образование
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label ВУЗ/СПО
+                    .cabinet-info__text Московский городской падгогический университет
+                  .form-item
+                    .cabinet-info__label Начало обучения
+                    .cabinet-info__text Январь 2010
+                  .form-item
+                    .cabinet-info__label Окончание
+                    .cabinet-info__text Июль 2014
+                  .form-item
+                    .cabinet-info__label Форма обучения
+                    .cabinet-info__text Очная
+                  .form-item
+                    .cabinet-info__label Квалификация
+                    .cabinet-info__text Квалификация
+                  .form-item
+                    .cabinet-info__label Направление/специальность
+                    .cabinet-info__text Направление/специальность
+                  .form-item
+                    .cabinet-info__label Уровень образования
+                    .cabinet-info__text Уровень образования
+                  .form-item
+                    .cabinet-info__label Номер диплома/Дата выдачи
+                    .cabinet-info__text N-1234/5 июля 2014
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Дополнительное образование
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Образовательная организация
+                    .cabinet-info__text Московский городской падгогический университет
+                  .form-item
+                    .cabinet-info__label Наименование программы
+                    .cabinet-info__text Наименование программы
+                  .form-item
+                    .cabinet-info__label Год окончания
+                    .cabinet-info__text 2015
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section карьера
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Стаж
+                    .cabinet-info__text Стаж
+                  .form-item
+                    .cabinet-info__label Место работы
+                    .cabinet-info__text Место работы
+                  .form-item
+                    .cabinet-info__label Период работы
+                    .cabinet-info__text Июль 2014 - Ноябрь 2016
+                  .form-item
+                    .cabinet-info__label Занимаемая должность
+                    .cabinet-info__text Преподаватель географии
+                  .form-item
+                    .cabinet-info__label Достижения
+                    .cabinet-info__text Достижения
+                  .form-item
+                    .cabinet-info__label Должностные обязанности
+                    .cabinet-info__text И нет сомнений, что стремящиеся вытеснить традиционное производство, нанотехнологии объединены в целые кластеры себе подобных.
+
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Аттестация
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Категория
+                    .cabinet-info__text 2 категория
+                  .form-item
+                    .cabinet-info__label Год аттестации
+                    .cabinet-info__text 2016
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Иностранный язык
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Язык
+                    .cabinet-info__text Английский
+                  .form-item
+                    .cabinet-info__label Уровень владения
+                    .cabinet-info__text В1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Язык
+                    .cabinet-info__text Английский
+                  .form-item
+                    .cabinet-info__label Уровень владения
+                    .cabinet-info__text A1
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__lg-2
+                h2.h2-title.h2-title--section Участие в мероприятиях
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Тема мероприятия
+                    .cabinet-info__text Тема мероприятия
+                  .form-item
+                    .cabinet-info__label Статус участника
+                    .cabinet-info__text Статус участника
+                  .form-item
+                    .cabinet-info__label Дата мероприятия
+                    .cabinet-info__text 12.02.2022
+
+              .cabinet-info__lg-2
+                h2.h2-title.h2-title--section Персональные награды
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Присвоенное звание/медаль/другое
+                    .cabinet-info__text Присвоенное звание/медаль/другое
+                  .form-item
+                    .cabinet-info__label Дата присвоения/мероприятия
+                    .cabinet-info__text 12.02.2023
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__lg-2
+                h2.h2-title.h2-title--section Проекты
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Наименование
+                    .cabinet-info__text Наименование
+                  .form-item
+                    .cabinet-info__label Тема
+                    .cabinet-info__text Тема
+                  .form-item
+                    .cabinet-info__label Дата
+                    .cabinet-info__text 12.02.2022
+
+              .cabinet-info__lg-2
+                h2.h2-title.h2-title--section Публикации
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Тема публикации
+                    .cabinet-info__text Тема публикации
+                  .form-item
+                    .cabinet-info__label Ссылка/Место публикации
+                    .cabinet-info__text Ссылка/Место публикации
+                  .form-item
+                    .cabinet-info__label Дата
+                    .cabinet-info__text 12.02.2022
+
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Выступление на научном мероприятии
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Тема мероприятия
+                    .cabinet-info__text Тема мероприятия
+                  .form-item
+                    .cabinet-info__label Тема выступления
+                    .cabinet-info__text Тема выступления
+                .form-item__group
+                  .form-item
+                    .cabinet-info__label Статус участника
+                    .cabinet-info__text Статус участника
+                  .form-item
+                    .cabinet-info__label Дата
+                    .cabinet-info__text 12.02.2022
+
+
+
+
+
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h2.h2-title.h2-title--section Эссе
+            .cabinet-info__row
+              .cabinet-info__md-1
+                h3.h4-title Достижение 1
+                p Современные технологии достигли такого уровня, что высокое качество позиционных исследований позволяет выполнить важные задания по разработке соответствующих условий активизации. <br>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. <br>Противоположная точка зрения подразумевает, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены.
+                h3.h4-title Достижение 2
+                p Современные технологии достигли такого уровня, что высокое качество позиционных исследований позволяет выполнить важные задания по разработке соответствующих условий активизации. <br>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. <br>Противоположная точка зрения подразумевает, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены.
+                h3.h4-title Достижение 3
+                p Современные технологии достигли такого уровня, что высокое качество позиционных исследований позволяет выполнить важные задания по разработке соответствующих условий активизации. <br>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. <br>Противоположная точка зрения подразумевает, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены.
+
+
+            .cabinet-info__bottom
+              .cabinet-info__btns
+                a.btn.btn--border(href="#") Удалить
+                input.btn(type="submit" value="Редактировать")
+
+

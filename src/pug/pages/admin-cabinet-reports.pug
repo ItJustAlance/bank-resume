@@ -1,0 +1,274 @@
+extends ../template-admin
+
+block variables
+  - var title = 'Кабинет админа_отчеты'
+  - var pageClass = 'cabinet-page mode-admin'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__title.h2-title Отчеты
+      .reports-list
+        .report-item-wrap
+          a.report-item.--rep1(href="#")
+            .report-item__title cоискатели
+            .report-item__number 800
+            .report-item__icon
+              img(src="assets/img/report1.svg")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+        .report-item-wrap
+          a.report-item.--rep2(href="#")
+            .report-item__title работодатели
+            .report-item__number 1120
+            .report-item__icon
+              img(src="assets/img/report2.svg")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+        .report-item-wrap
+          a.report-item.--rep3(href="#")
+            .report-item__title резюме
+            .report-item__number 960
+            .report-item__icon
+              img(src="assets/img/report3.svg")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+        .report-item-wrap
+          a.report-item.--rep4(href="#")
+            .report-item__title вакансии
+            .report-item__number 1455
+            .report-item__icon
+              img(src="assets/img/report4.png")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+        .report-item-wrap
+          a.report-item.--rep5(href="#")
+            .report-item__title приглашения
+            .report-item__number 760
+            .report-item__icon
+              img(src="assets/img/report5.svg")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+        .report-item-wrap
+          a.report-item.--rep6(href="#")
+            .report-item__title-cart
+              .icon
+                +icon('filter')
+              | воронка <br>конверсий
+
+            .report-item__icon
+              img(src="assets/img/report6.svg")
+            .report-item__bottom
+              .view-report Смотреть отчеты
+              .link
+                +icon('arrow-up-right')
+
+
+
+
+      .section-chart
+        .chart-item
+          .chart-item__title данные отчета
+          .chart
+            canvas#myChartRed
+          .chart-legend
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #ff879f")
+                .text Данные 1
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #6a1b2b")
+                .text Данные 2
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #ffafbf")
+                .text Данные 3
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #d53656")
+                .text Данные 4
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #ea9aaa")
+                .text Данные 5
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #f1bcc7")
+                .text Данные 6
+        .chart-item
+          .chart-item__title данные отчета
+          .chart
+            canvas#myChartBlue
+          .chart-legend
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #65b2d6")
+                .text Данные 1
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #003e5b")
+                .text Данные 2
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #82d0f3")
+                .text Данные 3
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #007db6")
+                .text Данные 4
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #80caed")
+                .text Данные 5
+            .chart-legend__item-wrap
+              .chart-legend__item
+                .color(style="background-color: #aadcf3")
+                .text Данные 6
+      // #myChart(style="width: 100%; height: 300px")
+
+      script(type="text/javascript" defer).
+        window.addEventListener('load', () => {
+
+          Chart.register(ChartDataLabels);
+
+          var ctx = document.getElementById("myChartRed");
+
+          function formatRate(rate) {
+            if (rate !== null && rate !== undefined) {
+              return rate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            } else return "0";
+          }
+
+          var data = {
+            datasets: [
+              {
+                data: [31, 5, 4, 20, 20, 25],
+                label: "Статистика",
+                labels: ['Данные 1', 'Данные 2', 'Данные 3', 'Данные 4', 'Данные 5', 'Данные 6'],
+                backgroundColor: [
+                  '#ff879f',
+                  '#6a1b2b',
+                  '#ffafbf',
+                  '#d53656',
+                  '#ea9aaa',
+                  '#f1bcc7'
+                ],
+                //weight:1.3,
+                datalabels: {
+                  color: "white",
+                  textAlign: "center",
+                  font: {
+                    size: 14,
+                    // weight:'bold'
+                  },
+                  display: true, // Set to true to display the labels
+                  formatter: function (value, ctx) {
+                    var index = ctx.dataIndex;
+                    var label = ctx.dataset.labels[index];
+                    //return  `${label.replace('Q', 'Quarter')}\n${formatRate(value)}`;
+                    return `${formatRate(value)}%`;
+                  }
+
+                }
+              },
+
+            ]
+          };
+
+          var options = {
+            plugins: {},
+            layout: {}
+          };
+
+          const plugins = [];
+
+          var pieChart = new Chart(ctx, {
+            type: "doughnut",
+            data: data,
+            plugins: plugins,
+            options: options
+          });
+        });
+
+
+      script(type="text/javascript" defer).
+        window.addEventListener('load', () => {
+
+          Chart.register(ChartDataLabels);
+
+          var ctx = document.getElementById("myChartBlue");
+
+          function formatRate(rate) {
+            if (rate !== null && rate !== undefined) {
+              return rate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            } else return "0";
+          }
+
+          var data = {
+            datasets: [
+              {
+                data: [31, 5, 4, 20, 20, 25],
+                label: "Статистика",
+                labels: ['Данные 1', 'Данные 2', 'Данные 3', 'Данные 4', 'Данные 5', 'Данные 6'],
+                backgroundColor: [
+                  '#65b2d6',
+                  '#003e5b',
+                  '#82d0f3',
+                  '#007db6',
+                  '#80caed',
+                  '#aadcf3'
+                ],
+                //weight:1.3,
+                datalabels: {
+                  color: "white",
+                  textAlign: "center",
+                  font: {
+                    size: 14,
+                    // weight:'bold'
+                  },
+                  display: true, // Set to true to display the labels
+                  formatter: function (value, ctx) {
+                    var index = ctx.dataIndex;
+                    var label = ctx.dataset.labels[index];
+                    //return  `${label.replace('Q', 'Quarter')}\n${formatRate(value)}`;
+                    return `${formatRate(value)}%`;
+                  }
+
+                }
+              },
+
+            ]
+          };
+
+          var options = {
+            plugins: {},
+            layout: {}
+          };
+
+          const plugins = [];
+
+          var pieChart = new Chart(ctx, {
+            type: "doughnut",
+            data: data,
+            plugins: plugins,
+            options: options
+          });
+        });
+

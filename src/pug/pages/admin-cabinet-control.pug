@@ -1,0 +1,533 @@
+extends ../template-admin
+
+block variables
+  - var title = 'Кабинет админа_Управление'
+  - var pageClass = 'cabinet-page mode-admin'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title Управление
+
+        .cabinet-header__row
+          .cabinet-header__tabs
+            .cabinet-header__tab-item.active
+              a.cabinet-header__tab-item__link(href="#") Соискатели
+                span.highlight 5
+            .cabinet-header__tab-item
+              a.cabinet-header__tab-item__link(href="#") Работодатели
+                span.highlight 5
+          .cabinet-header__right.--md-align-left
+            .b-btns
+              a.btn.btn--xs-full(href="#")
+                span.svg-icon
+                  +icon('plus')
+                span.btn-label Добавить пользователя
+        .cabinet-header__row
+          .cabinet-header__search.--search-left.--md-w100
+            .b-pole
+              input.input.pole-search(type="text" placeholder="ID, ссылка, название")
+            .cabinet-header__search-btns
+              input.btn(value="Найти" type="submit")
+
+          .cabinet-header__filters.--filters-right.--md-w100
+            .drop.drop-filter.--btn-filter.--md-ml-a.js-drop
+              .drop__label.js-drop__label
+                +icon('filter')
+              .drop__dropdown
+                .drop__dropdown-wrapper
+                  .drop-filter__box
+                    .drop-filter__header
+                      .drop-filter__header-title Сортировка
+                      .drop-filter__header-btns
+                        button.btn.btn--link
+                          span.svg-icon.--sm-visible
+                            +icon('save')
+                          span.btn-label.--sm-invisible Сохранить
+                        button.btn.btn--link
+                          span.svg-icon.--sm-visible
+                            +icon('trash-2')
+                          span.btn-label.--sm-invisible Очистить
+
+                    .drop-filter__body
+                      .drop-filter-item.js-faq-wrapper
+                        .drop-filter-item__toggle.js-faq-toggler
+                          .drop-filter-item__title
+                            .title-ico
+                              +icon('map-pin')
+                            .title-text Место работы
+                          .faq-item__ico
+                            .ic-down
+                              +icon('chevron-down')
+                            .ic-up
+                              +icon('chevron-up')
+                        .drop-filter__desc.js-faq-desq
+                          .sorts-list
+                            button.sort-item
+                              .icon
+                                +icon('arrow-up')
+                              .text А – Я
+                            button.sort-item
+                              .icon
+                                +icon('arrow-down')
+                              .text Я – А
+                      .drop-filter-item.js-faq-wrapper
+                        .drop-filter-item__toggle.js-faq-toggler
+                          .drop-filter-item__title
+                            .title-ico
+                              +icon('calendar')
+                            .title-text Дата последней авторизации
+                          .faq-item__ico
+                            .ic-down
+                              +icon('chevron-down')
+                            .ic-up
+                              +icon('chevron-up')
+                        .drop-filter__desc.js-faq-desq
+                          .calendar-input
+                            input.input.datepicker-range.--gray-90.js-datepicker-range(type="text" placeholder="ДД-ММ-ГГГГ")
+                  .drop-filter__box
+                    .drop-filter__header
+                      .drop-filter__header-title Фильтр
+
+
+                    .drop-filter__body
+                      .drop-filter-item.js-faq-wrapper
+                        .drop-filter-item__toggle.js-faq-toggler
+                          .drop-filter-item__title
+                            .title-ico
+                              +icon('log-in')
+                            .title-text Способ авторизации
+                          .faq-item__ico
+                            .ic-down
+                              +icon('chevron-down')
+                            .ic-up
+                              +icon('chevron-up')
+                        .drop-filter__desc.js-faq-desq
+                          .sorts-list
+                            .sort-item
+                              .text ДПО
+                            .sort-item
+                              .text Банк резюме
+
+
+
+
+
+      .cabinet-content
+        .table-control.table-wrapper.--lg-hidden
+          table.table
+            tr
+              th
+                .b-checkbox
+                  input(type="checkbox" id="f1")
+                  label.b-checkbox__label(for="f1")
+                    span.checked
+                      +icon('check')
+              th
+                .th-label ФИО
+              th
+                .th-label ID
+              th
+                .th-label Место работы
+              th
+                .th-label Дата посл. авторизации
+              th
+                .th-label Способ авторизации
+              th
+                .th-label Действия
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color.--red  ДПО
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color.--red  ДПО
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color.--red  ДПО
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color.--red  ДПО
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color.--red  ДПО
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color  Банк резюме
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color  Банк резюме
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color  Банк резюме
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color  Банк резюме
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+            tr
+              td
+                .b-checkbox
+                  input(type="checkbox" id="ff1")
+                  label.b-checkbox__label(for="ff1")
+                    span.checked
+                      +icon('check')
+              td
+                .td-label Иванова Анна Андреевна
+              td
+                .td-label
+                  a(href="#") 894523
+              td
+                .td-label УО «Средняя школа №1»
+              td
+                .td-label 10.05.2023
+              td
+                .td-label
+                  .label-color  Банк резюме
+              td
+                .td-label
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                    +icon('edit-2')
+                  button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                    +icon('trash-2')
+
+      .mobile-table-list
+        .mobile-table.--lg-invisible
+          .row-th
+            .col.col-1
+              .col-wrap ФИО
+            .col.col-2
+              .col-wrap ID
+          .row-td.--td-blue
+            .col.col-1
+              .col-wrap
+                strong Иванова Анна Андреевна
+            .col.col-2
+              .col-wrap
+                a(href="#") 894523
+          .row-td
+            .col.col-1
+              .col-wrap Место работы
+            .col.col-2
+              .col-wrap УО «Средняя школа №1»
+          .row-td
+            .col.col-1
+              .col-wrap Дата посл. авторизации.
+            .col.col-2
+              .col-wrap 10.07.2023
+          .row-td
+            .col.col-1
+              .col-wrap Способ авторизации
+            .col.col-2
+              .col-wrap
+                .label-color  Банк резюме
+
+          .row-td
+            .col.col-1
+              .col-wrap Действия
+            .col.col-2
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                  +icon('trash-2')
+        .mobile-table.--lg-invisible
+          .row-th
+            .col.col-1
+              .col-wrap ФИО
+            .col.col-2
+              .col-wrap ID
+          .row-td.--td-blue
+            .col.col-1
+              .col-wrap
+                strong Иванова Анна Андреевна
+            .col.col-2
+              .col-wrap
+                a(href="#") 894523
+          .row-td
+            .col.col-1
+              .col-wrap Место работы
+            .col.col-2
+              .col-wrap УО «Средняя школа №1»
+          .row-td
+            .col.col-1
+              .col-wrap Дата посл. авторизации.
+            .col.col-2
+              .col-wrap 10.07.2023
+          .row-td
+            .col.col-1
+              .col-wrap Способ авторизации
+            .col.col-2
+              .col-wrap
+                .label-color  Банк резюме
+
+          .row-td
+            .col.col-1
+              .col-wrap Действия
+            .col.col-2
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                  +icon('trash-2')
+        .mobile-table.--lg-invisible
+          .row-th
+            .col.col-1
+              .col-wrap ФИО
+            .col.col-2
+              .col-wrap ID
+          .row-td.--td-blue
+            .col.col-1
+              .col-wrap
+                strong Иванова Анна Андреевна
+            .col.col-2
+              .col-wrap
+                a(href="#") 894523
+          .row-td
+            .col.col-1
+              .col-wrap Место работы
+            .col.col-2
+              .col-wrap УО «Средняя школа №1»
+          .row-td
+            .col.col-1
+              .col-wrap Дата посл. авторизации.
+            .col.col-2
+              .col-wrap 10.07.2023
+          .row-td
+            .col.col-1
+              .col-wrap Способ авторизации
+            .col.col-2
+              .col-wrap
+                .label-color  Банк резюме
+
+          .row-td
+            .col.col-1
+              .col-wrap Действия
+            .col.col-2
+              .col-wrap
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Изменить")
+                  +icon('edit-2')
+                button.btn.btn--border.btn-small.btn-tooltip.js-btn-tooltip(data-tooltip="Удалить")
+                  +icon('trash-2')
+
+
+    .pagination-section
+      ul.pagination.--md-center
+        li.pagination__item.arr-prev
+          a.link.arr(href="#")
+            +icon('chevron-left')
+        li.pagination__item
+          a.link.active(href="#") 1
+        li.pagination__item
+          a.link(href="#") 2
+        li.pagination__item
+          a.link(href="#") 3
+        li.pagination__item
+          span.link ...
+        li.pagination__item
+          a.link(href="#") 10
+        li.pagination__item.arr-next
+          a.link.arr(href="#")
+            +icon('chevron-right')

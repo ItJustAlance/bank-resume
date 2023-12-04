@@ -52,25 +52,92 @@ header.header
       span.burger-btn__line
       span.burger-btn__line
       span.burger-btn__line
-  .mobile-menu
-    .mobile-menu__overlay
-    .mobile-menu__wrapper
-      .mobile-menu__header
-        nav.mobile-menu__nav
-          ul.mobile-menu__nav-list
-            li
-              a.btn(href="#") Выход
+  if(isAdmin)
+    .mobile-menu
+      .mobile-menu__overlay
+      .mobile-menu__wrapper
+        .mobile-menu__header
+          .header-auth__ava
+            a(href="#")
+              img(src="assets/img/mini-ava.png")
 
-      .mobile-menu__content
-        ul.menu-links
-          li
-            a(href="#") Пользовательское соглашение
-          li
-            a(href="#") Правовая информация
-          li
-            a(href="#") Контакты
-          li
-            a(href="#") Помощь (FAQ)
-          li
-            a.link-support(href="#") Служба поддержки
+        .mobile-menu__content
+          ul.menu-links.menu-levels
+            li.menu-item
+              span.link-submenu.js-btn-submenu
+                span.link-submenu__label Вакансии
+                span.link-submenu__icon
+                  +icon('chevron-down')
+              ul.submenu.js-submenu
+                li
+                  a(href="#") Правовая информация
+                li
+                  a(href="#") Контакты
+            li.menu-item
+              span.link-submenu.js-btn-submenu
+                span.link-submenu__label Резюме
+                span.link-submenu__icon
+                  +icon('chevron-down')
+              ul.submenu.js-submenu
+                li
+                  a(href="#") Правовая информация
+                li
+                  a(href="#") Контакты
+            li.menu-item
+              span.link-submenu.js-btn-submenu
+                span.link-submenu__label Отчеты
+                span.link-submenu__icon
+                  +icon('chevron-down')
+              ul.submenu.js-submenu
+                li
+                  a(href="#") Резюме
+                li
+                  a(href="#") Соискатели
+                li
+                  a(href="#") Работодатели
+                li
+                  a(href="#") Вакансии
+                li
+                  a(href="#") Приглашения
+                li
+                  a(href="#") Предложения о работе
+                li
+                  a(href="#") Организации
+                li
+                  a(href="#") Обратились повторно
+                li
+                  a(href="#") Конверсия этапов подбора
+
+
+            li
+              a(href="#") Помощь (FAQ)
+            li
+              a.link-support(href="#") Служба поддержки
+        .mobile-menu__footer
+          nav.mobile-menu__nav
+            ul.mobile-menu__nav-list
+              li
+                a.btn(href="#") Выход
+  else
+    .mobile-menu
+      .mobile-menu__overlay
+      .mobile-menu__wrapper
+        .mobile-menu__header
+          nav.mobile-menu__nav
+            ul.mobile-menu__nav-list
+              li
+                a.btn(href="#") Выход
+
+        .mobile-menu__content
+          ul.menu-links
+            li
+              a(href="#") Пользовательское соглашение
+            li
+              a(href="#") Правовая информация
+            li
+              a(href="#") Контакты
+            li
+              a(href="#") Помощь (FAQ)
+            li
+              a.link-support(href="#") Служба поддержки
 

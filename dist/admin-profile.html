@@ -9,7 +9,7 @@
     <meta name="keywords" content="some keyword">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link href="assets/css/app.css" rel="stylesheet"></head>
-  <body class="cabinet-page">
+  <body class="cabinet-page mode-admin">
     <div class="over">
       <header class="header">
         <div class="all">
@@ -85,7 +85,7 @@
                   <div class="cabinet-ava-img active"><img src="assets/img/ava.png"></div>
                 </div>
               </div>
-              <div class="cabinet-fio h2-title">иванова анна андреевна</div>
+              <div class="cabinet-fio h2-title">администратор</div>
             </div>
             <div class="cabinet-content">
               <div class="cabinet-info">
@@ -147,14 +147,6 @@
                       <div class="form-item">
                         <div class="cabinet-info__label">СНИЛС</div>
                         <div class="cabinet-info__text">ХХХ-ХХХ-ХХХ YY</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cabinet-info__row --x2">
-                    <div class="cabinet-info__md-1">
-                      <div class="form-item">
-                        <div class="cabinet-info__label">Готовность к переезду</div>
-                        <div class="cabinet-info__text">Не готова</div>
                       </div>
                     </div>
                   </div>
@@ -435,6 +427,10 @@
             <div class="admin-panel-second__wrapper">
               <ul class="admin-menu">
                 <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--plus">
+                      <use xlink:href="assets/img/sprite.svg#icon-plus"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
                     <svg class="svg-icon svg-icon--file-text">
                       <use xlink:href="assets/img/sprite.svg#icon-file-text"></use>
                     </svg></a></li>
@@ -481,6 +477,7 @@
       </div>
     </div>
     <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")-->
-    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
   <script type="text/javascript" src="assets/js/vendors~app.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
 </html>

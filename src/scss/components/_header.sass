@@ -144,14 +144,16 @@
     right: -101vw
     width: 87%
     max-width: 400px
-    padding: 40px 32px
+    padding: 40px 32px 40px 0
     display: flex
     gap: 40px
     background: $baseBg
     border-radius: 0 0 0 16px
     flex-direction: column
     transition: all .5s ease
-
+    max-height: calc(100% - 57px)
+    +r($xss)
+      width: 100%
   &__nav
     &-list
       display: flex
@@ -160,18 +162,69 @@
       li
         a.btn
           display: block
+  &__header
+    padding-left: 32px
+    +r($xss)
+      padding-left: 12px
   &__content
+    flex: 1 1 auto
+    overflow: auto
+    padding-left: 32px
+    +r($xss)
+      padding-left: 12px
   .menu-links
     display: flex
     flex-direction: column
     gap: 24px
+    font-weight: 500
     li
       a
         color: $clrGrey90
         &.link-support
           color: $clrPrimaryMain
           text-decoration: underline
+  .menu-levels
+    margin-left: -12px
+  .open-submenu
+    border-color: $clrPrimaryMain
+    color: $clrPrimaryMain
+    .link-submenu
+      &__icon
+        transform: rotate(0deg)
+        top: 5px
+  .link-submenu
+    display: inline-block
+    vertical-align: top
+    position: relative
+    border-left: 3px solid $clrPrimaryMain
+    &__label
+      display: inline-block
+      vertical-align: top
 
+      padding: 3px 22px 3px 11px
+    &__icon
+      position: absolute
+      top: 4px
+      right: 0
+      transform: rotate(-90deg)
+      .svg-icon
+        width: 18px
+        height: 18px
+    ul
+      font-weight: 400
+  .submenu
+    padding-top: 15px
+    display: none
+    li
+      display: block
+      padding-left: 18px
+      &+li
+        margin-top: 15px
+  &__footer
+    padding-top: 20px
+    padding-left: 32px
+    +r($xss)
+      padding-left: 12px
 .open-menu
   .mobile-menu
     left: 0

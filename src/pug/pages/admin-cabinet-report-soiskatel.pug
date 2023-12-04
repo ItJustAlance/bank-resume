@@ -1,0 +1,493 @@
+extends ../template-admin
+
+block variables
+  - var title = 'Кабинет админа_ Отчет подробно'
+  - var pageClass = 'cabinet-page mode-admin'
+  - var headerAuth = true
+  - var keywords = 'some keyword'
+  - var description = 'some description'
+  - var mainClass = 'main--office'
+  - var isAdmin = true
+
+block content
+  .all
+    .cabinet
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left
+            .cabinet-header__title.h2-title Отчет: соискатели
+      .cabinet-header.--sm-pb12
+        .cabinet-header__row
+          .cabinet-header__dates
+            .date-first
+              .form-item
+                label.label Дата начала
+                input.input.datepicker(type="text" placeholder="MMММ-ГГГГ")
+            .date-last
+              .form-item
+                label.label Дата окончания
+                input.input.datepicker(type="text" placeholder="МMMМ-ГГГГ")
+      .cabinet-header
+        .cabinet-header__row
+          .cabinet-header__left.--sm-pr0
+            .drop-select.js-drop-select.--sm-w100
+              .drop-select__label.js-drop-select__label
+                | География
+              .drop-select__arrow
+                +icon('chevron-down')
+              .drop-select__dropdown
+                .drop-select__dropdown-wrapper
+                  ul
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r1")
+                        label.b-radio__label(for="r1")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="География") География
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r2")
+                        label.b-radio__label(for="r2")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="Специальности") Специальности
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r3")
+                        label.b-radio__label(for="r3")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="Должности") Должности
+                    li.drop-select__item
+                      .b-radio.b-radio--blue
+                        input(type="radio" name="m1" id="r4")
+                        label.b-radio__label(for="r4")
+                          span.checked
+                          span.b-radio__text.js-drop-select__val(data-label="Квалиф. категории") Квалиф. категории
+
+
+
+          .cabinet-header__right.--md-align-left
+            .b-btns
+              a.btn.btn--md-full(href="#")
+                span.btn-label Выгрузить в XLS
+
+
+      .cabinet-content
+        .table-control.table-report.table-wrapper.--lg-hidden
+          .table-min-wrapper
+            table.table
+              tr
+                th.col-geo
+                  .th-label География
+                th.t-center
+                  .th-label Всего
+                th
+                  .th-label Активные
+                th
+                  .th-label Новые
+                th
+                  .th-label Жен.
+                th
+                  .th-label Муж.
+                th
+                  .th-label Сред.спец.
+                th
+                  .th-label Высшее
+                th
+                  .th-label Науч.степень
+                th
+                  .th-label до 50 т.р.
+                th
+                  .th-label 50 – 90 т.р.
+                th
+                  .th-label 90 – 120 т.р.
+                th
+                  .th-label от 120 т.р.
+
+
+
+              tr
+                td.col-geo
+                  .td-label Центральный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Северный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Северо-Восточный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Восточный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Юго-Восточный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4326
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 37
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Южный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 3279
+                td
+                  .td-label 322
+                td
+                  .td-label 38
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Юго-Западный
+                td.t-center
+                  .td-label 122
+                td
+                  .td-label 4324242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 31
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Западный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 43242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 32332
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Северо-Западный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 43242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 32332
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+              tr
+                td.col-geo
+                  .td-label Зеленоградный
+                td.t-center
+                  .td-label 123222
+                td
+                  .td-label 43242
+                td
+                  .td-label 333
+                td
+                  .td-label 44
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 32332
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+                td
+                  .td-label 322
+
+
+
+
+      .mobile-table-list
+        .mobile-table.table-report.--lg-visible
+          .row-th
+            .col.col-1
+              .col-wrap География
+            .col.col-2_3
+              .col-wrap Всего
+            .col.col-2_3
+              .col-wrap Актив.
+            .col.col-2_3
+              .col-wrap Нов.
+          .row-td.--td-blue
+            .col.col-1
+              .col-wrap
+                strong Центральный
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap 160
+            .col.col-2_3
+              .col-wrap 40
+          .row-td
+            .col.col-1
+              .col-wrap Жен.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap Муж.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap Сред.спец.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap Высшее
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap Науч.степень
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap до 50 т.р.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap 50 – 90 т.р.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap 90 – 120 т.р.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+          .row-td
+            .col.col-1
+              .col-wrap от 120 т.р.
+
+            .col.col-2_3
+              .col-wrap 200
+            .col.col-2_3
+              .col-wrap
+            .col.col-2_3
+              .col-wrap
+

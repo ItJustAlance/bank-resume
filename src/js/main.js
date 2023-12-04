@@ -100,7 +100,7 @@ window.addEventListener('load', () => {
     };
   });
 
-  $('.datepicker-range').daterangepicker({
+  $('.js-datepicker-range').daterangepicker({
     "showDropdowns": true,
     "minYear": 2000,
     "maxYear": 2025,
@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
     "linkedCalendars": true,
     "showCustomRangeLabel": true,
   }, function(start, end, label) {
-    console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+
   });
   $('.datepicker').daterangepicker({
     "showDropdowns": true,
@@ -152,6 +152,49 @@ window.addEventListener('load', () => {
     "drops": "auto",
     "locale": {
       "format": "MM/DD/YYYY",
+      "separator": " - ",
+      "applyLabel": "Сохранить",
+      "cancelLabel": "Отмена",
+      "fromLabel": "From",
+      "toLabel": "To",
+      "customRangeLabel": "Custom",
+      "weekLabel": "W",
+      "daysOfWeek": [
+        "Пн",
+        "Вт",
+        "Ср",
+        "Чт",
+        "Пт",
+        "Сб",
+        "Вс"
+      ],
+      "monthNames": [
+        "Январь",
+        "Февраль",
+        "Март",
+        "Апрель",
+        "Май",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "Октябрь",
+        "Ноябрь",
+        "Декабрь"
+      ],
+      "firstDay": 1
+    },
+    "linkedCalendars": true,
+    "showCustomRangeLabel": false,
+  });
+  $('.js-datepickermonth').daterangepicker({
+    "showDropdowns": true,
+    "singleDatePicker": true,
+    "minYear": 2000,
+    "maxYear": 2025,
+    "drops": "auto",
+    "locale": {
+      "format": "MM/YYYY",
       "separator": " - ",
       "applyLabel": "Сохранить",
       "cancelLabel": "Отмена",
@@ -216,4 +259,105 @@ window.addEventListener('load', () => {
     $(".admin-panel").toggleClass("open")
     return false
   });
+
+
+  /*** mobile menu ***/
+
+  $(".js-btn-submenu").on("click", function (){
+    $(this).toggleClass("open-submenu")
+    $(this).next(".js-submenu").slideToggle()
+    return false
+  });
+
+
 });
+
+
+
+
+
+/*** CHART ***/
+// $(function () {
+//
+//   Chart.register(ChartDataLabels);
+//
+//   var ctx = document.getElementById("myChart");
+//
+//   function formatRate(rate) {
+//     if (rate !== null && rate !== undefined) {
+//       return rate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+//     }
+//     else return "0";
+//   }
+//
+//   var data = {
+//     datasets: [
+//       {
+//         data: [31, 5, 4, 20, 20, 25],
+//         label: "Статистика",
+//         labels: ['Данные 1', 'Данные 2', 'Данные 3', 'Данные 4', 'Данные 5', 'Данные 6'],
+//         backgroundColor: [
+//           '#ff879f',
+//           '#6a1b2b',
+//           '#ffafbf',
+//           '#d53656',
+//           '#ea9aaa',
+//           '#f1bcc7'
+//         ],
+//         //weight:1.3,
+//         datalabels: {
+//           color: "white",
+//           textAlign: "center",
+//           font:{
+//             size: 14,
+//             // weight:'bold'
+//           },
+//           display: true, // Set to true to display the labels
+//           formatter: function (value, ctx) {
+//             var index = ctx.dataIndex;
+//             var label = ctx.dataset.labels[index];
+//             //return  `${label.replace('Q', 'Quarter')}\n${formatRate(value)}`;
+//             return  `${formatRate(value)}%`;
+//           }
+//
+//         }
+//       },
+//
+//     ]
+//   };
+//
+//   var options = {
+//     plugins:{
+//     },
+//     layout: {
+//     }
+//   };
+//
+//   const plugins = [];
+//
+//   var pieChart = new Chart(ctx, {
+//     type: "doughnut",
+//     data: data,
+//     plugins: plugins,
+//     options: options
+//   });
+// });
+//
+// /** type: 'doughnut',
+//  labels: [
+//  'Red',
+//  'Blue',
+//  'Yellow'
+//  ],
+//  datasets: [{
+//  label: 'My First Dataset',
+//  data: [300, 50, 100],
+//  backgroundColor: [
+//  'rgb(255, 99, 132)',
+//  'rgb(54, 162, 235)',
+//  'rgb(255, 205, 86)'
+//  ],
+//  hoverOffset: 4
+//  }]
+//  });
+// **/

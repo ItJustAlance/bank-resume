@@ -2,7 +2,7 @@ extends ../template-admin
 
 block variables
   - var title = 'Кабинет админа_ профиль'
-  - var pageClass = 'cabinet-page'
+  - var pageClass = 'cabinet-page mode-admin'
   - var headerAuth = true
   - var keywords = 'some keyword'
   - var description = 'some description'
@@ -16,7 +16,7 @@ block content
           .cabinet-ava
             .cabinet-ava-img.active
               img(src="assets/img/ava.png")
-        .cabinet-fio.h2-title иванова анна андреевна
+        .cabinet-fio.h2-title администратор
       .cabinet-content
         .cabinet-info
           .cabinet-info__section
@@ -58,11 +58,7 @@ block content
                 .form-item
                   .cabinet-info__label СНИЛС
                   .cabinet-info__text ХХХ-ХХХ-ХХХ YY
-            .cabinet-info__row.--x2
-              .cabinet-info__md-1
-                .form-item
-                  .cabinet-info__label Готовность к переезду
-                  .cabinet-info__text Не готова
+
             .cabinet-info__row.--x2
               .cabinet-info__md-1
                 .form-item

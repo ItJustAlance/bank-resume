@@ -98,6 +98,9 @@
     padding-bottom: 40px
     +r($sm)
       padding-bottom: 32px
+    &.--sm-pb12
+      +r($sm)
+        padding-bottom: 12px
     .mobile-filter
       color: #fff
       display: none
@@ -110,17 +113,33 @@
           justify-content: center
           &.active
             background: $clrPrimaryPressed
+    &__dates
+      display: flex
+      gap: 12px
+      +r($sm)
+        flex-wrap: wrap
+        .date-first, .date-last
+          width: 100%
 
+      .form-item
+        .label
+          margin-bottom: 4px
+          font-weight: 500
+          display: block
     &__search
       padding-top: 32px
       display: flex
       gap: 18px
+      &.--search-left
+        width: 50%
       +r($sm)
         flex-wrap: wrap
+      &.--md-w100
+        width: 100%
       .b-pole
         flex: 1 1 auto
         +r($sm)
-          max-width: calc(100% - 64px)
+          // max-width: calc(100% - 64px)
       .pole-search
         background: url(../img/search.svg) 12px 50% no-repeat
         padding-left: 38px
@@ -140,6 +159,11 @@
       display: flex
       align-items: center
       gap: 18px
+      &.--md-w100
+        +r($md)
+          width: 100%
+      &.--filters-right
+        margin-left: auto
       +r($md)
         flex-wrap: wrap
         justify-content: space-between
@@ -182,6 +206,48 @@
         background: #F4F9FB
         color: $clrGrey80
         border-radius: 50%
+    &__tabs
+      display: flex
+      padding-top: 12px
+      font-size: 18px
+      font-weight: 600
+      +r($md)
+        width: 100%
+        margin-bottom: 32px
+        font-size: 15px
+        font-weight: 500
+    &__tab-item
+      display: inline-flex
+      align-items: center
+      vertical-align: top
+      color: #000
+      margin-right: 24px
+
+      &.active
+        .cabinet-header__tab-item__link
+          border-bottom: 3px solid $clrPrimaryMain
+          color: $clrPrimaryMain
+      &__link
+        display: flex
+        align-items: center
+        padding-bottom: 10px
+        color: $clrGrey60
+        border-bottom: 3px solid rgba(255,255,255, 0)
+      +r($md)
+        margin-right: 12px
+      .highlight
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        vertical-align: top
+        margin-left: 4px
+        width: 30px
+        height: 30px
+        background: #F4F9FB
+        color: $clrGrey80
+        border-radius: 50%
+        font-size: 15px
+        font-weight: 400
     &__row
       display: flex
       flex-wrap: wrap
@@ -208,6 +274,9 @@
     &__left
       padding-right: 20px
       max-width: 400px
+      &.--sm-pr0
+        +r($sm)
+          padding-right: 0
       &.--md-6
         max-width: 50%
         +r($md)
@@ -267,6 +336,9 @@
         justify-content: flex-end
       &.algin-start
         align-items: flex-start
+      &.--md-align-left
+        +r($md)
+          justify-content: flex-start
       &.--md-7
         flex: 0 0 58.333%
         max-width: 58.333%
@@ -1010,7 +1082,7 @@
     margin-bottom: 0
   .row-th
     background: $baseBg
-    border-radius: 16px 16px 0
+    border-radius: 16px 16px 0 0
     display: flex
     font-weight: 500
   .row-td
@@ -1050,3 +1122,27 @@
       +r($xss)
       flex-wrap: wrap
   &__body
+
+.table-control
+  margin-bottom: 80px
+
+.table-report
+  font-size: 12px
+  overflow: auto
+  max-width: calc(100vw - 134px)
+  +r($lg)
+    max-width: 300%
+  .table-min-wrapper
+    min-width: 1100px
+  th
+    text-align: right
+  .th-label
+    color: $clrGrey50
+  td
+    font-size: 15px
+    text-align: right
+  .t-center
+    text-align: center
+  .col-geo
+    text-align: left
+    width: 190px
