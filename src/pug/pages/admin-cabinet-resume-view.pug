@@ -7,13 +7,14 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
+  - var isAdmin = true
 
 block content
   .all
     .cabinet
       .cabinet-header
         .cabinet-header__row
-          .cabinet-header__left
+          .cabinet-header__left.--max-350
             .cabinet-header__title.h2-title просмотр резюме
             .cabinet-header__subtitle преподаватель географии
             .cabinet-header__date Опубликовано 1 июля 2023
@@ -70,6 +71,11 @@ block content
               .cabinet-info__lg-2
                 .form-item__group
                   .form-item
+                    .cabinet-info__label ID
+                    .cabinet-info__text
+                      strong
+                        a(href="#") 895623
+                  .form-item
                     .cabinet-info__label Возраст
                     .cabinet-info__text 29 лет
                   .form-item
@@ -113,7 +119,7 @@ block content
                 h2.h2-title.h2-title--section Желаемое место работы
             .cabinet-info__row
               .cabinet-info__lg-2
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Желаемая позиция
                     .cabinet-info__text Преподаватель географии
@@ -141,7 +147,7 @@ block content
                 h2.h2-title.h2-title--section Основное образование
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label ВУЗ/СПО
                     .cabinet-info__text Московский городской падгогический университет
@@ -172,7 +178,7 @@ block content
                 h2.h2-title.h2-title--section Дополнительное образование
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Образовательная организация
                     .cabinet-info__text Московский городской падгогический университет
@@ -189,7 +195,7 @@ block content
                 h2.h2-title.h2-title--section карьера
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Стаж
                     .cabinet-info__text Стаж
@@ -216,7 +222,7 @@ block content
                 h2.h2-title.h2-title--section Аттестация
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Категория
                     .cabinet-info__text 2 категория
@@ -230,7 +236,7 @@ block content
                 h2.h2-title.h2-title--section Иностранный язык
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Язык
                     .cabinet-info__text Английский
@@ -249,7 +255,7 @@ block content
             .cabinet-info__row
               .cabinet-info__lg-2
                 h2.h2-title.h2-title--section Участие в мероприятиях
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Тема мероприятия
                     .cabinet-info__text Тема мероприятия
@@ -262,7 +268,7 @@ block content
 
               .cabinet-info__lg-2
                 h2.h2-title.h2-title--section Персональные награды
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Присвоенное звание/медаль/другое
                     .cabinet-info__text Присвоенное звание/медаль/другое
@@ -273,7 +279,7 @@ block content
             .cabinet-info__row
               .cabinet-info__lg-2
                 h2.h2-title.h2-title--section Проекты
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Наименование
                     .cabinet-info__text Наименование
@@ -286,7 +292,7 @@ block content
 
               .cabinet-info__lg-2
                 h2.h2-title.h2-title--section Публикации
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Тема публикации
                     .cabinet-info__text Тема публикации
@@ -304,7 +310,7 @@ block content
                 h2.h2-title.h2-title--section Выступление на научном мероприятии
             .cabinet-info__row
               .cabinet-info__md-1
-                .form-item__group
+                .form-item__group.--md-border-no
                   .form-item
                     .cabinet-info__label Тема мероприятия
                     .cabinet-info__text Тема мероприятия

@@ -7,6 +7,7 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
+  - var isAdmin = true
 
 block content
   .all
@@ -34,7 +35,7 @@ block content
             .box-wrapper
               .cabinet-header
                 .cabinet-header__row
-                  .cabinet-header__title.h3-title Основная информация
+                  .cabinet-header__title.h3-title.--md-hidden Основная информация
                 .cabinet-ava-wrapper
                   .cabinet-ava
                     .cabinet-ava-img
@@ -50,6 +51,11 @@ block content
               .cabinet-content
                 .cabinet-edit.form-form
                   .cabinet-edit__section
+                    .cabinet-edit__row
+                      .cabinet-edit__col-md-1
+                        .form-item
+                          strong
+                            a(href="#") ID 895623
                     .cabinet-edit__row
                       .cabinet-edit__col-md-1
                         .form-item
@@ -432,11 +438,8 @@ block content
                       .b-editor
                         textarea.textarea
     .cabinet-info__bottom
-      .cabinet-info__error
-        | Вы зарегистрированы через портал ДПО. <br>
-        | Чтобы изменить данные, перейдите на сайт портала ДПО.
       .cabinet-info__btns.--center
-        a.btn.btn--border.btn--border__red.btn--md-full(href="#") Отменить
-        a.btn.btn--border.btn--md-full(href="#") Сохранить как черновик
-        input.btn.btn--md-full(type="submit"  value="Сохранить и опубликовать")
+        a.btn.btn--border.btn--border__red.btn--md-full.md-order-2(href="#") Отменить
+        a.btn.btn--border.btn--md-full.md-order-1(href="#") Сохранить как черновик
+        input.btn.btn--md-full.md-order-0(type="submit"  value="Сохранить и опубликовать")
 

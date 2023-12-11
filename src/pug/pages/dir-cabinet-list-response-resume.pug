@@ -7,14 +7,15 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
+  - var director = true
 
 block content
   .all
     .cabinet
       .cabinet-header
         .cabinet-header__row
-          .cabinet-header__left
-            .cabinet-header__title.h2-title каталог вакансий
+          .cabinet-header__left.--md-6
+            .cabinet-header__title.h2-title Отклики на вакансию
             .cabinet-header__subtitle преподаватель истории
           .cabinet-header__right.--md-4.just-right
             .b-btns
@@ -51,13 +52,13 @@ block content
           .mobile-filter
             button.btn.js-filter-toggler__btn
               +icon('sliders')
-          .cabinet-header__search-btns
+          .cabinet-header__search-btns.--md-hidden
             input.btn(value="Найти" type="submit")
-            button.btn.btn--border Сохранить поиск
+
 
       .cabinet-wrapper
         .cabinet-content
-          .cabinet__list
+          .cabinet__list.--response
             .cabinet__card__wrapper.cabinet__card--smd
               .cabinet__card.cabinet__card--catalog
                 .cabinet__card__header.--md-reverse
@@ -86,41 +87,7 @@ block content
                 .cabinet__card__footer
                   .b-left
                     .b-btns
-                      a.btn.btn--xs-full(href="#") Подробнее
-
-            .cabinet__card__wrapper.cabinet__card--smd
-              .cabinet__card.cabinet__card--catalog
-                .cabinet__card__header.--md-reverse
-                  .b-left
-                    h3.h3-title.header-title Преподаватель обществознанияоб ществознания
-                    h4.h4-title Иванова Анна Андреевна, 29 лет
-
-                  .b-right.--status-fav
-                    .b-btns-right
-                      span.btn.btn--border.btn-small
-                        span.svg-icon
-                          +icon('send')
-                        span.btn-label Приглашение отправлено
-                      button.btn.btn--border.btn-small
-                        span.svg-icon
-                          +icon('heart')
-                        span.btn-label Удалить из избранного
-                .cabinet__card__body
-                  ul.options-vacansy
-                    li.item-vacansy
-                      span.item-vacansy__label Стаж
-                      span.item-vacansy__text 1-3 года
-                    li.item-vacansy
-                      span.item-vacansy__label Последнее место работы
-                      span.item-vacansy__text УО СШ №321
-                    li.item-vacansy
-                      span.item-vacansy__label Уровень зарплаты
-                      span.item-vacansy__text от 30 000 ₽
-
-                .cabinet__card__footer
-                  .b-left
-                    .b-btns
-                      a.btn.btn--xs-full(href="#") Подробнее
+                      a.btn.btn--sm-full(href="#") Подробнее
 
             .cabinet__card__wrapper.cabinet__card--smd
               .cabinet__card.cabinet__card--catalog
@@ -154,7 +121,8 @@ block content
                 .cabinet__card__footer
                   .b-left
                     .b-btns
-                      a.btn.btn--xs-full(href="#") Подробнее
+                      a.btn.btn--sm-full(href="#") Подробнее
+
             .cabinet__card__wrapper.cabinet__card--smd
               .cabinet__card.cabinet__card--catalog
                 .cabinet__card__header.--md-reverse
@@ -187,7 +155,40 @@ block content
                 .cabinet__card__footer
                   .b-left
                     .b-btns
-                      a.btn.btn--xs-full(href="#") Подробнее
+                      a.btn.btn--sm-full(href="#") Подробнее
+            .cabinet__card__wrapper.cabinet__card--smd
+              .cabinet__card.cabinet__card--catalog
+                .cabinet__card__header.--md-reverse
+                  .b-left
+                    h3.h3-title.header-title Преподаватель обществознанияоб ществознания
+                    h4.h4-title Иванова Анна Андреевна, 29 лет
+
+                  .b-right.--status-fav
+                    .b-btns-right
+                      span.btn.btn--border.btn-small
+                        span.svg-icon
+                          +icon('send')
+                        span.btn-label Приглашение отправлено
+                      button.btn.btn--border.btn-small
+                        span.svg-icon
+                          +icon('heart')
+                        span.btn-label Удалить из избранного
+                .cabinet__card__body
+                  ul.options-vacansy
+                    li.item-vacansy
+                      span.item-vacansy__label Стаж
+                      span.item-vacansy__text 1-3 года
+                    li.item-vacansy
+                      span.item-vacansy__label Последнее место работы
+                      span.item-vacansy__text УО СШ №321
+                    li.item-vacansy
+                      span.item-vacansy__label Уровень зарплаты
+                      span.item-vacansy__text от 30 000 ₽
+
+                .cabinet__card__footer
+                  .b-left
+                    .b-btns
+                      a.btn.btn--sm-full(href="#") Подробнее
             .cabinet__card__wrapper.cabinet__card--smd
               .cabinet__card.cabinet__card--catalog
                 .cabinet__card__header.--md-reverse
@@ -216,7 +217,7 @@ block content
                 .cabinet__card__footer
                   .b-left
                     .b-btns
-                      a.btn.btn--xs-full(href="#") Подробнее
+                      a.btn.btn--sm-full(href="#") Подробнее
               .cabinet__card__wrapper.cabinet__card--smd
                 .cabinet__card.cabinet__card--catalog
                   .cabinet__card__header.--md-reverse
@@ -245,7 +246,7 @@ block content
                   .cabinet__card__footer
                     .b-left
                       .b-btns
-                        a.btn.btn--xs-full(href="#") Подробнее
+                        a.btn.btn--sm-full(href="#") Подробнее
 
 
 

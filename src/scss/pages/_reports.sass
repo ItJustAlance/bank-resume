@@ -70,9 +70,17 @@
         .text
 admin-cabinet-report-soiskatel
 .reports-list
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -20px
+  +r($md)
+    max-width: 100%
+    overflow: auto
+    padding-top: 40px
+    margin-top: -40px
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -20px
+    +r($md)
+      min-width: 250vw
 .report-item
   display: flex
   flex-direction: column
@@ -83,6 +91,7 @@ admin-cabinet-report-soiskatel
   padding: 14px
   color: $clrGrey90
   width: 100%
+
   &:hover
     background: #003E5B
     color: #fff
@@ -98,9 +107,9 @@ admin-cabinet-report-soiskatel
     +r($lg)
       max-width: 50%
       min-width: 50%
-    +r($sm)
-      max-width: 100%
-      min-width: 100%
+    +r($md)
+      max-width: 33.333%
+      min-width: 33.333%
   &__title
     font-size: 18px
     font-weight: 600

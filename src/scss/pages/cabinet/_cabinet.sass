@@ -6,6 +6,9 @@
   &-detail
     &__bottom-btns
       padding-top: 60px
+      display: flex
+      flex-wrap: wrap
+      gap: 18px
       +r($md)
         padding-top: 32px
 
@@ -98,6 +101,8 @@
     padding-bottom: 40px
     +r($sm)
       padding-bottom: 32px
+      &+.box-bg
+        padding-top: 0
     &.--sm-pb12
       +r($sm)
         padding-bottom: 12px
@@ -130,12 +135,15 @@
       padding-top: 32px
       display: flex
       gap: 18px
+      +r($md)
+        margin-bottom: 24px
       &.--search-left
         width: 50%
       +r($sm)
         flex-wrap: wrap
       &.--md-w100
-        width: 100%
+        +r($md)
+          width: 100%
       .b-pole
         flex: 1 1 auto
         +r($sm)
@@ -146,13 +154,13 @@
       &-btns
         display: flex
         gap: 18px
-        +r($xs)
+        +r($sm)
           flex-wrap: wrap
           width: 100%
         .btn
           padding-left: 24px
           padding-right: 24px
-          +r($xs)
+          +r($sm)
             width: 100%
     &__filters
       padding-top: 32px
@@ -216,13 +224,15 @@
         margin-bottom: 32px
         font-size: 15px
         font-weight: 500
+        border-bottom: 3px solid $clrGrey30
     &__tab-item
       display: inline-flex
       align-items: center
       vertical-align: top
       color: #000
       margin-right: 24px
-
+      +r($md)
+        margin-bottom: -3px
       &.active
         .cabinet-header__tab-item__link
           border-bottom: 3px solid $clrPrimaryMain
@@ -264,6 +274,12 @@
         text-align: center
         justify-content: center
         padding-bottom: 18px
+        &.--md-text-align-left
+          text-align: left
+          justify-content: flex-start
+      +r($sm)
+        text-align: left
+        justify-content: flex-start
     &__subtitle
       font-size: 18px
       font-weight: 600
@@ -274,6 +290,9 @@
     &__left
       padding-right: 20px
       max-width: 400px
+      &.--md-mb0
+        +r($md)
+          margin-bottom: 0
       &.--sm-pr0
         +r($sm)
           padding-right: 0
@@ -289,6 +308,8 @@
           justify-content: flex-start
           padding-bottom: 4px
           text-align: left
+      &.--max-350
+        max-width: 350px
       &.--md-7
         flex: 0 0 58.333%
         max-width: 58.333%
@@ -307,7 +328,7 @@
         max-width: 33.333%
     &__infobox
       display: flex
-      margin-right: 24px
+      margin-right: 60px
       margin-top: 8px
       +r($md)
         margin-right: 0
@@ -384,7 +405,7 @@
           .cabinet-header__infobox
             margin-bottom: 32px
     &-select--public
-      margin-right: 38px
+      margin-right: 26px
     &-select--status-right
       .drop-select__dropdown,
       .drop__dropdown
@@ -470,7 +491,10 @@
   &-fio
     padding-top: 32px
     text-transform: uppercase
-
+    +r($md)
+      padding-top: 12px
+      &.h3-title
+        font-size: 24px
   &-wrapper
     display: flex
     +r($md)
@@ -495,11 +519,15 @@
     &__box
       width: 100%
       padding-bottom: 60px
+      &.--small
+        padding-bottom: 20px
+      +r($md)
+        padding-bottom: 20px
     &__section
       border-top: 1px solid $clrGrey40
       display: flex
       flex-wrap: wrap
-      padding: 20px 0 30px
+      padding: 20px 0
       width: 100%
       &.no-border
         border-top: none
@@ -508,16 +536,18 @@
       .h2-title--section
         padding-bottom: 20px
     &__row
-      padding-bottom: 12px
-      min-width: 100%
+      min-width: calc(100% + 48px)
       display: flex
       margin: 0 -24px
+      & + .cabinet-info__row
+        padding-top: 12px
       +r($lg + 1)
         flex-wrap: wrap
       &.--x2
         padding-bottom: 42px
         +r($md)
           padding-bottom: 32px
+
     &__md-1
       display: flex
       width: 100%
@@ -546,6 +576,7 @@
       padding-bottom: 12px
       +r($md)
         flex-wrap: wrap
+
     &__label
       color: $clrGrey60
       font-size: 15px
@@ -566,9 +597,16 @@
       padding-top: 60px
       +r($md)
         padding-top: 20px
+        width: 100%
       .btn
         margin-right: 18px
         margin-bottom: 18px
+        +r($md)
+          margin-right: 0
+        +r($sm)
+          margin-right: 0
+          width: 100%
+          text-align: center
     &__error
       padding-bottom: 12px
       color: $clrDangerMain
@@ -577,6 +615,16 @@
       flex-wrap: wrap
       &.--center
         justify-content: center
+    .form-item
+      &__group
+        padding-top: 20px
+        margin-bottom: 5px
+        +r($md)
+          border-top: 1px solid $clrGrey40
+        &.--md-border-no
+          +r($md)
+            border-top: none
+            padding-top: 0
   &-edit
     display: flex
     flex-wrap: wrap
@@ -625,9 +673,11 @@
         // margin-top: 16px
       .form-item
         max-width: 420px
+        +r($md)
+          max-width: 100%
     .form-item
       +r($md)
-        max-width: 420px
+        // max-width: 420px
         margin-top: 16px
         padding-top: 0
       &+.h3-title
@@ -660,6 +710,7 @@
         overflow: auto
       +r($md)
         background: #F4F9FB
+        margin-bottom: 30px
       &__item
         display: inline-flex
         align-items: center
@@ -696,11 +747,13 @@
     +r($lg)
       padding: 30px
     +r($md)
-      padding: 30px 0
+      padding: 10px 0
       background: none
     &+.box-bg
       border-radius: 16px
       margin-top: 18px
+      +r($md)
+        margin-top: 0
   &.show
     display: block
   &-wrapper
@@ -723,6 +776,13 @@
       margin-left: -12px
       margin-right: -12px
       padding-bottom: 40px
+    &.--response
+      .cabinet__card__header .header-title
+        +r($md)
+          text-transform: none
+      .cabinet__card__header .b-left
+        +r($md)
+          flex-wrap: wrap
   &__card
     box-shadow: -2px 2px 14px 0px rgba(27, 27, 27, 0.10)
     border-radius: 16px
@@ -1122,7 +1182,7 @@
       +r($xss)
       flex-wrap: wrap
   &__body
-
+    max-width: 730px
 .table-control
   margin-bottom: 80px
 

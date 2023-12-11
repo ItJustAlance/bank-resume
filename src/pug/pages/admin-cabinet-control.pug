@@ -7,7 +7,7 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
-
+  - var isAdmin = true
 block content
   .all
     .cabinet
@@ -26,7 +26,7 @@ block content
                 span.highlight 5
           .cabinet-header__right.--md-align-left
             .b-btns
-              a.btn.btn--xs-full(href="#")
+              a.btn.btn--sm-full(href="#")
                 span.svg-icon
                   +icon('plus')
                 span.btn-label Добавить пользователя
@@ -34,7 +34,7 @@ block content
           .cabinet-header__search.--search-left.--md-w100
             .b-pole
               input.input.pole-search(type="text" placeholder="ID, ссылка, название")
-            .cabinet-header__search-btns
+            .cabinet-header__search-btns.--md-hidden
               input.btn(value="Найти" type="submit")
 
           .cabinet-header__filters.--filters-right.--md-w100

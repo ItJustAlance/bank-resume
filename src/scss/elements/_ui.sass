@@ -917,12 +917,27 @@
   box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.16)
 
 
-
+.md-order-0
+  +r($md)
+    order: 0
+.md-order-1
+  +r($md)
+    order: 1
+.md-order-2
+  +r($md)
+    order: 2
 .--lg-hidden
   +r($lg)
     display: none !important
+.--md-hidden
+  +r($md)
+    display: none !important
 
 .mobile-table.--lg-visible
+  display: none
+  +r($lg)
+    display: block !important
+.mobile-table.--lg-invisible
   display: none
   +r($lg)
     display: block !important
@@ -950,7 +965,7 @@ table tr th:last-child
 
 
 .mobile-table
-  border-radius: 16px
+  border-radius: 4px
   border: 1px solid $clrGrey30
   margin-bottom: 30px
   display: none
@@ -972,7 +987,7 @@ table tr th:last-child
     margin-bottom: 0
   .row-th
     background: $baseBg
-    border-radius: 16px 16px 0 0
+    border-radius: 4px 4px 0 0
     display: flex
     font-weight: 500
   .row-td

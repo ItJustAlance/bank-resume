@@ -7,6 +7,7 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
+  - var isAdmin = true
 
 block content
   .all
@@ -22,7 +23,7 @@ block content
             button.btn.js-filter-toggler__btn
               +icon('sliders')
           .cabinet-header__search-btns
-            input.btn(value="Найти" type="submit")
+            input.btn.--md-hidden(value="Найти" type="submit")
             button.btn.btn--border Сохранить поиск
         .cabinet-header__filters
           .label Найдено 112 вакансий
@@ -372,7 +373,7 @@ block content
 
                     ul.cabinet__card__infos.--mobile
                       li Преподаватель
-                      li Полная занятость
+
                     .b-right
                       .cabinet-ava.--small
                         .cabinet-ava-img.active

@@ -51,12 +51,21 @@
       gap: 24px
       margin-right: 24px
       .link-item
+        position: relative
         &:hover
           .svg-icon
             fill: $clrPrimaryMain
             &--bell
               fill: none
               stroke: $clrPrimaryMain
+      .new-mess
+        position: absolute
+        top: 0
+        right: 4px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: #D53656
       .svg-icon
         width: 24px
         height: 24px

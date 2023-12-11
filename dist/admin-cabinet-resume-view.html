@@ -17,40 +17,14 @@
               <svg class="svg-icon --color svg-icon--logo 1">
                 <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
               </svg></a></div>
-          <div class="link--support"><a href="#">Служба поддержки</a></div>
           <div class="header-right">
-            <div class="header__links">
-              <div class="drop-link">
-                <div class="drop-link__label">Резюме</div>
-                <div class="drop-link__arrow">
-                  <svg class="svg-icon svg-icon--chevron-down">
-                    <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
-                  </svg>
-                </div>
-                <div class="drop-link__dropdown">
-                  <div class="drop-link__dropdown-wrapper">
-                    <ul>
-                      <li><a href="#">Мои резюме</a></li>
-                      <li><a href="#">Создать резюме</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div><a class="btn-link" href="#">Каталог вакансий</a>
-            </div>
             <div class="header-auth">
               <div class="header-auth__icons"><a class="link-item" href="#">
-                  <svg class="svg-icon svg-icon--heart">
-                    <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
-                  </svg></a><a class="link-item" href="#">
-                  <svg class="svg-icon svg-icon--send">
-                    <use xlink:href="assets/img/sprite.svg#icon-send"></use>
-                  </svg></a><a class="link-item" href="#">
                   <svg class="svg-icon --color svg-icon--bell 1">
                     <use xlink:href="assets/img/sprite-color.svg#icon-color-bell"></use>
-                  </svg></a></div>
-              <div class="header-auth__ava"><a href="#"><img src="assets/img/mini-ava.png"></a></div>
+                  </svg>
+                  <div class="new-mess"></div></a></div>
             </div>
-            <div class="btns"><a class="btn" href="#">Выход</a></div>
           </div>
           <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
         </div>
@@ -58,20 +32,54 @@
           <div class="mobile-menu__overlay"></div>
           <div class="mobile-menu__wrapper">
             <div class="mobile-menu__header">
+              <div class="header-auth__ava"><a href="#"><img src="assets/img/mini-ava.png"></a></div>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="menu-links menu-levels">
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Вакансии</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Правовая информация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Резюме</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Правовая информация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Отчеты</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Резюме</a></li>
+                    <li><a href="#">Соискатели</a></li>
+                    <li><a href="#">Работодатели</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Приглашения</a></li>
+                    <li><a href="#">Предложения о работе</a></li>
+                    <li><a href="#">Организации</a></li>
+                    <li><a href="#">Обратились повторно</a></li>
+                    <li><a href="#">Конверсия этапов подбора</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li><a class="link-support" href="#">Служба поддержки</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__footer">
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__nav-list">
                   <li><a class="btn" href="#">Выход</a></li>
                 </ul>
               </nav>
-            </div>
-            <div class="mobile-menu__content">
-              <ul class="menu-links">
-                <li><a href="#">Пользовательское соглашение</a></li>
-                <li><a href="#">Правовая информация</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Помощь (FAQ)</a></li>
-                <li><a class="link-support" href="#">Служба поддержки</a></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -81,7 +89,7 @@
           <div class="cabinet">
             <div class="cabinet-header">
               <div class="cabinet-header__row">
-                <div class="cabinet-header__left">
+                <div class="cabinet-header__left --max-350">
                   <div class="cabinet-header__title h2-title">просмотр резюме</div>
                   <div class="cabinet-header__subtitle">преподаватель географии</div>
                   <div class="cabinet-header__date">Опубликовано 1 июля 2023</div>
@@ -157,6 +165,10 @@
                     <div class="cabinet-info__lg-2">
                       <div class="form-item__group">
                         <div class="form-item">
+                          <div class="cabinet-info__label">ID</div>
+                          <div class="cabinet-info__text"><strong><a href="#">895623</a></strong></div>
+                        </div>
+                        <div class="form-item">
                           <div class="cabinet-info__label">Возраст</div>
                           <div class="cabinet-info__text">29 лет</div>
                         </div>
@@ -214,7 +226,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__lg-2">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Желаемая позиция</div>
                           <div class="cabinet-info__text">Преподаватель географии</div>
@@ -255,7 +267,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">ВУЗ/СПО</div>
                           <div class="cabinet-info__text">Московский городской падгогический университет</div>
@@ -300,7 +312,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Образовательная организация</div>
                           <div class="cabinet-info__text">Московский городской падгогический университет</div>
@@ -325,7 +337,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Стаж</div>
                           <div class="cabinet-info__text">Стаж</div>
@@ -362,7 +374,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Категория</div>
                           <div class="cabinet-info__text">2 категория</div>
@@ -383,7 +395,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Язык</div>
                           <div class="cabinet-info__text">Английский</div>
@@ -410,7 +422,7 @@
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__lg-2">
                       <h2 class="h2-title h2-title--section">Участие в мероприятиях</h2>
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Тема мероприятия</div>
                           <div class="cabinet-info__text">Тема мероприятия</div>
@@ -427,7 +439,7 @@
                     </div>
                     <div class="cabinet-info__lg-2">
                       <h2 class="h2-title h2-title--section">Персональные награды</h2>
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Присвоенное звание/медаль/другое</div>
                           <div class="cabinet-info__text">Присвоенное звание/медаль/другое</div>
@@ -444,7 +456,7 @@
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__lg-2">
                       <h2 class="h2-title h2-title--section">Проекты</h2>
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Наименование</div>
                           <div class="cabinet-info__text">Наименование</div>
@@ -461,7 +473,7 @@
                     </div>
                     <div class="cabinet-info__lg-2">
                       <h2 class="h2-title h2-title--section">Публикации</h2>
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Тема публикации</div>
                           <div class="cabinet-info__text">Тема публикации</div>
@@ -486,7 +498,7 @@
                   </div>
                   <div class="cabinet-info__row">
                     <div class="cabinet-info__md-1">
-                      <div class="form-item__group">
+                      <div class="form-item__group --md-border-no">
                         <div class="form-item">
                           <div class="cabinet-info__label">Тема мероприятия</div>
                           <div class="cabinet-info__text">Тема мероприятия</div>

@@ -7,7 +7,7 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
-
+  - var director = true
 block content
   .all
     .cabinet
@@ -123,7 +123,7 @@ block content
 
     .cabinet-info__bottom
       .cabinet-info__btns.--center
-        a.btn.btn--border.btn--border__red.btn--md-full(href="#") Отменить
-        a.btn.btn--border.btn--md-full(href="#") Сохранить как черновик
-        input.btn.btn--md-full(type="submit"  value="Сохранить и опубликовать")
+        a.btn.btn--border.btn--border__red.btn--md-full.md-order-2(href="#") Отменить
+        a.btn.btn--border.btn--md-full.md-order-1(href="#") Сохранить как черновик
+        input.btn.btn--md-full.md-order-0(type="submit"  value="Сохранить и опубликовать")
 

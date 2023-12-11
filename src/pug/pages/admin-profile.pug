@@ -7,6 +7,7 @@ block variables
   - var keywords = 'some keyword'
   - var description = 'some description'
   - var mainClass = 'main--office'
+  - var isAdmin = true
 
 block content
   .all
@@ -19,6 +20,13 @@ block content
         .cabinet-fio.h2-title администратор
       .cabinet-content
         .cabinet-info
+          .cabinet-info__section
+            .cabinet-info__row
+              .cabinet-info__md-1
+                .form-item
+                  .cabinet-info__label ID
+                  .cabinet-info__text
+                    a(href="#") 895623
           .cabinet-info__section
             .cabinet-info__row
               .cabinet-info__md-1
@@ -72,6 +80,6 @@ block content
               | Вы зарегистрированы через портал ДПО. <br>
               | Чтобы изменить данные, перейдите на сайт портала ДПО.
             .cabinet-info__btns
-              a.btn.btn--border(href="#") Заявка на удаление профиля
-              input.btn(type="submit" disabled value="Редактировать профиль")
+              a.btn.btn--border.btn--xs-full.md-order-1(href="#") Заявка на удаление профиля
+              input.btn.btn--xs-full.md-order-0(type="submit" disabled value="Редактировать профиль")
 
