@@ -137,6 +137,10 @@
       gap: 18px
       +r($md)
         margin-bottom: 24px
+      &.--md-w75
+        width: 75%
+        +r($md)
+          width: 100%
       &.--search-left
         width: 50%
       +r($sm)
@@ -765,7 +769,8 @@
         font-size: 24px
         padding-top: 32px
         padding-bottom: 16px
-
+    .cabinet-header
+      padding-bottom: 60px
 
 
 
@@ -809,12 +814,24 @@
           padding: 32px 40px
           +r($md)
             padding: 18px 12px
+        .cabinet__card__header
+          +r($md)
+            gap: 0
+        .cabinet-ava.--small
+          width: 44px
+          height: 44px
+          .cabinet-ava-img
+            width: 44px
+            height: 44px
+        .organisation__title
+          padding-bottom: 8px
     &__header
       display: flex
       +r($md)
         flex-wrap: wrap
         width: 100%
         gap: 18px
+        position: relative
       &.--md-reverse
         +r($md)
           flex-direction: column-reverse
@@ -826,18 +843,27 @@
           padding-right: 12px
       .b-left
         padding-right: 20px
-
         +r($md)
           padding-right: 0
           display: flex
           width: 100%
         +r($xss)
           flex-wrap: wrap
+        &.--mobile-padding-50
+          +r($md)
+            padding-right: 50px
       .b-right
         max-width: 230px
         display: inline-block
         vertical-align: top
         margin-left: auto
+        &.--mobile-ava-right
+          +r($md)
+            position: absolute
+            top: 0
+            right: 0
+            width: 45px
+            max-width: 45px
         &.--status-fav
           max-width: 47%
           width: 100%
@@ -980,10 +1006,31 @@
     border-radius: 16px
     border: 2px solid #F4F9FB
     padding: 32px 40px
+    position: relative
+    &>div
+      z-index: 1
+      position: relative
+    &:after
+      content: ""
+      width: 100%
+      height: 100%
+      border: 1px solid $clrPrimaryHover
+      display: none
+      position: absolute
+      top: 0
+      left: 0
+      border-radius: 16px
     +r($md)
       padding: 18px 12px
-    &:hover, &.active
+    &:hover:after
+      display: block
+      +r($md)
+        display: none
+      // box-shadow: -1px -1px 0px $clrPrimaryHover, 1px 1px 0px $clrPrimaryHover, 0px 0px 0px $clrPrimaryHover,  -1px 1px 0px $clrPrimaryHover
+    &.active
       background: #F4F9FB
+      &:hover
+
     &__wrapper
       padding-bottom: 18px
       +r($md)
@@ -1063,6 +1110,7 @@
 
   .h3-title
     padding-bottom: 18px
+    font-size: 18px
   &__list
     margin: 0
     padding: 0

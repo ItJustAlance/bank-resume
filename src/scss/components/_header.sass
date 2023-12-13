@@ -151,8 +151,8 @@
     position: absolute
     top: 56px
     right: -101vw
-    width: 87%
-    max-width: 400px
+    width: 100%
+    max-width: 560px
     padding: 40px 32px 40px 0
     display: flex
     gap: 40px
@@ -198,14 +198,17 @@
     border-color: $clrPrimaryMain
     color: $clrPrimaryMain
     .link-submenu
+
       &__icon
         transform: rotate(0deg)
         top: 5px
+    &.link-submenu
+      border-color: $clrPrimaryMain
   .link-submenu
     display: inline-block
     vertical-align: top
     position: relative
-    border-left: 3px solid $clrPrimaryMain
+    border-left: 3px solid rgba(255,255,255, 0)
     &__label
       display: inline-block
       vertical-align: top

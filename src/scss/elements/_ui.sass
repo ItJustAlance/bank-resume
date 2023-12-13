@@ -996,6 +996,8 @@ table tr th:last-child
       background: $baseBg
     & + .row-td
     border-top: 1px solid #f0f0f0
+    &.border-top2
+      border-top: 2px solid #D0D0D0
   .col
     padding: 16px 12px
     +r($xss)
@@ -1009,6 +1011,8 @@ table tr th:last-child
     min-width: 17%
     max-width: 17%
 
+.clrGray60
+  color: $clrGrey60
 .label-color
   display: inline-flex
   padding: 4px 10px
@@ -1019,3 +1023,10 @@ table tr th:last-child
   &.--red
     color: $clrRedSecondMian
     background: #F7D7DD
+
+.--md-pt0
+  +r($md)
+    padding-top: 0
+.--md-pt18
+  +r($md)
+    padding-top: 18px
