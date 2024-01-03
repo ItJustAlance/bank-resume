@@ -102,7 +102,7 @@ window.addEventListener('load', () => {
 
   $('.js-datepicker-range').daterangepicker({
     "showDropdowns": true,
-    "minYear": 2000,
+    "minYear": 1900,
     "maxYear": 2025,
     "drops": "auto",
     "locale": {
@@ -147,7 +147,7 @@ window.addEventListener('load', () => {
   $('.datepicker').daterangepicker({
     "showDropdowns": true,
     "singleDatePicker": true,
-    "minYear": 2000,
+    "minYear": 1900,
     "maxYear": 2025,
     "drops": "auto",
     "locale": {
@@ -190,7 +190,7 @@ window.addEventListener('load', () => {
   $('.js-datepickermonth').daterangepicker({
     "showDropdowns": true,
     "singleDatePicker": true,
-    "minYear": 2000,
+    "minYear": 1900,
     "maxYear": 2025,
     "drops": "auto",
     "locale": {
