@@ -330,6 +330,10 @@
       &.--md-4
         flex: 0 0 33.333%
         max-width: 33.333%
+        +r($md)
+          width: 100%
+          max-width: 100%
+          flex: 0 0 33.333%
     &__infobox
       display: flex
       margin-right: 60px
@@ -383,6 +387,9 @@
       &.--md-4
         flex: 0 0 33.333%
         max-width: 33.333%
+        +r($md)
+          max-width: 100%
+          flex: 0 0 100%
       .b-btns
         display: flex
         align-items: center
