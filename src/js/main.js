@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
     $(".js-phone_mask").mask("+7 (999) 999-9999");
   }
   if ($('.js-snils_mask').length) {
-    $(".js-snils_mask").mask("999-9999-999 99");
+    $(".js-snils_mask").mask("999-999-999 99");
   }
   if($("select.ik-select").length>0) {
     $('select.ik-select').ikSelect();
@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
     "maxYear": 2025,
     "drops": "auto",
     "locale": {
-      "format": "MM/DD/YYYY",
+      "format": "DD/MM/YYYY",
       "separator": " - ",
       "applyLabel": "Сохранить",
       "cancelLabel": "Отмена",
@@ -151,7 +151,7 @@ window.addEventListener('load', () => {
     "maxYear": 2025,
     "drops": "auto",
     "locale": {
-      "format": "MM/DD/YYYY",
+      "format": "DD/MM/YYYY",
       "separator": " - ",
       "applyLabel": "Сохранить",
       "cancelLabel": "Отмена",
