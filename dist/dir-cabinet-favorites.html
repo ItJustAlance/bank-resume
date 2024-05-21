@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет Директора_избранные резюме</title>
+    <meta name="description" content="some description">
+    <meta name="keywords" content="some keyword">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="css/vendors~app.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
+  <body class="cabinet-page">
+    <div class="over">
+      <header class="header">
+        <div class="all">
+          <div class="logo"><a href="#">
+              <svg class="svg-icon --color svg-icon--logo 1">
+                <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
+              </svg></a></div>
+          <div class="link--support"><a href="#">Служба поддержки</a></div>
+          <div class="header-right">
+            <div class="header__links">
+              <div class="drop-link">
+                <div class="drop-link__label">Вакансии</div>
+                <div class="drop-link__arrow">
+                  <svg class="svg-icon svg-icon--chevron-down">
+                    <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="drop-link__dropdown">
+                  <div class="drop-link__dropdown-wrapper">
+                    <ul>
+                      <li><a href="#">Мои вакансии</a></li>
+                      <li><a href="#">Создать вакансию</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><a class="btn-link" href="#">Каталог резюме</a>
+            </div>
+            <div class="header-auth">
+              <div class="header-auth__icons"><a class="link-item" href="#">
+                  <svg class="svg-icon svg-icon--heart">
+                    <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                  </svg></a><a class="link-item" href="#">
+                  <svg class="svg-icon svg-icon--send">
+                    <use xlink:href="assets/img/sprite.svg#icon-send"></use>
+                  </svg></a><a class="link-item" href="#">
+                  <svg class="svg-icon --color svg-icon--bell 1">
+                    <use xlink:href="assets/img/sprite-color.svg#icon-color-bell"></use>
+                  </svg></a></div>
+              <div class="header-auth__ava"><a href="#"><img src="assets/img/mini-ava.png"></a></div>
+            </div>
+            <div class="btns"><a class="btn" href="#">Выход</a></div>
+          </div>
+          <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__header">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__nav-list">
+                  <li><a class="btn" href="#">Выход</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="menu-links">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li><a class="link-support" href="#">Служба поддержки</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main main--office">
+        <div class="all">
+          <div class="cabinet">
+            <div class="cabinet-header">
+              <div class="cabinet-header__row">
+                <div class="cabinet-header__left --md-6">
+                  <div class="cabinet-header__title h2-title">избранные резюме</div>
+                  <div class="cabinet-header__tags">
+                    <div class="cabinet-header__tag-item">Непрочитанные<span class="highlight">5</span></div>
+                  </div>
+                </div>
+                <div class="cabinet-header__right --md-4 just-right algin-start">
+                  <div class="b-btns">
+                    <div class="drop-select js-drop-select cabinet-header-select--status-right">
+                      <div class="drop-select__label js-drop-select__label">Статус кандидата</div>
+                      <div class="drop-select__arrow">
+                        <svg class="svg-icon svg-icon--chevron-down">
+                          <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                      </div>
+                      <div class="drop-select__dropdown">
+                        <div class="drop-select__dropdown-wrapper">
+                          <ul>
+                            <li class="drop-select__item">
+                              <div class="b-radio b-radio--blue">
+                                <input type="radio" name="m1" id="r1">
+                                <label class="b-radio__label" for="r1"><span class="checked"></span><span class="b-radio__text js-drop-select__val" data-label="Приглашение отправлено">Приглашение отправлено</span></label>
+                              </div>
+                            </li>
+                            <li class="drop-select__item">
+                              <div class="b-radio b-radio--blue">
+                                <input type="radio" name="m1" id="r2">
+                                <label class="b-radio__label" for="r2"><span class="checked"></span><span class="b-radio__text js-drop-select__val" data-label="Отклик не рассмотрен">Отклик не рассмотрен</span></label>
+                              </div>
+                            </li>
+                            <li class="drop-select__item">
+                              <div class="b-radio b-radio--blue">
+                                <input type="radio" name="m1" id="r2">
+                                <label class="b-radio__label" for="r2"><span class="checked"></span><span class="b-radio__text js-drop-select__val" data-label="Избранные резюме">Избранные резюме</span></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cabinet-header__search">
+                <div class="b-pole">
+                  <input class="input pole-search" type="text" placeholder="ID, ссылка, название">
+                </div>
+                <div class="mobile-filter">
+                  <button class="btn js-filter-toggler__btn">
+                    <svg class="svg-icon svg-icon--sliders">
+                      <use xlink:href="assets/img/sprite.svg#icon-sliders"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="cabinet-header__search-btns --md-hidden">
+                  <input class="btn" value="Найти" type="submit">
+                </div>
+              </div>
+            </div>
+            <div class="cabinet-wrapper">
+              <div class="cabinet-aside js-filter-toggler">
+                <div class="catalog-filter">
+                  <button class="catalog-filter__close js-filter-toggler__close">
+                    <svg class="svg-icon svg-icon--close">
+                      <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Должность</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f1">
+                          <label class="b-checkbox__label" for="f1"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Директор</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f2">
+                          <label class="b-checkbox__label" for="f2"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Завуч</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f3">
+                          <label class="b-checkbox__label" for="f3"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Педагог-организатор</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f4">
+                          <label class="b-checkbox__label" for="f4"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Преподаватель</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Предметная область</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f11">
+                          <label class="b-checkbox__label" for="f11"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Математика и информатика</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f12">
+                          <label class="b-checkbox__label" for="f12"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Филология</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f13">
+                          <label class="b-checkbox__label" for="f13"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Физика, химия, биология</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f14">
+                          <label class="b-checkbox__label" for="f14"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Обществознание</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f15">
+                          <label class="b-checkbox__label" for="f15"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Технология</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f16">
+                          <label class="b-checkbox__label" for="f16"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Искусство</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f17">
+                          <label class="b-checkbox__label" for="f17"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Физическая культура</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Тип занятости</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f21">
+                          <label class="b-checkbox__label" for="f21"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Полная занятость</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f22">
+                          <label class="b-checkbox__label" for="f22"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Частичная занятость</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">График работы</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f31">
+                          <label class="b-checkbox__label" for="f31"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Полный день</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f32">
+                          <label class="b-checkbox__label" for="f32"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Сменный график</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f33">
+                          <label class="b-checkbox__label" for="f33"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Гибкий график</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f34">
+                          <label class="b-checkbox__label" for="f34"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Удаленная работа</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Нагрузка</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f41">
+                          <label class="b-checkbox__label" for="f41"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">0,5 ставки</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f42">
+                          <label class="b-checkbox__label" for="f42"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">1 ставка</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f43">
+                          <label class="b-checkbox__label" for="f43"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">2 ставки</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Возможность подмены</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-radio b-radio--blue">
+                          <input type="radio" name="m1" id="r1">
+                          <label class="b-radio__label" for="r1"><span class="checked"></span><span class="b-radio__text js-drop-select__val" data-label="Да">Да</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-radio b-radio--blue">
+                          <input type="radio" name="m1" id="r2">
+                          <label class="b-radio__label" for="r2"><span class="checked"></span><span class="b-radio__text js-drop-select__val" data-label="Нет">Нет</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Округ</div>
+                    <div class="catalog-filter__list js-show-more-wrapper">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f51">
+                          <label class="b-checkbox__label" for="f51"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Центральный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f52">
+                          <label class="b-checkbox__label" for="f52"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f53">
+                          <label class="b-checkbox__label" for="f53"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северо-Восточный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item hidden">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f54">
+                          <label class="b-checkbox__label" for="f54"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северо-Восточный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item hidden">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f55">
+                          <label class="b-checkbox__label" for="f55"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северо-Восточный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item hidden">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f56">
+                          <label class="b-checkbox__label" for="f56"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северо-Восточный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item hidden">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f57">
+                          <label class="b-checkbox__label" for="f57"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Северо-Восточный</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__show-more"><a class="show-more__link js-show-more__link" href="#" data-show-text="Показать все" data-hide-text="Свернуть">Показать все</a></div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Район</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f61">
+                          <label class="b-checkbox__label" for="f61"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Тверской</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f62">
+                          <label class="b-checkbox__label" for="f62"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Выхино-Жулебино</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f63">
+                          <label class="b-checkbox__label" for="f63"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Тропарёво-Никулино</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f64">
+                          <label class="b-checkbox__label" for="f64"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Тимирязевский</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f65">
+                          <label class="b-checkbox__label" for="f65"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Новогиреево</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__box">
+                    <div class="catalog-filter__title">Район</div>
+                    <div class="catalog-filter__list">
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f71">
+                          <label class="b-checkbox__label" for="f71"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Не имеет значения</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f72">
+                          <label class="b-checkbox__label" for="f72"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">от 5 000 ₽</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f73">
+                          <label class="b-checkbox__label" for="f73"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">от 30 000 ₽</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f74">
+                          <label class="b-checkbox__label" for="f74"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">от 50 000 ₽</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f75">
+                          <label class="b-checkbox__label" for="f75"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">от 80 000 ₽</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="b-checkbox b-subeckbox">
+                          <input type="checkbox" id="f76">
+                          <label class="b-checkbox__label" for="f76"><span class="checked">
+                              <svg class="svg-icon svg-icon--check">
+                                <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                              </svg></span><span class="b-checkbox__text">Своя зарплата</span></label>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <input class="input inp-price" type="text" placeholder="от">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cabinet-content">
+                <div class="cabinet__list">
+                  <div class="cabinet__card__wrapper cabinet__card--smd">
+                    <div class="cabinet__card cabinet__card--catalog">
+                      <div class="cabinet__card__header --md-reverse">
+                        <div class="b-left">
+                          <h3 class="h3-title header-title">Преподаватель истории</h3>
+                          <h4 class="h4-title">Иванова Анна Андреевна, 29 лет</h4>
+                        </div>
+                        <div class="b-right --status-fav">
+                          <div class="b-btns-right"><span class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--send">
+                                  <use xlink:href="assets/img/sprite.svg#icon-send"></use>
+                                </svg></span><span class="btn-label">Приглашение отправлено</span></span>
+                            <button class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--heart">
+                                  <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                                </svg></span><span class="btn-label">Удалить из избранного</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cabinet__card__body">
+                        <ul class="options-vacansy">
+                          <li class="item-vacansy"><span class="item-vacansy__label">Стаж</span><span class="item-vacansy__text">1-3 года</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Последнее место работы</span><span class="item-vacansy__text">УО СШ №321</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Уровень зарплаты</span><span class="item-vacansy__text">от 30 000 ₽</span></li>
+                        </ul>
+                      </div>
+                      <div class="cabinet__card__footer">
+                        <div class="b-left">
+                          <div class="b-btns"><a class="btn btn--sm-full" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet__card__wrapper cabinet__card--smd">
+                    <div class="cabinet__card cabinet__card--catalog">
+                      <div class="cabinet__card__header --md-reverse">
+                        <div class="b-left">
+                          <h3 class="h3-title header-title">Преподаватель обществознанияоб ществознания</h3>
+                          <h4 class="h4-title">Иванова Анна Андреевна, 29 лет</h4>
+                        </div>
+                        <div class="b-right --status-fav">
+                          <div class="b-btns-right">
+                            <button class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--heart">
+                                  <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                                </svg></span><span class="btn-label">Удалить из избранного</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cabinet__card__body">
+                        <ul class="options-vacansy">
+                          <li class="item-vacansy"><span class="item-vacansy__label">Стаж</span><span class="item-vacansy__text">1-3 года</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Последнее место работы</span><span class="item-vacansy__text">УО СШ №321</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Уровень зарплаты</span><span class="item-vacansy__text">от 30 000 ₽</span></li>
+                        </ul>
+                      </div>
+                      <div class="cabinet__card__footer">
+                        <div class="b-left">
+                          <div class="b-btns"><a class="btn btn--border btn--xs-full" href="#">Предложить работу</a><a class="btn btn--sm-full" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet__card__wrapper cabinet__card--smd">
+                    <div class="cabinet__card cabinet__card--catalog">
+                      <div class="cabinet__card__header --md-reverse">
+                        <div class="b-left">
+                          <h3 class="h3-title header-title">Преподаватель обществознанияоб ществознания</h3>
+                          <h4 class="h4-title">Иванова Анна Андреевна, 29 лет</h4>
+                        </div>
+                        <div class="b-right --status-fav">
+                          <div class="b-btns-right">
+                            <button class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--heart">
+                                  <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                                </svg></span><span class="btn-label">Удалить из избранного</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cabinet__card__body">
+                        <ul class="options-vacansy">
+                          <li class="item-vacansy"><span class="item-vacansy__label">Стаж</span><span class="item-vacansy__text">1-3 года</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Последнее место работы</span><span class="item-vacansy__text">УО СШ №321</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Уровень зарплаты</span><span class="item-vacansy__text">от 30 000 ₽</span></li>
+                        </ul>
+                      </div>
+                      <div class="cabinet__card__footer">
+                        <div class="b-left">
+                          <div class="b-btns"><a class="btn btn--border btn--xs-full" href="#">Предложить работу</a><a class="btn btn--sm-full" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet__card__wrapper cabinet__card--smd">
+                    <div class="cabinet__card cabinet__card--catalog">
+                      <div class="cabinet__card__header --md-reverse">
+                        <div class="b-left">
+                          <h3 class="h3-title header-title">Преподаватель обществознанияоб ществознания</h3>
+                          <h4 class="h4-title">Иванова Анна Андреевна, 29 лет</h4>
+                        </div>
+                        <div class="b-right --status-fav">
+                          <div class="b-btns-right">
+                            <button class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--heart">
+                                  <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                                </svg></span><span class="btn-label">Удалить из избранного</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cabinet__card__body">
+                        <ul class="options-vacansy">
+                          <li class="item-vacansy"><span class="item-vacansy__label">Стаж</span><span class="item-vacansy__text">1-3 года</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Последнее место работы</span><span class="item-vacansy__text">УО СШ №321</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Уровень зарплаты</span><span class="item-vacansy__text">от 30 000 ₽</span></li>
+                        </ul>
+                      </div>
+                      <div class="cabinet__card__footer">
+                        <div class="b-left">
+                          <div class="b-btns"><a class="btn btn--border btn--xs-full" href="#">Предложить работу</a><a class="btn btn--sm-full" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet__card__wrapper cabinet__card--smd">
+                    <div class="cabinet__card cabinet__card--catalog">
+                      <div class="cabinet__card__header --md-reverse">
+                        <div class="b-left">
+                          <h3 class="h3-title header-title">Преподаватель обществознанияоб ществознания</h3>
+                          <h4 class="h4-title">Иванова Анна Андреевна, 29 лет</h4>
+                        </div>
+                        <div class="b-right --status-fav">
+                          <div class="b-btns-right">
+                            <button class="btn btn--border btn-small"><span class="svg-icon">
+                                <svg class="svg-icon svg-icon--heart">
+                                  <use xlink:href="assets/img/sprite.svg#icon-heart"></use>
+                                </svg></span><span class="btn-label">Удалить из избранного</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cabinet__card__body">
+                        <ul class="options-vacansy">
+                          <li class="item-vacansy"><span class="item-vacansy__label">Стаж</span><span class="item-vacansy__text">1-3 года</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Последнее место работы</span><span class="item-vacansy__text">УО СШ №321</span></li>
+                          <li class="item-vacansy"><span class="item-vacansy__label">Уровень зарплаты</span><span class="item-vacansy__text">от 30 000 ₽</span></li>
+                        </ul>
+                      </div>
+                      <div class="cabinet__card__footer">
+                        <div class="b-left">
+                          <div class="b-btns"><a class="btn btn--border btn--xs-full" href="#">Предложить работу</a><a class="btn btn--sm-full" href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-section">
+          <ul class="pagination --right --md-center">
+            <li class="pagination__item arr-prev"><a class="link arr" href="#">
+                <svg class="svg-icon svg-icon--chevron-left">
+                  <use xlink:href="assets/img/sprite.svg#icon-chevron-left"></use>
+                </svg></a></li>
+            <li class="pagination__item"><a class="link active" href="#">1</a></li>
+            <li class="pagination__item"><a class="link" href="#">2</a></li>
+            <li class="pagination__item"><a class="link" href="#">3</a></li>
+            <li class="pagination__item"><span class="link">...</span></li>
+            <li class="pagination__item"><a class="link" href="#">10</a></li>
+            <li class="pagination__item arr-next"><a class="link arr" href="#">
+                <svg class="svg-icon svg-icon--chevron-right">
+                  <use xlink:href="assets/img/sprite.svg#icon-chevron-right"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="all">
+            <div class="footer-left"><a href="#">Служба поддержки</a></div>
+            <div class="footer-center">
+              <ul class="footer-nav">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <div class="link-sites"><a href="#"><img src="assets/img/site1.svg"></a><a href="#"><img src="assets/img/site2.svg"></a></div>
+            </div>
+            <div class="footer-copy">© Департамент образования и науки г. Москвы, 2023
+              <div class="small">При полном или частичном использовании материалов с официальных сайтов Правительства Москвы ссылка на источник обязательна.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="just-modal undefined" id="modal-support">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal__header">
+                <div class="just-modal-title h2-title">служба поддержки</div>
+                <div class="just-modal-subtitle">Опишите вашу проблему.</div>
+              </div>
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <label class="label">Имя</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">E-mail</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">Ваша проблема</label>
+                  <textarea class="textarea"></textarea>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="b-checkbox">
+                    <input type="checkbox" id="fff">
+                    <label class="b-checkbox__label" for="fff"><span class="checked">
+                        <svg class="svg-icon svg-icon--check">
+                          <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                        </svg></span><span class="b-checkbox__text">Согласен на <a href="#">обработку персональных данных</a></span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="text-captcha">Подтвердите, что вы не робот</div>
+                  <div class="captcha"><img src="assets/img/capha.png"></div>
+                </div>
+                <div class="just-modal-form__row">
+                  <button class="btn btn--full" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal--white modal-form-normal" id="modal-login">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad1">
+                    <label class="b-radio__label" for="rad1"><span class="checked"></span><span class="b-radio__text">Вход для директора</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad2">
+                    <label class="b-radio__label" for="rad2"><span class="checked"></span><span class="b-radio__text">Вход для соискателя</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Продолжить</button>
+                  </div>
+                  <div class="just-modal-form__col2"><a class="btn btn--border btn--full js-just-modal__close" href="#">Отменить</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-covering-letter" id="modal-covering-letter">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal__header"></div>
+                <div class="just-modal-form__row">
+                  <div class="label">Сопроводительное письмо</div>
+                  <textarea class="textarea --covering-letter"></textarea>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-big modal-anons" id="modal-anons">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-anons">
+                <div class="anons-img"><img src="assets/img/anons-big.png"></div>
+                <div class="anons-date">28.06.2023</div>
+                <div class="anons-title h4-title">Современная методология разработки оказалась ошибочной</div>
+                <div class="anons-text">
+                  <p>И нет сомнений, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Задача организации, в особенности же экономическая повестка сегодняшнего дня предоставляет широкие возможности для стандартных подходов. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Сложно сказать, почему диаграммы связей ассоциативно распределены по отраслям! Таким образом, глубокий уровень погружения говорит о возможностях системы обучения кадров, соответствующей насущным потребностям.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-middle modal-review" id="modal-review">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-review">
+                <div class="review-list custom-scroll">
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")-->
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")-->
+  <script type="text/javascript" src="assets/js/vendors~app.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>

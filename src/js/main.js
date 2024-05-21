@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import  './libs';
+import 'select2';
+import 'select2/dist/css/select2.css';
 import moment from 'moment';
 
 window.addEventListener('load', () => {
@@ -50,8 +52,13 @@ window.addEventListener('load', () => {
   if ($('.js-snils_mask').length) {
     $(".js-snils_mask").mask("999-999-999 99");
   }
+
   if($("select.ik-select").length>0) {
-    $('select.ik-select').ikSelect();
+    $('select.ik-select').select2({
+      width: '100%'
+      // placeholder: 'Select an option'
+    });
+    // $('select.ik-select').ikSelect();
   }
 
   $(".js-mobile-text-full").on("click", function (){
