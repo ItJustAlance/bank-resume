@@ -277,6 +277,51 @@ window.addEventListener('load', () => {
   });
 
 
+
+
+
+  // var data2 = {
+  //   "id": 1,
+  //   "text": "Tyto alba",
+  //   "genus": "Tyto",
+  //   "species": "alba"
+  // };
+  //
+  // $('#sel').trigger({
+  //   type: 'select2',
+  //   params: {
+  //     data: data2
+  //   }
+  // });
+  var ops = [
+    {id: 998, text: "啥a"},
+    {id: 996, text: "洒到"},
+    {id: 997, text: "Asda"}
+  ];
+  var ops2 = [
+    {id: 998, text: "啥a222"},
+    {id: 996, text: "洒到222"},
+    {id: 997, text: "Asda222"}
+  ];
+  $('#sel').select2({
+    width: 280,
+    placeholder: 'Click, Bitch',
+    data: ops,
+  });
+  // $('#sel').trigger({
+  //   type: 'select2:select',
+  //   params: {
+  //     data: ops2
+  //   }
+  // });
+  $('#sel').on('select2:select', function (e) {
+    console.log('select event');
+    $('#sel2').select2({
+      width: 280,
+      placeholder: 'Click, Bitch',
+      data: ops2,
+    });
+  });
 });
 
 
