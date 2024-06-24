@@ -293,34 +293,40 @@ window.addEventListener('load', () => {
   //     data: data2
   //   }
   // });
-  var ops = [
-    {id: 998, text: "啥a"},
-    {id: 996, text: "洒到"},
-    {id: 997, text: "Asda"}
-  ];
-  var ops2 = [
-    {id: 998, text: "啥a222"},
-    {id: 996, text: "洒到222"},
-    {id: 997, text: "Asda222"}
-  ];
-  $('#sel').select2({
-    width: 280,
-    placeholder: 'Click, Bitch',
-    data: ops,
-  });
-  // $('#sel').trigger({
-  //   type: 'select2:select',
-  //   params: {
-  //     data: ops2
-  //   }
+  // var ops = [
+  //   {id: 998, text: "啥a"},
+  //   {id: 996, text: "洒到"},
+  //   {id: 997, text: "Asda"}
+  // ];
+  // var ops2 = [
+  //   {id: 998, text: "啥a222"},
+  //   {id: 996, text: "洒到222"},
+  //   {id: 997, text: "Asda222"}
+  // ];
+  // $('#sel').select2({
+  //   width: 280,
+  //   placeholder: 'Click, Bitch',
+  //   data: ops,
   // });
-  $('#sel').on('select2:select', function (e) {
-    console.log('select event');
-    $('#sel2').select2({
-      width: 280,
-      placeholder: 'Click, Bitch',
-      data: ops2,
-    });
+  // // $('#sel').trigger({
+  // //   type: 'select2:select',
+  // //   params: {
+  // //     data: ops2
+  // //   }
+  // // });
+  // $('#sel').on('select2:select', function (e) {
+  //   console.log('select event');
+  //   $('#sel2').select2({
+  //     width: 280,
+  //     placeholder: 'Click, Bitch',
+  //     data: ops2,
+  //   });
+  // });
+  $('.js-handler-select').on('select2:select', function (e) {
+    var those = $(this);
+    var func =  those.attr("handler");
+    var fn = window[func];
+    if (typeof fn === "function") fn.apply();
   });
 });
 
