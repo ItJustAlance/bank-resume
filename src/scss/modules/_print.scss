@@ -7,7 +7,9 @@
   .cabinet-header__right .b-btns,
   .cabinet-detail__bottom-btns,
   .b-detail-info__col-right,
-  .--md-hidden{
+  .--md-hidden,
+  .covering-letter__header .right-btns,
+  .admin-panel {
     display: none !important;
   }
   .over {max-width: 1000px;}
@@ -45,13 +47,11 @@
   }
   .cabinet-info__section {
     padding: 10px 0;
-    page-break-inside: avoid;
-    page-break-before: avoid;
+
 
   }
   .cabinet-info__lg-2 {
-    page-break-inside: avoid;
-    page-break-before: avoid;
+
 
   }
   .cabinet-info__row + .cabinet-info__row {
@@ -61,7 +61,7 @@
     padding-bottom: 18px;
   }
   .cabinet-info__row {
-    page-break-inside: avoid;
+
     flex-wrap: wrap;
 
   }
@@ -69,7 +69,7 @@
     width: 100%;
   }
   .cabinet-info__section .h2-title--section {
-    page-break-before: avoid;
+
     padding-top: 5px;
     padding-bottom: 5px;
   }
