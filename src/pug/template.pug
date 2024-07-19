@@ -21,6 +21,9 @@ html(lang='en')
         include partials/header
       main.main(class=mainClass)
         block content
-      include partials/footer
+      if(footerNew)
+        include partials/footer-new
+      else
+        include partials/footer
     //script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
     //script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")

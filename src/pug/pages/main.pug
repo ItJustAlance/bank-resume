@@ -2,193 +2,42 @@ extends ../template
 
 block variables
   - var title = 'Webpack 4'
-  - var pageClass = 'index-page'
+  - var pageClass = 'second-page'
+  - var footerNew = true
   - var keywords = 'some keyword'
   - var description = 'some description'
 
 block content
   .lvl1
     .all
-      .lvl1-content
-        h1.h1-title команды мечты создаются здесь
-        .text помощник в поиске работы и сотрудников в сфере образования
-        .b-btn
-          a.btn(href="#") Начать
-      .lvl1-img
-        img.lvl-bg(src="assets/img/ill1.svg")
-  .lvl2
-    .all
-      .card3in-list
-        .card3in-list__wrapper
-          .card3in
-            .card3in-wrapper
-              .card3in__icon
-                img(src="assets/img/ic1.svg")
-              .card3in__text
-                .num 67
-                | предложений о работе
-          .card3in
-            .card3in-wrapper
-              .card3in__icon
-                img(src="assets/img/ic2.svg")
-              .card3in__text
-                .num 180
-                | размещенных резюме
-          .card3in
-            .card3in-wrapper
-              .card3in__icon
-                img(src="assets/img/ic3.svg")
-              .card3in__text
-                .num 113
-                | приглашений на собеседование
-      .card2in-list
-        .card2in
-          .card2in-wrapper
-            .card2in-content
-              .card2in-content__info
-                .title Для работодателей
-                .text Доступ к банку резюме предоставляется администрациям школ города Москвы. Если вы являетесь директором московской школы, вы можете войти в банк резюме, используя единую учетную запись ЕКИС.
-              .b-btn
-                a.btn.btn-login(href="#") Вход
-            .card2in-img
-              img(src="assets/img/people1.svg")
-        .card2in
-          .card2in-wrapper
-            .card2in-content
-              .card2in-content__info
-                .title Для соискателей
-                .text Ваш помощник в поиске работы в московских школах. <br>Бесплатная публикация резюме
-              .b-btn
-                a.btn.btn--border.btn--reg.md-order-1(href="#") Зарегистрироваться
-                a.btn.btn-login.md-order-0(href="#") Вход
-            .card2in-img
-              img(src="assets/img/people2.svg")
-      .card-weclome
-        .card-weclome__list
-          .card-info.red
-            .card-info-wrapper
-              .num
-                span 1
-              .title Запишитесь
-              .text на консультацию
-          .card-info
-            .card-info-wrapper
-              .num
-                span 2
-              .title пройдите курс
-              .text в комфортном режиме
-        .card-weclome__text
-          .title ознакомительный курс
-          .text Запишитесь, чтобы пройти бесплатный welcome-курс.
+      .lvl1-box
+        .lvl1-content
+          h1.h1-title команды мечты создаются здесь
+          .text помощник в поиске работы и сотрудников в сфере образования
           .b-btn
-            a.btn(href="#") Записаться
-        .card-weclome__mobile-btn
-          a.btn(href="#") Записаться
-  .lvl3
+            a.btn(href="#") Начать
+        .lvl1-img
+          img.lvl-bg(src="assets/img/main-new.svg")
+  .lvl7
     .all
-      .diagnostic-header
-        .title пройдите диагностику
-        .b-text
-          | Вы можете пройти профессиональную диагностику на нашем сайте и получить результаты сразу после ее прохождения.
-          .b-btn
-            a.btn(href="#") Пройти диагностику
-        .b-text2 В любое время <br>и бесплатно
-      .diagnostic-list
-        .diagnostic-list__wrapper
-          .diagnostic.item1
-            .diagnostic-wrapper
-              .img
-                img(src="assets/img/ic4.svg")
-              .title в любое <br>время
-          .diagnostic.item2
-            .diagnostic-wrapper
-              .img
-                img(src="assets/img/ic5.svg")
-              .title прямо на сайте
-          .diagnostic.item3
-            .diagnostic-wrapper
-              .img
-                img(src="assets/img/ic6.svg")
-              .title бесплатно
-          .diagnostic.item4
-            .diagnostic-wrapper
-              .img
-                img(src="assets/img/ic7.svg")
-              .title результаты –сразу же
-      .b-btn-mobile
-        a.btn(href="#") Пройти диагностику
-  .lvl4
-    .all
-      .lvl-title Анонс мероприятий
-      .anons-list
-        .anons-list__wrapper
-          .anons-item.anons-item--2
-            .anons-item__wrapper
-              .anons-item__img(style="background-image: url(assets/img/anons1.png)")
-              .anons-item__bottom
-                .anons-item__date 28.06.2023
-                .anons-item__title Современная методология разработки оказалась ошибочной
-                .anons-item__text Частотность поисковых запросов оказалась ошибочной
-          .anons-item
-            .anons-item__wrapper
-              .anons-item__img(style="background-image: url(assets/img/anons2.png)")
-              .anons-item__bottom
-                .anons-item__date 28.06.2023
-                .anons-item__title Современная методология разработки оказалась ошибочной
-                .anons-item__text Частотность поисковых запросов оказалась ошибочной
-          .anons-item
-            .anons-item__wrapper
-              .anons-item__img(style="background-image: url(assets/img/anons2.png)")
-              .anons-item__bottom
-                .anons-item__date 28.06.2023
-                .anons-item__title Современная методология разработки оказалась ошибочной
-                .anons-item__text Частотность поисковых запросов оказалась ошибочной
-          .anons-item
-            .anons-item__wrapper
-              .anons-item__img(style="background-image: url(assets/img/anons2.png)")
-              .anons-item__bottom
-                .anons-item__date 28.06.2023
-                .anons-item__title Современная методология разработки оказалась ошибочной
-                .anons-item__text Частотность поисковых запросов оказалась ошибочной
-          .anons-item
-            .anons-item__wrapper
-              .anons-item__img(style="background-image: url(assets/img/anons2.png)")
-              .anons-item__bottom
-                .anons-item__date 28.06.2023
-                .anons-item__title Современная методология разработки оказалась ошибочной
-                .anons-item__text Частотность поисковых запросов оказалась ошибочной
-
-      .loader-etc
-        a.link-loader(href="#") Смотреть еще
-  .lvl5
-    .all
-      .banner-career
-        .banner-career__text
-          .title карьерная консультация
-          .text Запишитесь, чтобы получить бесплатную карьерную консультацию.
-          .b-btn
-            a.btn(href="#") Записаться
-        .banner-career__img
-          img(src="assets/img/gromofon.svg")
-      .card-info-list.card-info-list--3-col.hidden-md
-        .card-info.red
-          .card-info-wrapper
-            .num
-              span 1
-            .title Запишитесь
-            .text на консультацию
-        .card-info
-          .card-info-wrapper
-            .num
-              span 2
-            .title пройдите опрос
-            .text в удобное время
-        .card-info.yellow
-          .card-info-wrapper
-            .num
-              span 3
-            .title результаты
-            .text получите на ваш e-mail
+      .info-box-row.--row-2
+        .info-box
+          .info-box__wrap
+            .info-box__title Для работодателей
+            .info-box__img
+              img(src="assets/img/login-job.svg")
+            .info-box__text Доступ к банку резюме предоставляется администрациям школ города Москвы. Если вы являетесь директором московской школы, вы можете войти в банк резюме, используя единую учетную запись ЕКИС.
+            .info-box__btn
+              a.btn(href="#") Вход для работодателей
+        .info-box
+          .info-box__wrap
+            .info-box__title Для соискателей
+            .info-box__img
+              img(src="assets/img/login-people.svg")
+            .info-box__text Ваш помощник в поиске работы в московских школах. <br>
+              | Бесплатная публикация резюме
+            .info-box__btn
+              a.btn(href="#") Вход для соискателей
 
   .lvl6
     .all
@@ -234,3 +83,13 @@ block content
               .faq-item__desc.js-faq-desq Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.
         .b-btn-mobile
           a.btn.js-btn-modal(href="#" data-modal="modal-support") Обратная связь
+  .lvl8
+    .all
+      .banner-portal
+        .banner-portal__img
+          img(src="assets/img/logo_dpo.svg")
+        .banner-portal__text
+          .title Портал ДПО
+          | Все самые актуальные курсы, карьерные треки и популярные мероприятия вы найдете на Портале ДПО
+        .banner-portal__btn
+          a.btn(href="#") Перейти на портал
