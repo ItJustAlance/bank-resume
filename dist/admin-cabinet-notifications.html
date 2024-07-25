@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет админа_Уведомления</title>
+    <meta name="description" content="some description">
+    <meta name="keywords" content="some keyword">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="css/vendors~app.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
+  <body class="cabinet-page mode-admin">
+    <div class="over">
+      <header class="header">
+        <div class="all">
+          <div class="logo"><a href="#">
+              <svg class="svg-icon --color svg-icon--logo 1">
+                <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
+              </svg></a></div>
+          <div class="header-right">
+            <div class="header-auth">
+              <div class="header-auth__icons"><a class="link-item" href="#">
+                  <svg class="svg-icon --color svg-icon--bell 1">
+                    <use xlink:href="assets/img/sprite-color.svg#icon-color-bell"></use>
+                  </svg>
+                  <div class="new-mess"></div></a></div>
+            </div>
+          </div>
+          <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__header">
+              <div class="header-auth__ava"><a href="#"><img src="assets/img/mini-ava.png"></a></div>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="menu-links menu-levels">
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Вакансии</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Правовая информация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Резюме</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Правовая информация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><span class="link-submenu js-btn-submenu"><span class="link-submenu__label">Отчеты</span><span class="link-submenu__icon">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg></span></span>
+                  <ul class="submenu js-submenu">
+                    <li><a href="#">Резюме</a></li>
+                    <li><a href="#">Соискатели</a></li>
+                    <li><a href="#">Работодатели</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Приглашения</a></li>
+                    <li><a href="#">Предложения о работе</a></li>
+                    <li><a href="#">Организации</a></li>
+                    <li><a href="#">Обратились повторно</a></li>
+                    <li><a href="#">Конверсия этапов подбора</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li><a class="link-support" href="#">Служба поддержки</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu__footer">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__nav-list">
+                  <li><a class="btn" href="#">Выход</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main main--office">
+        <div class="all">
+          <div class="cabinet">
+            <div class="cabinet-header">
+              <div class="cabinet-header__row">
+                <div class="cabinet-header__left">
+                  <div class="cabinet-header__title h2-title">Уведомления</div>
+                  <div class="cabinet-header__tags">
+                    <div class="cabinet-header__tag-item">Непрочитанные<span class="highlight">5</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cabinet-header__filters">
+                <div class="drop drop--small js-drop">
+                  <div class="drop__label js-drop__label">Фильтр
+                    <div class="drop__arrow">
+                      <svg class="svg-icon svg-icon--chevron-down">
+                        <use xlink:href="assets/img/sprite.svg#icon-chevron-down"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="drop__dropdown">
+                    <div class="drop__dropdown-wrapper">
+                      <ul>
+                        <li class="drop__item">
+                          <div class="b-checkbox b-subeckbox">
+                            <input type="checkbox" id="fd1">
+                            <label class="b-checkbox__label" for="fd1"><span class="checked">
+                                <svg class="svg-icon svg-icon--check">
+                                  <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                                </svg></span><span class="b-checkbox__text">Прочитанные</span></label>
+                          </div>
+                        </li>
+                        <li class="drop__item">
+                          <div class="b-checkbox b-subeckbox">
+                            <input type="checkbox" id="ff1">
+                            <label class="b-checkbox__label" for="ff1"><span class="checked">
+                                <svg class="svg-icon svg-icon--check">
+                                  <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                                </svg></span><span class="b-checkbox__text">Непрочитанные</span></label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-header__filters-btns">
+                  <button class="btn btn--border btn-small"><span class="svg-icon">
+                      <svg class="svg-icon svg-icon--check-square">
+                        <use xlink:href="assets/img/sprite.svg#icon-check-square"></use>
+                      </svg></span><span class="btn-label">Отметить все прочитанными</span></button>
+                  <button class="btn btn--border btn-small"><span class="svg-icon">
+                      <svg class="svg-icon svg-icon--trash-2">
+                        <use xlink:href="assets/img/sprite.svg#icon-trash-2"></use>
+                      </svg></span><span class="btn-label">Удалить все уведомления</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="cabinet-content">
+              <div class="cabinet__list">
+                <div class="cabinet-notification__wrapper">
+                  <div class="cabinet-notification">
+                    <div class="cabinet-notification__header">
+                      <div class="left-col">
+                        <div class="title">Уведомление</div>
+                        <div class="date">10.07.2023</div>
+                      </div>
+                      <div class="right-col">
+                        <div class="b-btn">
+                          <button class="btn btn--border btn-small"><span class="svg-icon">
+                              <svg class="svg-icon svg-icon--trash-2">
+                                <use xlink:href="assets/img/sprite.svg#icon-trash-2"></use>
+                              </svg></span><span class="btn-label">Удалить</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cabinet-notification__body">
+                      <div class="b-text">Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-notification__wrapper">
+                  <div class="cabinet-notification">
+                    <div class="cabinet-notification__header">
+                      <div class="left-col">
+                        <div class="title">Уведомление</div>
+                        <div class="date">10.07.2023</div>
+                      </div>
+                      <div class="right-col">
+                        <div class="b-btn">
+                          <button class="btn btn--border btn-small"><span class="svg-icon">
+                              <svg class="svg-icon svg-icon--trash-2">
+                                <use xlink:href="assets/img/sprite.svg#icon-trash-2"></use>
+                              </svg></span><span class="btn-label">Удалить</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cabinet-notification__body">
+                      <div class="b-text">Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-notification__wrapper">
+                  <div class="cabinet-notification active">
+                    <div class="cabinet-notification__header">
+                      <div class="left-col">
+                        <div class="title">Уведомление</div>
+                        <div class="date">10.07.2023</div>
+                      </div>
+                      <div class="right-col">
+                        <div class="b-btn">
+                          <button class="btn btn--border btn-small"><span class="svg-icon">
+                              <svg class="svg-icon svg-icon--trash-2">
+                                <use xlink:href="assets/img/sprite.svg#icon-trash-2"></use>
+                              </svg></span><span class="btn-label">Удалить</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cabinet-notification__body">
+                      <div class="b-text">Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-notification__wrapper">
+                  <div class="cabinet-notification active">
+                    <div class="cabinet-notification__header">
+                      <div class="left-col">
+                        <div class="title">Уведомление</div>
+                        <div class="date">10.07.2023</div>
+                      </div>
+                      <div class="right-col">
+                        <div class="b-btn">
+                          <button class="btn btn--border btn-small"><span class="svg-icon">
+                              <svg class="svg-icon svg-icon--trash-2">
+                                <use xlink:href="assets/img/sprite.svg#icon-trash-2"></use>
+                              </svg></span><span class="btn-label">Удалить</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cabinet-notification__body">
+                      <div class="b-text">Таким образом, высокое качество позиционных исследований представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-section">
+            <ul class="pagination --md-center">
+              <li class="pagination__item arr-prev"><a class="link arr" href="#">
+                  <svg class="svg-icon svg-icon--chevron-left">
+                    <use xlink:href="assets/img/sprite.svg#icon-chevron-left"></use>
+                  </svg></a></li>
+              <li class="pagination__item"><a class="link active" href="#">1</a></li>
+              <li class="pagination__item"><a class="link" href="#">2</a></li>
+              <li class="pagination__item"><a class="link" href="#">3</a></li>
+              <li class="pagination__item"><span class="link">...</span></li>
+              <li class="pagination__item"><a class="link" href="#">10</a></li>
+              <li class="pagination__item arr-next"><a class="link arr" href="#">
+                  <svg class="svg-icon svg-icon--chevron-right">
+                    <use xlink:href="assets/img/sprite.svg#icon-chevron-right"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="all">
+            <div class="footer-left"><a href="#">Служба поддержки</a></div>
+            <div class="footer-center">
+              <ul class="footer-nav">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <div class="link-sites"><a href="#"><img src="assets/img/site1.svg"></a><a href="#"><img src="assets/img/site2.svg"></a></div>
+            </div>
+            <div class="footer-copy">© Департамент образования и науки г. Москвы, 2023
+              <div class="small">При полном или частичном использовании материалов с официальных сайтов Правительства Москвы ссылка на источник обязательна.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="just-modal undefined" id="modal-support">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal__header">
+                <div class="just-modal-title h2-title">служба поддержки</div>
+                <div class="just-modal-subtitle">Опишите вашу проблему.</div>
+              </div>
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <label class="label">Имя</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">E-mail</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">Ваша проблема</label>
+                  <textarea class="textarea"></textarea>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="b-checkbox">
+                    <input type="checkbox" id="fff">
+                    <label class="b-checkbox__label" for="fff"><span class="checked">
+                        <svg class="svg-icon svg-icon--check">
+                          <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                        </svg></span><span class="b-checkbox__text">Согласен на <a href="#">обработку персональных данных</a></span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="text-captcha">Подтвердите, что вы не робот</div>
+                  <div class="captcha"><img src="assets/img/capha.png"></div>
+                </div>
+                <div class="just-modal-form__row">
+                  <button class="btn btn--full" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal--white modal-form-normal" id="modal-login">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad1">
+                    <label class="b-radio__label" for="rad1"><span class="checked"></span><span class="b-radio__text">Вход для директора</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad2">
+                    <label class="b-radio__label" for="rad2"><span class="checked"></span><span class="b-radio__text">Вход для соискателя</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Продолжить</button>
+                  </div>
+                  <div class="just-modal-form__col2"><a class="btn btn--border btn--full js-just-modal__close" href="#">Отменить</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-covering-letter" id="modal-covering-letter">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal__header"></div>
+                <div class="just-modal-form__row">
+                  <div class="label">Сопроводительное письмо</div>
+                  <textarea class="textarea --covering-letter"></textarea>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-big modal-anons" id="modal-anons">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-anons">
+                <div class="anons-img"><img src="assets/img/anons-big.png"></div>
+                <div class="anons-date">28.06.2023</div>
+                <div class="anons-title h4-title">Современная методология разработки оказалась ошибочной</div>
+                <div class="anons-text">
+                  <p>И нет сомнений, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Задача организации, в особенности же экономическая повестка сегодняшнего дня предоставляет широкие возможности для стандартных подходов. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Сложно сказать, почему диаграммы связей ассоциативно распределены по отраслям! Таким образом, глубокий уровень погружения говорит о возможностях системы обучения кадров, соответствующей насущным потребностям.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-middle modal-review" id="modal-review">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-review">
+                <div class="review-list custom-scroll">
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-panel">
+        <div class="admin-panel-main">
+          <div class="admin-panel-main__wrapper">
+            <div class="admin-panel__ava"><img src="assets/img/ava.png"></div>
+          </div>
+          <div class="admin-panel-second">
+            <div class="admin-panel-second__btn-open js-open-btn-admin-panel">
+              <svg class="svg-icon svg-icon--chevron-right">
+                <use xlink:href="assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </div>
+            <div class="admin-panel-second__wrapper">
+              <ul class="admin-menu">
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--plus">
+                      <use xlink:href="assets/img/sprite.svg#icon-plus"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--file-text">
+                      <use xlink:href="assets/img/sprite.svg#icon-file-text"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--users">
+                      <use xlink:href="assets/img/sprite.svg#icon-users"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--user">
+                      <use xlink:href="assets/img/sprite.svg#icon-user"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--grid">
+                      <use xlink:href="assets/img/sprite.svg#icon-grid"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--send">
+                      <use xlink:href="assets/img/sprite.svg#icon-send"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--check-square">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-square"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--map-pin">
+                      <use xlink:href="assets/img/sprite.svg#icon-map-pin"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--user-check">
+                      <use xlink:href="assets/img/sprite.svg#icon-user-check"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--refresh-ccw">
+                      <use xlink:href="assets/img/sprite.svg#icon-refresh-ccw"></use>
+                    </svg></a></li>
+                <li class="admin-menu__item"><a class="admin-menu__item-link" href="#">
+                    <svg class="svg-icon svg-icon--filter">
+                      <use xlink:href="assets/img/sprite.svg#icon-filter"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+  <script type="text/javascript" src="assets/js/vendors~app.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack 4</title>
+    <meta name="description" content="some description">
+    <meta name="keywords" content="some keyword">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="css/vendors~app.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
+  <body class="second-page">
+    <div class="over">
+      <header class="header">
+        <div class="all">
+          <div class="logo"><a href="#">
+              <svg class="svg-icon --color svg-icon--logo 1">
+                <use xlink:href="assets/img/sprite-color.svg#icon-color-logo"></use>
+              </svg></a></div>
+          <div class="header-right">
+            <div class="btns"><a class="btn js-btn-modal" href="#" data-modal="modal-support">Вход</a><a class="btn btn--border" href="#">Регистрация</a></div>
+          </div>
+          <button class="burger-btn" type="button"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></button>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__overlay"></div>
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__header">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__nav-list">
+                  <li><a class="btn" href="#">Вход для соискателя</a></li>
+                  <li><a class="btn" href="#">Вход для директора</a></li>
+                  <li><a class="btn btn--border" href="#">Регистрация</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="menu-links">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li><a class="link-support" href="#">Служба поддержки</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="lvl1">
+          <div class="all">
+            <div class="lvl1-box">
+              <div class="lvl1-content">
+                <h1 class="h1-title">команды мечты создаются здесь</h1>
+                <div class="text">помощник в поиске работы и сотрудников в сфере образования</div>
+                <div class="b-btn"><a class="btn" href="#">Начать</a></div>
+              </div>
+              <div class="lvl1-img"><img class="lvl-bg" src="assets/img/main-new.svg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lvl7">
+          <div class="all">
+            <div class="info-box-row --row-2">
+              <div class="info-box">
+                <div class="info-box__wrap">
+                  <div class="info-box__title">Для работодателей</div>
+                  <div class="info-box__img"><img src="assets/img/login-job.svg"></div>
+                  <div class="info-box__text">Доступ к банку резюме предоставляется администрациям школ города Москвы. Если вы являетесь директором московской школы, вы можете войти в банк резюме, используя единую учетную запись ЕКИС.</div>
+                  <div class="info-box__btn"><a class="btn" href="#">Вход для работодателей</a></div>
+                </div>
+              </div>
+              <div class="info-box">
+                <div class="info-box__wrap">
+                  <div class="info-box__title">Для соискателей</div>
+                  <div class="info-box__img"><img src="assets/img/login-people.svg"></div>
+                  <div class="info-box__text">
+                    Ваш помощник в поиске работы в московских школах. <br>Бесплатная публикация резюме</div>
+                  <div class="info-box__btn"><a class="btn" href="#">Вход для соискателей</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lvl6">
+          <div class="all">
+            <div class="questions-remain">
+              <div class="questions-remain__left">
+                <div class="h2-title">Остались вопросы?</div>
+                <div class="text">Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме.Если у вас возникли сложности или вопросы, вы можете связаться с нами.</div>
+                <div class="b-btn"><a class="btn js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></div>
+              </div>
+              <div class="questions-remain__right">
+                <div class="faq-list">
+                  <div class="faq-item js-faq-wrapper">
+                    <div class="faq-item__toggle">
+                      <div class="faq-item__title js-faq-toggler">Как пользоваться Банком резюме?</div>
+                      <div class="faq-item__ico">
+                        <svg class="svg-icon svg-icon--plus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-plus-circle"></use>
+                        </svg>
+                        <svg class="svg-icon svg-icon--minus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-minus-circle"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="faq-item__desc js-faq-desq">Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.</div>
+                  </div>
+                  <div class="faq-item js-faq-wrapper">
+                    <div class="faq-item__toggle">
+                      <div class="faq-item__title js-faq-toggler">Как пользоваться Банком резюме?</div>
+                      <div class="faq-item__ico">
+                        <svg class="svg-icon svg-icon--plus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-plus-circle"></use>
+                        </svg>
+                        <svg class="svg-icon svg-icon--minus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-minus-circle"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="faq-item__desc js-faq-desq">Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.</div>
+                  </div>
+                  <div class="faq-item js-faq-wrapper">
+                    <div class="faq-item__toggle">
+                      <div class="faq-item__title js-faq-toggler">Как пользоваться Банком резюме?</div>
+                      <div class="faq-item__ico">
+                        <svg class="svg-icon svg-icon--plus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-plus-circle"></use>
+                        </svg>
+                        <svg class="svg-icon svg-icon--minus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-minus-circle"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="faq-item__desc js-faq-desq">Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.</div>
+                  </div>
+                  <div class="faq-item js-faq-wrapper">
+                    <div class="faq-item__toggle">
+                      <div class="faq-item__title js-faq-toggler">Как пользоваться Банком резюме?</div>
+                      <div class="faq-item__ico">
+                        <svg class="svg-icon svg-icon--plus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-plus-circle"></use>
+                        </svg>
+                        <svg class="svg-icon svg-icon--minus-circle">
+                          <use xlink:href="assets/img/sprite.svg#icon-minus-circle"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="faq-item__desc js-faq-desq">Ответы на часто задаваемые вопросы здесь. Специалисты службы поддержки банка резюме могут оказывать вам помощь в заполнении резюме. <br>Если у вас возникли сложности или вопросы, вы можете связаться с нами.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-btn-mobile"><a class="btn js-btn-modal" href="#" data-modal="modal-support">Обратная связь</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="lvl8">
+          <div class="all">
+            <div class="banner-portal">
+              <div class="banner-portal__img"><img src="assets/img/logo_dpo.svg"></div>
+              <div class="banner-portal__text">
+                <div class="title">Портал ДПО</div>Все самые актуальные курсы, карьерные треки и популярные мероприятия вы найдете на Портале ДПО
+              </div>
+              <div class="banner-portal__btn"><a class="btn" href="#">Перейти на портал</a></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-new">
+        <div class="all">
+          <div class="footer-new-wrapper">
+            <div class="footer-new__up">
+              <div class="footer-new__menu">
+                <div class="col-menu col1">
+                  <ul class="footer-new__nav">
+                    <li><a href="#">Служба поддержки</a></li>
+                  </ul>
+                </div>
+                <div class="col-menu col2">
+                  <ul class="footer-new__nav">
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Правовая информация</a></li>
+                  </ul>
+                </div>
+                <div class="col-menu col3">
+                  <ul class="footer-new__nav">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Помощь (FAQ)</a></li>
+                  </ul>
+                </div>
+                <div class="col-menu --logos">
+                  <div class="footer-new__logos">
+                    <div class="item-foot-logo"><img src="assets/img/logo_dpo.svg"></div>
+                    <div class="item-foot-logo"><img src="assets/img/mosru.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-new__down">
+              <div class="footer-new__copy">© Департамент образования и науки г. Москвы, 2023 <br>
+                <div class="soglasie">При полном или частичном использовании материалов с официальных сайтов Правительства Москвы ссылка на источник обязательна.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="just-modal undefined" id="modal-support">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal__header">
+                <div class="just-modal-title h2-title">служба поддержки</div>
+                <div class="just-modal-subtitle">Опишите вашу проблему.</div>
+              </div>
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <label class="label">Имя</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">E-mail</label>
+                  <input class="input" type="text">
+                </div>
+                <div class="just-modal-form__row">
+                  <label class="label">Ваша проблема</label>
+                  <textarea class="textarea"></textarea>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="b-checkbox">
+                    <input type="checkbox" id="fff">
+                    <label class="b-checkbox__label" for="fff"><span class="checked">
+                        <svg class="svg-icon svg-icon--check">
+                          <use xlink:href="assets/img/sprite.svg#icon-check"></use>
+                        </svg></span><span class="b-checkbox__text">Согласен на <a href="#">обработку персональных данных</a></span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row pb-32">
+                  <div class="text-captcha">Подтвердите, что вы не робот</div>
+                  <div class="captcha"><img src="assets/img/capha.png"></div>
+                </div>
+                <div class="just-modal-form__row">
+                  <button class="btn btn--full" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal--white modal-form-normal" id="modal-login">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad1">
+                    <label class="b-radio__label" for="rad1"><span class="checked"></span><span class="b-radio__text">Вход для директора</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__row">
+                  <div class="b-radio">
+                    <input type="radio" id="rad2">
+                    <label class="b-radio__label" for="rad2"><span class="checked"></span><span class="b-radio__text">Вход для соискателя</span></label>
+                  </div>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Продолжить</button>
+                  </div>
+                  <div class="just-modal-form__col2"><a class="btn btn--border btn--full js-just-modal__close" href="#">Отменить</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-covering-letter" id="modal-covering-letter">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-form">
+                <div class="just-modal__header"></div>
+                <div class="just-modal-form__row">
+                  <div class="label">Сопроводительное письмо</div>
+                  <textarea class="textarea --covering-letter"></textarea>
+                </div>
+                <div class="just-modal-form__btns">
+                  <div class="just-modal-form__col2">
+                    <button class="btn btn--full" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-big modal-anons" id="modal-anons">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-anons">
+                <div class="anons-img"><img src="assets/img/anons-big.png"></div>
+                <div class="anons-date">28.06.2023</div>
+                <div class="anons-title h4-title">Современная методология разработки оказалась ошибочной</div>
+                <div class="anons-text">
+                  <p>И нет сомнений, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Задача организации, в особенности же экономическая повестка сегодняшнего дня предоставляет широкие возможности для стандартных подходов. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Сложно сказать, почему диаграммы связей ассоциативно распределены по отраслям! Таким образом, глубокий уровень погружения говорит о возможностях системы обучения кадров, соответствующей насущным потребностям.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                  <p>Однозначно, ключевые особенности структуры проекта освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы. В частности, начало повседневной работы по формированию позиции обеспечивает актуальность экономической целесообразности принимаемых решений.</p>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="just-modal modal-middle modal-review" id="modal-review">
+        <div class="just-modal__wrapper">
+          <div class="just-modal__overlay"></div>
+          <div class="just-modal__container">
+            <div class="just-modal__body">
+              <div class="just-modal-review">
+                <div class="review-list custom-scroll">
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                  <div class="review-item">
+                    <div class="review-item__header">
+                      <div class="review-item__title">Отзыв</div>
+                      <div class="review-item__date">12.07.2023</div>
+                    </div>
+                    <div class="review-item__text">Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Для современного мира высококачественный прототип будущего проекта предоставляет широкие возможности для благоприятных перспектив.</div>
+                    <div class="review-item__bottom">
+                      <div class="name">Смирнов Иван Иванович</div>
+                      <div class="text-gray">Директор УО “СШ №64”</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="just-modal__close-wrapper">
+              <button class="just-modal__close js-just-modal__close" type="button">
+                <svg class="svg-icon svg-icon--close">
+                  <use xlink:href="assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")-->
+    <!--script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")-->
+  <script type="text/javascript" src="assets/js/vendors~app.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>
