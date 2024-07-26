@@ -12,6 +12,9 @@ html(lang='en')
     meta(name="description", content=description)
     meta(name="keywords" content=keywords)
     link(rel="shortcut icon" href="favicon.png" type="image/png")
+    link(href="css/vendors~app.css" rel="stylesheet")
+    link(href="/assets/css/app.css" rel="stylesheet")
+
   body(class=pageClass)
     .over
       if(headerAuth)
@@ -23,6 +26,10 @@ html(lang='en')
       include partials/footer
       include partials/admin-panel
     //script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
+    script(type="text/javascript" src="assets/js/app.js")
+    script(type="text/javascript" src="assets/js/vendors~app.js")
+
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js")
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js")
 
+    script(type="text/javascript" src="https://br.corp-univer.ru/local/templates/br/assets/js/main-static.js")

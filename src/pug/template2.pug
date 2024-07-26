@@ -12,6 +12,11 @@ html(lang='en')
     meta(name="description", content=description)
     meta(name="keywords" content=keywords)
     link(rel="shortcut icon" href="favicon.png" type="image/png")
+    link(href="css/vendors~app.css" rel="stylesheet")
+    link(href="assets/css/app.css" rel="stylesheet")
+
+
+
 
   body(class=pageClass)
     .over
@@ -19,3 +24,7 @@ html(lang='en')
       main.main
         block content
       include partials/footer
+    script(type="text/javascript" src="assets/js/vendors~app.js")
+    script(type="text/javascript" src="assets/js/app.js")
+
+    script(type="text/javascript" src="https://br.corp-univer.ru/local/templates/br/assets/js/main-static.js")

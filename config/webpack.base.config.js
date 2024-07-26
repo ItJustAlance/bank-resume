@@ -64,13 +64,24 @@ const config = {
   context: PATHS.src,
   externals: {
     paths: PATHS,
+    //jquery: 'jQuery'
   },
   entry: {
     app: PATHS.src,
   },
+  // entry: {
+  //   app: './app.js',
+  //   home: {import: './home.js', filename: 'pages/[name][ext]'},
+  //   about: {import: './about.js', filename: 'pages/[name][ext]'}
+  // },
+  // output: {
+  //   filename: `${PATHS.assets}js/[name].js`,
+  //   path: PATHS.dist,
+  // },
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
+    //publicPath: 'https://mi-74.ru/d.js',
   },
   stats: {
     assets: true,
@@ -266,6 +277,8 @@ const config = {
         new HtmlWebpackPlugin({
           template: `${PAGES_DIR}/${page}`,
           filename: `./${page.replace(/\.pug/, '.html')}`,
+          inject: false,
+
         })
     ),
     new MiniCssExtractPlugin({
